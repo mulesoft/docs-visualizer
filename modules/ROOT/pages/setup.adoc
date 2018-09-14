@@ -1,0 +1,67 @@
+= Setup Anypoint Visualizer
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This topic describes how to configure the roles and permission required to use Anypoint Visualizer. It also provides information and considerations when deploying applications.
+
+== Configure Permissions
+
+To access Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
+
+* Visualizer Viewer: enables a user to view the graph of an application network, but does not allow them to make changes. This permission must be configured for each business group. This enables users within the business group to access Anypoint Visualizer.
+* Visualizer Editor: enables a user to view and modify the graph of an application network. This permission can only be assigned within the master organization.
+
+
+== Verify Supported Runtimes
+
+Anypoint Visualizer only includes activity from applications deployed to a supported Mule runtime. When deploying an Mule application or API, you must ensure that you are using a supported Mule runtime as the deployment target.
+
+Anypoint Visualizer supports the following Mule runtimes running on CloudHub:
+
+* Mule Runtime, version 3.9.1
+* Mule Runtime, version 3.9.1-AM
+* Mule Runtime, version 4.1.2
+* Mule Runtime, version 4.1.2-AM
+* Mule Runtime, version 4.1.3
+
+To select these versions, expand the "old patched releases" section in the runtime versions drop-down.
+
+** Note: Applications using supported runtimes before June 30th, will have to update the runtime, which can be done with 0-downtime for CloudHub applications, APIs and proxies.
+
+== Verify Supported Connectors
+
+Additionally, Anypoint Visualizer can monitor activity for outbound connections on specific connectors.
+
+For Mule runtime, version 3.9.x, the following connectors are supported:
+
+* Salesforce
+* HTTP/HTTPS
+* Database
+* All connectors based on the Connector DevKit
+
+For Mule runtime, version 4.1.x, the following connectors are supported:
+
+* Salesforce
+* HTTP/HTTPS
+* Database
+* Mule 4 Extension Connectors
+
+== Deploy an Application
+
+When deploying an application that you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule runtime as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
+
+Applications using supported runtimes before June 30th, must update the runtime.
+
+After redeploying an application, all meta data collected by Anypoint Visualizer is removed for that application. The number of inbound connections for the application node is reset.
+
+== Disabling Data Collection
+
+The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. To reduce performance impact for an application, perform one of the following:
+
+* Deploy the application using a default Mule runtime.
+* Disable data collection for a specific application. To disable data collection for an application, redeploy the application and set the following application property:
++
+----
+anypoint.platform.config.visualizer.agent.enabled=true/false
+----
