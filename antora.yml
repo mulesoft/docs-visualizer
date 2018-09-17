@@ -1,5 +1,5 @@
 name: visualizer
 title: Visualizer
-version: master
+version: 'latest'
 nav:
 - modules/ROOT/nav.adoc
