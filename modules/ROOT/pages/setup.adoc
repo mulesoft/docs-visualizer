@@ -9,7 +9,7 @@ This topic describes how to configure the roles and permission required to use A
 
 To access Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
 
-* Visualizer Viewer: enables a user to view the graph of an application network, but does not allow them to make changes. This permission must be configured for each business group. This enables users within the business group to access Anypoint Visualizer.
+* Runtime Manager Read Applications: enables a user to view the graph of an application network, but does not allow them to make changes.
 * Visualizer Editor: enables a user to view and modify the graph of an application network. This permission can only be assigned within the master organization.
 
 
