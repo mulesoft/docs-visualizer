@@ -60,7 +60,7 @@ When you select a node within the graph, the node and its dependency stack will 
 
 From the details panel, you can rename a node by clicking the *Rename Node* button.
 
-Additionally, you can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name will be highlighted, while others will fade.
+Additionally, you can search for a node (service) in the *Filter services* text field. Services containing your search in any part of their name will be highlighted, while others will fade.
 
 == View Information About a Connection in Your Network
 
