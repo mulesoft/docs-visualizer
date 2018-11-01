@@ -43,15 +43,24 @@ One drop-down can be used to select one of the following metrics:
 
 The other drop-down can be used to select the time window used to calculate the average values of the selected metric.
 
+In order to avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view. For example,
+
+|===
+| Avg throughput | 66.7m TPM | 66.7 milli transactions per minute | 0.0667 TPM
+|===
+https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric prefixes], but note that, in Anypoint Visualizer, u represents micro, rather than μ.
+
 == View Information About a Node in Your Network
 
-When you select a node within the graph, Anypoint Visualizer displays information about the node in the details panel on the right-hand side of the application. This panel is divided into the following sections:
+When you select a node within the graph, the node and its dependency stack will be highlighted and all unconnected nodes will be grayed out. Anypoint Visualizer displays information about the node in the details panel on the right-hand side of the application. This panel is divided into the following sections:
 
 * *Details*: provides information about the node, including the layer the node is assigned to. You can change the layer from this section. See xref:layers.adoc[Use Layers in Anypoint Visualizer].
 * *Metrics summary*: provides monitoring metrics for the selected node including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
-* *Metrics chart*: Shows the time-serie chart of the selected metric in metric drop-down.
+* *Metrics chart*: Shows the time-series chart of the selected metric in metric drop-down.
 
 From the details panel, you can rename a node by clicking the *Rename Node* button.
+
+Additionally, you can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name will be highlighted, while others will fade.
 
 == View Information About a Connection in Your Network
 
