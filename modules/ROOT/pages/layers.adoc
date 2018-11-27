@@ -3,28 +3,28 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This topic describes how to work with layers in Anypoint Vizualizer.
+Work with layers in Anypoint Vizualizer.
 
 == Adding an API, Application, or Proxy to a Layer
 
-There are 2 ways of classifying a node to a layer. Using properties, or through the UI.
+There are two ways of classifying a node to a layer--by using properties, or through the UI.
 
-=== Setting the layer through properties
-To automate the classification of nodes into layers, users can use the property `anypoint.platform.visualizer.layer=<<name>>`. This property can be configured in the application's properties file, or at deployment time through Runtime Manager UI or API.
+=== Setting the Layer Through Properties
+To automate the classification of nodes into layers, use the property `anypoint.platform.visualizer.layer=<<name>>`. You can configure this property in the application's properties file, or at deployment time through the Runtime Manager UI or API.
 
-When this property is used, the nodes will automatically appear in the specified layer, and if the layer doesn't exists it will be automatically created. Node layer can be reassigned through the UI.
+When this property is used, the nodes automatically appear in the specified layer, and if the layer doesn't exist it will be automatically created. Node layer can be reassigned through the UI.
 
-== Setting the layer through the UI
+== Setting the Layer Through the UI
 
-By default when you view an environment using Anypoint Visualizer, none of the nodes in the application are assigned to a layer. You can assign a node to an existing layer. The following procedures are also applicable for changing the layer of a node.
+By default, when you view an environment using Anypoint Visualizer, none of the nodes in the application are assigned to a layer. You can assign a node to an existing layer. The following procedures are also applicable for changing the layer of a node.
 
-. Select the application node you want to add to a layer.
+. Select the application node to add to a layer.
 +
-_Result_: The *Details* panel for the node appears in the right-hand pane as shown in the following image:
+_Result_: The *Customization* panel for the node appears in the right-hand panel as shown in the following image:
 +
 image::select-node.png[Select Node]
 
-. In the *Details* panel, expand the drop-down list next to *Layer* as shown in the following image:
+. In the *Customization* panel, expand the drop-down list next to *Layer* as shown in the following image:
 +
 image::select-layer.png[Select Layer]
 
@@ -38,8 +38,8 @@ image::select-layer-result.png[Node in Layer]
 
 In addition to the default layers provided by Anypoint Visualizer, you can create new layers to customize the view of your application network.
 
-. Select the node you want to add to a new layer.
-. From the drop-down list in the *Details* panel, select *New Layer ....*
+. Select the node to add to a new layer.
+. From the drop-down list in the *Customization* panel, select *New Layer*.
 . Enter a name for your layer in the dialog box, then click *Create Layer*.
 
 _Result_: The node appears in the new layer. You can add additional nodes to this layer as necessary.
@@ -51,9 +51,11 @@ You can delete layers from Anypoint Visualizer as required. Deleting a layer doe
 
 . In the visualizer display, click inside of the layer you want to delete. Do not click a node within the layer.
 . Click the *Delete Layer* icon above the *Details* panel.
++
+image::delete-layer.png[]
 . Click *Delete Layer* to confirm.
 
-_Result_: Anypoint Visualizer automatically adjust the network display. Nodes that were part of the deleted layer no longer have a layer assigned.
+_Result_: Anypoint Visualizer automatically adjusts the network display. Nodes that were part of the deleted layer no longer have a layer assigned.
 
 == Reorder layers
 You can reorder the layers from Anypoint Visualizer:
@@ -64,3 +66,4 @@ You can reorder the layers from Anypoint Visualizer:
 == See Also
 
 * xref:view.adoc[View Application Information with Anypoint Visualizer]
+* xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]

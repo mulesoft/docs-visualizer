@@ -1,0 +1,52 @@
+= Use Tags in Anypoint Visualizer
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can add tags to an API, application, proxy, or other service. Similar to layers, there are two ways of assigning a tag to a node--by using properties, or through the Runtime Manager UI.
+
+== Setting the Tag Through Properties
+
+To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=[name], [name]`. You can configure this property in the application's properties file, or at deployment time through the Runtime Manager UI or API.
+
+When this property is used, the nodes will automatically show the assigned tag(s) in the side panel of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
+
+In the following example, the tag “project-b” was added through properties and therefore cannot be modified on the canvas.
+
+image::properties-tags.png[]
+
+== Setting the Tag Through the UI
+
+By default, when you first view a node using Anypoint Visualizer, it will not have any tags assigned. You can assign a tag to an existing node using the UI if it does not already have the same tag applied through properties.
+
+. Select the application node to tag.
+_Result:_ The Customization panel for the node appears in the right-hand panel as shown in the following image:
++
+image::select-node.png[]
+. In the *Customization* panel, click the *+* by *Add tag* as shown in the following image:
++
+image::add-tag.png[]
+. Type the name of the tag to apply. Existing tags will appear in a drop-down list as you begin to type. Either select an existing tag, or click “Create tag ‘your-tag’” and press enter to add a tag. +
+[NOTE]
+You cannot apply the same tag multiple times to a node. All tags will be converted to lowercase and cannot have spaces.
++
+image::create-tag.png[]
++
+_Result:_ The tags that you added to a node will be listed in the *Customization* panel. This node will now be included in the list of services if you xref:view.adoc#customize-view[filter by this tag].
+
+== Delete a Tag
+
+You can delete tags from Anypoint Visualizer as required. Deleting a tag does not delete the associated nodes.
+
+To delete a tag assigned by property, you must return to the application’s properties file to delete the assignment `anypoint.platform.visualizer.tags=[name]`.
+
+To delete a tag that was configured in the UI:
+
+. Select the node with that tag.
+. Locate the tag in the *Customization* panel, and click the *X* on the tag to delete.
+
+== See Also
+
+xref:view.adoc[View Application Information with Anypoint Visualizer]
+xref:view.adoc#customize-view[Filtering by Tags]
+xref:layers.adoc[Use Layers in Anypoint Visualizer]
