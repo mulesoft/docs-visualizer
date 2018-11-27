@@ -23,7 +23,7 @@ By default, when you first view a node using Anypoint Visualizer, it will not ha
 _Result:_ The Customization panel for the node appears in the right-hand panel as shown in the following image:
 +
 image::select-node.png[]
-. In the *Customization* panel, click the *+* by *Add tag* as shown in the following image:
+. In the *Customization* panel, click *+ Add tag* as shown in the following image:
 +
 image::add-tag.png[]
 . Type the name of the tag to apply. Existing tags will appear in a drop-down list as you begin to type. Either select an existing tag, or click “Create tag ‘your-tag’” and press enter to add a tag. +
@@ -38,7 +38,7 @@ _Result:_ The tags that you added to a node will be listed in the *Customization
 
 You can delete tags from Anypoint Visualizer as required. Deleting a tag does not delete the associated nodes.
 
-To delete a tag assigned by property, you must return to the application’s properties file to delete the assignment `anypoint.platform.visualizer.tags=[name]`.
+To delete a tag assigned using the `anypoint.platform.visualizer.tags=[name]` property, you must return to the application’s properties file and delete the assignment `anypoint.platform.visualizer.tags=[name]`.
 
 To delete a tag that was configured in the UI:
 

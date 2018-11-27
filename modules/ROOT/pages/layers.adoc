@@ -7,16 +7,16 @@ Work with layers in Anypoint Vizualizer.
 
 == Adding an API, Application, or Proxy to a Layer
 
-There are two ways of classifying a node to a layer--by using properties, or through the UI.
+There are two ways of classifying a node to a layer--in the application's properties file, or through the UI.
 
 === Setting the Layer Through Properties
-To automate the classification of nodes into layers, use the property `anypoint.platform.visualizer.layer=<<name>>`. You can configure this property in the application's properties file, or at deployment time through the Runtime Manager UI or API.
+To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<<name>>` in the application's properties file.
 
-When this property is used, the nodes automatically appear in the specified layer, and if the layer doesn't exist it will be automatically created. Node layer can be reassigned through the UI.
+When this property is used, the nodes automatically appear in the specified layer, and if the layer doesn't exist it will be automatically created. A node layer can be reassigned through the Runtime Manager UI.
 
 == Setting the Layer Through the UI
 
-By default, when you view an environment using Anypoint Visualizer, none of the nodes in the application are assigned to a layer. You can assign a node to an existing layer. The following procedures are also applicable for changing the layer of a node.
+You can set the layer at deployment time using the Runtime Manager UI or API. By default, when you view an environment using Anypoint Visualizer, none of the nodes in the application are assigned to a layer. You can assign a node to an existing layer. The following procedures are also applicable for changing the layer of a node.
 
 . Select the application node to add to a layer.
 +
@@ -47,9 +47,9 @@ _Result_: The node appears in the new layer. You can add additional nodes to thi
 
 == Delete a Layer
 
-You can delete layers from Anypoint Visualizer as required. Deleting a layer does not delete the nodes.
+You can delete layers from Anypoint Visualizer as required. Deleting a layer does not delete the node.
 
-. In the visualizer display, click inside of the layer you want to delete. Do not click a node within the layer.
+. In the Visualizer display, click inside the layer to delete. Do not click a node within the layer.
 . Click the *Delete Layer* icon above the *Details* panel.
 +
 image::delete-layer.png[]
@@ -57,10 +57,10 @@ image::delete-layer.png[]
 
 _Result_: Anypoint Visualizer automatically adjusts the network display. Nodes that were part of the deleted layer no longer have a layer assigned.
 
-== Reorder layers
+== Reorder Layers
 You can reorder the layers from Anypoint Visualizer:
 
-. In the visualizer display, click inside of the layer you want to delete. Do not click a node within the layer.
+. In the Visualizer display, click inside the layer to delete. Do not click a node within the layer.
 . Use the arrows in the *Details* panel to move the layer up/down relative to the other layers.
 
 == See Also
