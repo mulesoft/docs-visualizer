@@ -7,7 +7,7 @@ You can add tags to an API, application, proxy, or other service. Similar to lay
 
 == Setting the Tag Through Properties
 
-To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=[name], [name]`. You can configure this property in the application's properties file, or at deployment time through the Runtime Manager UI or API.
+To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>`. You can configure this property in the application's properties file, or at deployment time through the Runtime Manager UI or API.
 
 When this property is used, the nodes will automatically show the assigned tag(s) in the side panel of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
 
@@ -38,7 +38,7 @@ _Result:_ The tags that you added to a node will be listed in the *Customization
 
 You can delete tags from Anypoint Visualizer as required. Deleting a tag does not delete the associated nodes.
 
-To delete a tag assigned using the `anypoint.platform.visualizer.tags=[name]` property, you must return to the application’s properties file and delete the assignment `anypoint.platform.visualizer.tags=[name]`.
+To delete a tag assigned using the `anypoint.platform.visualizer.tags=<name>` property, you must return to the application’s properties file and delete the assignment `anypoint.platform.visualizer.tags=[name]`.
 
 To delete a tag that was configured in the UI:
 

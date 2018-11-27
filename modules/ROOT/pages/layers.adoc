@@ -10,7 +10,7 @@ Work with layers in Anypoint Vizualizer.
 There are two ways of classifying a node to a layer--in the application's properties file, or through the UI.
 
 === Setting the Layer Through Properties
-To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<<name>>` in the application's properties file.
+To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>` in the application's properties file.
 
 When this property is used, the nodes automatically appear in the specified layer, and if the layer doesn't exist it will be automatically created. A node layer can be reassigned through the Runtime Manager UI.
 
