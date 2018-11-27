@@ -69,7 +69,7 @@ When you select a connection within the graph, Anypoint Visualizer displays basi
 
 From the side panel, you can rename the connection by clicking the *Set Edge Name* button.
 
-[customize-view]
+[[customize-view]]
 == Customize Your View of Your Network
 
 Use the filtering feature in the side panel to customize your view and choose what appears in the canvas. You can filter by *environments*, *tags*, and *services*.
