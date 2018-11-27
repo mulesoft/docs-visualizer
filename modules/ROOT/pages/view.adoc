@@ -43,7 +43,7 @@ One drop-down can be used to select one of the following metrics:
 
 The other drop-down can be used to select the time window used to calculate the average values of the selected metric.
 
-In order to avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view. For example,
+To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view. For example:
 
 |===
 | Avg throughput | 66.7m TPM | 66.7 milli transactions per minute | 0.0667 TPM
@@ -52,31 +52,34 @@ https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric pre
 
 == View Information About a Node in Your Network
 
-When you select a node within the graph, the node and its dependency stack will be highlighted and all unconnected nodes will be grayed out. Anypoint Visualizer displays information about the node in the details panel on the right-hand side of the application. This panel is divided into the following sections:
+When you select a node within the graph, the node and its dependency stack will be highlighted and all unconnected nodes will be grayed out. Anypoint Visualizer displays information about the node in the panel on the right-hand side of the application. This panel is divided into the following sections:
 
-* *Details*: provides information about the node, including the layer the node is assigned to. You can change the layer from this section. See xref:layers.adoc[Use Layers in Anypoint Visualizer].
-* *Metrics summary*: provides monitoring metrics for the selected node including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
-* *Metrics chart*: Shows the time-series chart of the selected metric in metric drop-down.
+* *Details*: Provides information about the node.
+* *Metrics summary*: Provides monitoring metrics for the selected node including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
+* *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* drop-down.
+* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can change the layer and the tags from this section. See xref:layers.adoc[Use Layers in Anypoint Visualizer] and xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer].
 
-From the details panel, you can rename a node by clicking the *Rename Node* button.
+From the side panel, you can rename a node by clicking the *Rename Node* button.
 
 You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name will be highlighted, while others will fade.
 
 == View Information About a Connection in Your Network
 
-When you select a connect within the graph, Anypoint Visualizer displays basic information about the connection in the details panel on the right-hand side of the application.
+When you select a connection within the graph, Anypoint Visualizer displays basic information about the connection in the panel on the right-hand side panel of the application.
 
-From the details panel, you can rename the connection by clicking the *Set Edge Name* button.
+From the side panel, you can rename the connection by clicking the *Set Edge Name* button.
 
+[[customize-view]]
 == Customize Your View of Your Network
 
-Use the filtering feature in the side panel to customize your view and order what appears in the application. You can filter by *environments* and *services*. 
+Use the filtering feature in the side panel to customize your view and choose what appears in the canvas. You can filter by *environments*, *tags*, and *services*.
 
-This feature enables you to hide the nodes that you do not want to see see in the graph. Filter selections persist after you close Anypoint Visualizer and reload the canvas at a later time. 
+This feature enables you to hide the nodes that you do not want to see see in the graph. Filter selections persist after you close Anypoint Visualizer and reload the canvas at a later time.
 
-Note that filters have a cascading design, so all nodes that do not belong to the checked environments are automatically hidden from the list of services. 
+Note that filters have a cascading design, so all nodes that do not belong to the checked environments or tags are automatically hidden from the list of services. You can check the *Include related services* box to see services that are related to the nodes labeled with the selected tags. The list of services shown in the right-hand panel and the canvas will reflect this selection.
 
 
 == See Also
 
 * xref:layers.adoc[Use Layers in Anypoint Visualizer]
+* xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
