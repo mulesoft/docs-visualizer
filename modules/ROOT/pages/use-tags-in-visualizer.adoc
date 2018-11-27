@@ -26,7 +26,11 @@ image::select-node.png[]
 . In the *Customization* panel, click *+ Add tag* as shown in the following image:
 +
 image::add-tag.png[]
-. Type the name of the tag to apply. Existing tags will appear in a drop-down list as you begin to type. Either select an existing tag, or click “Create tag ‘your-tag’” and press enter to add a tag. +
+. Type the name of the tag to apply. Existing tags appear in a drop-down list as you begin to type. +
+You can either: +
+* Select an existing tag, or
+* Enter a name for a new tag, and click *Create tag <your-tag>*, or
+* Enter a name for the new tag, and press enter. +
 [NOTE]
 You cannot apply the same tag multiple times to a node. All tags will be converted to lowercase and cannot have spaces.
 +
@@ -38,7 +42,7 @@ _Result:_ The tags that you added to a node will be listed in the *Customization
 
 You can delete tags from Anypoint Visualizer as required. Deleting a tag does not delete the associated nodes.
 
-To delete a tag assigned using the `anypoint.platform.visualizer.tags=<name>` property, you must return to the application’s properties file and delete the assignment `anypoint.platform.visualizer.tags=[name]`.
+To delete a tag assigned using the `anypoint.platform.visualizer.tags=<name>` property, you must return to the application’s properties file and delete the assignment `anypoint.platform.visualizer.tags=<name>`.
 
 To delete a tag that was configured in the UI:
 
