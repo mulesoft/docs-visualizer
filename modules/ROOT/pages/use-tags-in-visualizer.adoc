@@ -11,13 +11,13 @@ To automate adding tag(s) to a node, use the property `anypoint.platform.visuali
 
 When this property is used, the nodes will automatically show the assigned tag(s) in the side panel of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
 
-In the following example, the tag “project-b” was added through properties and therefore cannot be modified on the canvas.
+In the following example, the tag `project-b` was added through properties and therefore cannot be modified on the canvas.
 
 image::properties-tags.png[]
 
 == Setting the Tag Through the UI
 
-By default, when you first view a node using Anypoint Visualizer, it will not have any tags assigned. You can assign a tag to an existing node using the UI if it does not already have the same tag applied through properties.
+By default, when you first view a node using Anypoint Visualizer, it does not have any tags assigned. You can assign a tag to an existing node using the UI if it does not already have the same tag applied through properties.
 
 . Select the application node to tag. +
 _Result:_ The Customization panel for the node appears in the right-hand panel as shown in the following image:

@@ -3,25 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is stored encrypted in a database.
+Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes the IP and URL (without parameters) of the incoming request, as well as the URL (without parameters), and some header values of outgoing requests. This information is stored encrypted in a database.
 
 [%header%autowidth.spread]
 |===
 | Metadata | Description
-| node_info | General information about the node.
-| org_id | The organization where the node is deployed.
-| ip | The IP address of the node.
-| type | Specifies whether the node is an API or Mule application.
-| deployment_id | An internal ID that specifies the hash of the application or API.
-| app_name | The name of the application.
-| url | The fully qualified domain of the application.
+| `node_info` | General information about the node
+| `org_id` | The organization where the node is deployed
+| `ip` | The IP address of the node
+| `type` | Specifies whether the node is an API or Mule application
+| `deployment_id` | An internal ID that specifies the hash of the application or API
+| `app_name` | The name of the application
+| `url` | The fully qualified domain of the application
 |===
 
 == Disable Data Collection for an Application
 
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. To reduce performance impact for an application, you can do one of the following:
 
-* Deploy the application using a default Mule runtime.
+* Deploy the application using a default Mule.
 * Disable data collection for a specific application. To disable data collection for an application, redeploy the application and set the following application property:
 +
 ----
