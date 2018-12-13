@@ -10,31 +10,34 @@ Configure the roles and permissions required to use Anypoint Visualizer and unde
 To access Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
 
 * Runtime Manager Read Applications: Enables a user to view the graph of an application network, but does not allow them to make changes.
-* Visualizer Editor: Enables a user to view and modify the graph of an application network. This permission can only be assigned within the master organization.
+* Visualizer Editor: Enables a user to view and modify the graph of an application network. This permission can only be assigned within the master organization. +
+The Visualizer Editor role is a custom role. See xref:access-management::roles#custom-roles[Custom Roles].
 
 
-== Verify Supported Runtimes
+== Verify Supported CloudHub Runtimes
 
-Anypoint Visualizer includes only activity from applications deployed to a supported Mule runtime. When deploying an Mule application or API, you must ensure that you are using a supported Mule runtime as the deployment target.
+Anypoint Visualizer includes activity only from applications deployed to a supported Mule runtime engine. When deploying a Mule application or API, you must ensure that you are using a supported Mule runtime engine as the deployment target.
 
 Anypoint Visualizer supports the following Mule runtimes running on CloudHub:
 
 * Mule Runtime, version 3.9.1
 * Mule Runtime, version 3.9.1-AM
-* Mule Runtime, version 4.1.2
-* Mule Runtime, version 4.1.2-AM
-* Mule Runtime, version 4.1.3
+* Mule Runtime, version 4.1.x
+* Mule Runtime, version 4.1.x-AM
 
-To select these versions, expand the "old patched releases" section in the runtime versions drop-down.
+These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Show old patch releases* section in the runtime versions drop-down.
 
 [NOTE]
-You must update the runtime for applications using supported runtimes before June 30th, which you can do with zero downtime for CloudHub applications, APIs, and proxies.
+====
+Anypoint Monitoring metrics appears only for applications running on a Mule -AM version. +
+You must update the runtime for applications using runtimes before June 30th, which you can do with zero downtime for CloudHub applications, APIs, and proxies.
+====
 
 == Verify Supported Connectors
 
 Anypoint Visualizer can monitor activity for outbound connections on specific connectors.
 
-For Mule Runtime, version 3.9.x, the following connectors are supported:
+For Mule runtime engine version 3.9.x, the following connectors are supported:
 
 * Salesforce
 * HTTP/HTTPS
