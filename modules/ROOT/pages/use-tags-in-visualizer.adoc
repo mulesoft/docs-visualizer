@@ -20,6 +20,7 @@ image::properties-tags.png[]
 By default, when you first view a node using Anypoint Visualizer, it will not have any tags assigned. You can assign a tag to an existing node using the UI if it does not already have the same tag applied through properties.
 
 . Select the application node to tag. +
+You can hold the shift key to select multiple nodes to apply tags to all the selected nodes at once. +
 _Result:_ The Customization panel for the node appears in the right-hand panel as shown in the following image:
 +
 image::select-node.png[]

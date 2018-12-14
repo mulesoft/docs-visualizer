@@ -18,7 +18,8 @@ When this property is used, the nodes automatically appear in the specified laye
 
 You can set the layer at deployment time using the Runtime Manager UI or API. By default, when you view an environment using Anypoint Visualizer, none of the nodes in the application are assigned to a layer. You can assign a node to an existing layer. The following procedures are also applicable for changing the layer of a node.
 
-. Select the application node to add to a layer.
+. Select the application node to add to a layer. +
+You can hold the shift key to select multiple nodes to apply layers to all the selected nodes at once. +
 +
 _Result_: The *Customization* panel for the node appears in the right-hand panel as shown in the following image:
 +
