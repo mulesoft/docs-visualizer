@@ -1,0 +1,45 @@
+= Troubleshoot Visualizer
+
+If you encounter an error while using Visualizer, you can try these solutions.
+
+== Why are no applications loading?
+
+[%header,cols="3*a"]
+|===
+|Error Message |Cause |Solution
+|`You don’t have access to any ${environment_type} environments. You can request access from your org admin.`
+| Either the organization or business group does not have this environment configured or you do not have the correct permissions.
+|Learn more about xref:access-management::roles.adoc[role permissions] or request CloudHub Network Viewer access from your org administrator.
+|`There are no services to show in the selected environments. You may need to update your applications' runtime versions so they can appear in the Visualizer.`
+|Visualizer currently supports only applications deployed to CloudHub and standalone Mule runtime engines with specific runtimes.
+|If you know that you have applications deployed in this environment, but are not seeing them on the Visualizer canvas, you may need to update your applications to use these runtimes if you want them to appear. View a list of xref:setup.adoc[supported runtimes].
+|If your apps aren't appearing...
+|Visualizer supports only specific runtimes.
+|If you are not seeing some of your applications on the Visualizer canvas or in the services list, first, check your filters, then you may need to update your applications to use a different runtime if you want them to appear. View a list of xref:setup.adoc[supported runtimes].
+|===
+
+== Why can't I see metrics for my applications?
+
+[%header,cols="3*a"]
+|===
+|Error Message |Cause |Solution
+|`You can’t view metrics for selected environments. Learn more.`
+|While all users have free access to Anypoint Visualizer and Anypoint Monitoring, your account needs to be enabled.
+|Please file a support ticket or contact your Customer Success representative and ask for your account to be enabled.
+|`Metrics aren't available for this app. You may need to update its runtime version.`
+|The application is not using a runtime that supports Anypoint Monitoring metrics.
+|For CloudHub applications, you must be on a `-AM` runtime to support Anypoint Monitoring. View a list of xref:setup.adoc[supported runtimes].
+|===
+
+== I seem to have permissions issues
+
+[%header,cols="3*a"]
+|===
+|Error Message |Cause |Solution
+|`You don’t have permissions to edit this node. Learn more.`
+|You need to have the Visualizer Editor permission to edit in Visualizer.
+|Learn more about the different permissions in Visualizer and how to configure custom roles.
+|`Metrics are hidden for this app because you don’t have the “Cloudhub viewer” role for its environment. Learn more.`
+|You have selected an application that belongs to an environment for which you are not a “CloudHub Viewer.” This node is only showing because it is a dependency of another node.
+|Learn more about configuring permissions.
+|===

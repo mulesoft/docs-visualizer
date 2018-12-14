@@ -18,7 +18,7 @@ The Visualizer Editor role is a custom role. See xref:access-management::roles#c
 
 Anypoint Visualizer includes activity only from applications deployed to a supported Mule runtime engine. When deploying a Mule application or API, you must ensure that you are using a supported Mule runtime engine as the deployment target.
 
-Anypoint Visualizer supports the following Mule runtimes running on CloudHub:
+Anypoint Visualizer supports the following Mule runtimes running on *CloudHub*:
 
 * Mule Runtime, version 3.9.1
 * Mule Runtime, version 3.9.1-AM
@@ -29,9 +29,18 @@ These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Sh
 
 [NOTE]
 ====
-Anypoint Monitoring metrics appears only for applications running on a Mule -AM version. +
-You must update the runtime for applications using runtimes before June 30th, which you can do with zero downtime for CloudHub applications, APIs, and proxies.
+Anypoint Monitoring metrics appears only for applications running on a Mule `-AM` version. +
+You must update the runtime for applications using runtimes before June 30th 2018, which you can do with zero downtime for CloudHub applications, APIs, and proxies.
 ====
+
+== Verify Supported Standalone Mule Runtime Engines
+
+Anypoint Visualizer supports the following Mule runtimes for *standalone Mule runtime engine* deployments:
+
+* Mule Runtime, version 3.8.5
+* Mule Runtime, version 3.9.1
+* Mule Runtime, version 4.1.x 
+
 
 == Verify Supported Connectors
 
@@ -44,24 +53,28 @@ For Mule runtime engine version 3.9.x, the following connectors are supported:
 * Database
 * All connectors based on the Connector DevKit
 
-For Mule Runtime, version 4.1.x, the following connectors are supported:
+For Mule runtime engine, version 4.1.x, the following connectors are supported:
 
 * Salesforce
 * HTTP/HTTPS
 * Database
 * Mule 4 Extension Connectors
 
+== Standalone Mule Runtime Engine Setup
+
+To support Visualizer for standalone Mule runtime engine deployments, you must xref:monitoring::am-installing.adoc[install the Anypoint Monitoring agent].
+
 == Deploy an Application
 
-When you deploy an application you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule runtime as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
+When you deploy an application you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule runtime engine as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
 
 After redeploying an application, all metadata collected by Anypoint Visualizer is removed for that application. The number of inbound connections for the application node is reset.
 
-== Disabling Data Collection
+== Disable Data Collection
 
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. To reduce performance impact for an application, you can do one of the following:
 
-* Deploy the application using a default Mule runtime.
+* Deploy the application using a default Mule runtime engine.
 * Disable data collection for a specific application. To disable data collection for an application, redeploy the application and set the following application property:
 +
 ----

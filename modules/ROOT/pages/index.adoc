@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Visualizer enables you to view, understand, and make decisions about your application network. Anypoint Visualizer displays views of different aspects of an application network graph. You can use this graph to explore your application network, identify problems, and make decisions. Use cases for Anypoint Visualizer include architectural review and compliance, troubleshooting, and security.
+Anypoint Visualizer displays views of different aspects of an application network graph. You can use this graph to explore your application network, identify problems, and make decisions. Use cases for Anypoint Visualizer include architectural review and compliance, troubleshooting, and security.
 
 Anypoint Visualizer provides a graphical representation of the APIs, and Mule applications, and third-party systems within your application network. The data displayed in the graph is dynamically updated and does not require prior configuration. Additionally, the data displayed is secure, as only users with the proper permissions can view the application network graph.
 
@@ -21,12 +21,12 @@ Anypoint Visualizer also enables you to view multiple metrics including throughp
 
 To access Anypoint Visualizer, you must have have the right permissions. See xref:setup.adoc[Set up Anypoint Visualizer] for information on how to configure permissions.
 
-Anypoint Visualizer collects data from the Mule applications, APIs, and proxies deployed to discover all incoming and outgoing connections through an embedded plugin. As long as the application, API, or proxy is running on a supported Mule runtime, it is discovered along with any associated dependencies. See xref:technical.adoc[How Anypoint Visualizer Collects Application Data] for additional information on how Anypoint Visualizer collects data displayed in the graph.
+Anypoint Visualizer collects data from Mule applications, APIs, and proxies deployed to CloudHub or standalone Mule runtimes to discover all incoming and outgoing connections through an embedded plugin. As long as the application, API, or proxy is running on a supported Mule runtime, it is discovered along with any associated dependencies. See xref:technical.adoc[How Anypoint Visualizer Collects Application Data] for additional information on how Anypoint Visualizer collects data displayed in the graph.
 
 From Anypoint Visualizer you can select which environments you want to view, arrange applications in layers, inspect their operational monitoring information, and customize the labels displayed for nodes and connnections. See xref:view.adoc[Using Anypoint Visualizer] for more information.
 
 [NOTE]
-Anypoint Visualizer currently supports only Mule Applications, APIs, and proxies deployed in CloudHub. For more details about support for on-premises applications, contact your customer success representative.
+Anypoint Visualizer currently supports Mule Applications, APIs, and proxies deployed in CloudHub or in standalone Mule runtimes. Support for applications in standalone Mule runtimes is currently being rolled out in waves. Contact your customer success representative for questions about gaining access.
 
 == Use Cases
 
@@ -44,7 +44,7 @@ The following use cases provide examples of how you can use Anypoint Visualizer.
 
 * *Resolving production issues faster*: Anypoint Visualizer allows you to understand the behavior of all your APIs together with their dependencies in a single view, which reduces the time needed to pinpoint the root cause of an error or understand the performance impact of a particular API on your clients.
 
-== See Also
+=== See Also
 
 * xref:setup.adoc[Set up Anypoint Visualizer]
 * xref:view.adoc[View an Application Network]

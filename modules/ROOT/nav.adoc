@@ -5,3 +5,4 @@
 * xref:layers.adoc[Use Layers in Anypoint Visualizer]
 * xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
 * xref:technical.adoc[How Anypoint Visualizer Collects Application Data]
+* xref:troubleshoot-visualizer.adoc[Troubleshoot Visualizer]
