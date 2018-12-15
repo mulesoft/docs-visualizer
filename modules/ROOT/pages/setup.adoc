@@ -66,6 +66,10 @@ For Mule runtime engine, version 4.1.x, the following connectors are supported:
 
 To support Visualizer for standalone Mule runtime engine deployments, you must xref:monitoring::am-installing.adoc[install the Anypoint Monitoring agent].
 
+[NOTE]
+Anypoint Visualizer currently supports Mule Applications, APIs, and proxies deployed in CloudHub or in standalone Mule runtimes. Support for applications in standalone Mule runtimes is currently being rolled out incrementally. Contact your customer success representative for questions about gaining access.
+
+
 == Deploy an Application
 
 When you deploy an application you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule runtime engine as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.

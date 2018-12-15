@@ -25,9 +25,6 @@ Anypoint Visualizer collects data from Mule applications, APIs, and proxies depl
 
 From Anypoint Visualizer you can select which environments you want to view, arrange applications in layers, inspect their operational monitoring information, and customize the labels displayed for nodes and connnections. See xref:view.adoc[Using Anypoint Visualizer] for more information.
 
-[NOTE]
-Anypoint Visualizer currently supports Mule Applications, APIs, and proxies deployed in CloudHub or in standalone Mule runtimes. Support for applications in standalone Mule runtimes is currently being rolled out in waves. Contact your customer success representative for questions about gaining access.
-
 == Use Cases
 
 The following use cases provide examples of how you can use Anypoint Visualizer.
