@@ -15,7 +15,7 @@ To automate the classification of nodes into layers, configure the property `any
 When this property is used, the nodes automatically appear in the specified layer. If the layer doesn't exist it is automatically created. You can reassign a node layer through the Runtime Manager UI.
 
 [NOTE]
-For hybrid applications, layer names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
+For applications deployed to standalone Mule runtime engines, layer names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
 
 == Setting the Layer Through the UI
 

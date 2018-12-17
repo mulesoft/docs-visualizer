@@ -12,7 +12,7 @@ To automate adding tag(s) to a node, use the property `anypoint.platform.visuali
 When this property is used, the nodes will automatically show the assigned tag(s) in the side panel of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
 
 [NOTE]
-For hybrid applications, tag names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
+For applications deployed to standalone Mule runtime engines, tag names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
 
 In the following example, the tag “project-b” was added through properties and therefore cannot be modified on the canvas.
 
