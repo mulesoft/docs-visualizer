@@ -39,9 +39,9 @@ You must update the runtime for applications using runtimes before June 30th 201
 
 Anypoint Visualizer supports the following Mule runtimes for *standalone Mule runtime engine* deployments:
 
-* Mule Runtime, version 3.8.5
-* Mule Runtime, version 3.9.1
-* Mule Runtime, version 4.1.x
+* Mule Runtime, version 3.8.5+
+* Mule Runtime, version 3.9.1+
+* Mule Runtime, version 4.1.1+
 
 
 == Verify Supported Connectors
