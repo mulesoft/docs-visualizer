@@ -12,7 +12,10 @@ There are two ways of classifying a node to a layer--in the application's proper
 === Setting the Layer Through Properties
 To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>` in the application's properties file.
 
-When this property is used, the nodes automatically appear in the specified layer, and if the layer doesn't exist it will be automatically created. A node layer can be reassigned through the Runtime Manager UI.
+When this property is used, the nodes automatically appear in the specified layer. If the layer doesn't exist it is automatically created. You can reassign a node layer through the Runtime Manager UI.
+
+[NOTE]
+For hybrid applications, layer names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
 
 == Setting the Layer Through the UI
 
@@ -41,7 +44,7 @@ In addition to the default layers provided by Anypoint Visualizer, you can creat
 
 . Select the node to add to a new layer.
 . From the drop-down list in the *Customization* panel, select *New Layer*.
-. Enter a name for your layer in the dialog box, then click *Create Layer*.
+. Enter a name for your layer in the dialog box, then click *Create Layer*. +
 
 _Result_: The node appears in the new layer. You can add additional nodes to this layer as necessary.
 
