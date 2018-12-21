@@ -22,7 +22,7 @@ Anypoint Visualizer includes activity only from applications deployed to a suppo
 
 Anypoint Visualizer supports the following Mule runtimes running on *CloudHub*:
 
-* Mule Runtime, version 3.9.1
+* Mule Runtime, version 3.9.1+
 * Mule Runtime, version 3.9.1-AM
 * Mule Runtime, version 4.1.x
 * Mule Runtime, version 4.1.x-AM
@@ -32,16 +32,16 @@ These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Sh
 [NOTE]
 ====
 Anypoint Monitoring metrics appears only for applications running on a Mule `-AM` version. +
-You must update the runtime for applications using runtimes before June 30th 2018, which you can do with zero downtime for CloudHub applications, APIs, and proxies.
+You must also update the Mule runtime engine for applications using Mule runtime engines that were released before June 30th 2018 to ensure you have the proper Visualizer agent. You can do this with zero downtime for CloudHub applications, APIs, and proxies.
 ====
 
 == Verify Supported Standalone Mule Runtime Engines
 
-Anypoint Visualizer supports the following Mule runtimes for *standalone Mule runtime engine* deployments:
+Anypoint Visualizer supports the following Mule runtime engines for *standalone Mule runtime engine* deployments:
 
-* Mule Runtime, version 3.8.5
-* Mule Runtime, version 3.9.1
-* Mule Runtime, version 4.1.x
+* Mule Runtime, version 3.8.5+
+* Mule Runtime, version 3.9.1+
+* Mule Runtime, version 4.1.1+
 
 
 == Verify Supported Connectors
