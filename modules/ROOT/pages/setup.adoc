@@ -39,9 +39,9 @@ You must also update the Mule runtime engine for applications using Mule runtime
 
 Anypoint Visualizer supports the following Mule runtime engines for *standalone Mule runtime engine* deployments:
 
-* Mule Runtime, version 3.8.5
-* Mule Runtime, version 3.9.1
-* Mule Runtime, version 4.1.1
+* Mule Runtime, version 3.8.5+
+* Mule Runtime, version 3.9.1+
+* Mule Runtime, version 4.1.1+
 
 
 == Verify Supported Connectors
