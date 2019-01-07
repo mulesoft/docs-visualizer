@@ -61,7 +61,7 @@ When you select a node within the graph, the node and its dependency stack will 
 
 From the side panel, you can click *Rename Node* to rename a node.
 
-You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name will be highlighted, while others fade.
+You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
 
 == View Information About a Connection in Your Network
 
@@ -72,7 +72,7 @@ From the side panel, you can rename the connection by clicking the *Set Edge Nam
 [[customize-view]]
 == Customize Your View of Your Network
 
-Use the filtering feature in the side panel to customize your view and choose what appears in the canvas. You can filter by *environments*, *tags*, and *services*.
+Use the filtering feature in the side panel to customize your view and choose what appears in the canvas. You can filter by environments, tags, and services.
 
 This feature enables you to hide the nodes that you do not want to see see in the graph. Filter selections persist until you change them.  When you close Anypoint Visualizer and reload the canvas at a later time, the filter selections you last made are displayed.
 
