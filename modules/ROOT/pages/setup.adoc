@@ -10,17 +10,17 @@ Configure the roles and permissions required to use Anypoint Visualizer and unde
 To access Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
 
 * *Runtime Manager > Read Applications*: Enables a user to view the graph of an application network, but does not allow them to make changes.
-* *Visualizer Editor*: Enables a user to view and modify the graph of an application network. +
+* *Visualizer > Visualizer Editor*: Enables a user to view and modify the graph of an application network. +
 You can create a xref:access-management::roles.adoc#custom-roles[custom role] and assign the *Visualizer Editor* permission to it.
 [NOTE]
-This permission can only be assigned within the master organization.
+The *Visualizer Editor* permission can only be assigned within the master organization.
 
 
 == Verify Supported CloudHub Runtimes
 
 Anypoint Visualizer includes activity only from applications deployed to a supported Mule runtime engine. When deploying a Mule application or API, you must ensure that you are using a supported Mule runtime engine as the deployment target.
 
-Anypoint Visualizer supports the following Mule runtimes running on *CloudHub*:
+Anypoint Visualizer supports the following Mule runtime engines running on *CloudHub*:
 
 * Mule Runtime, version 3.9.1+
 * Mule Runtime, version 3.9.1-AM
@@ -32,12 +32,12 @@ These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Sh
 [NOTE]
 ====
 Anypoint Monitoring metrics appears only for applications running on a Mule `-AM` version. +
-You must also update the Mule runtime engine for applications using Mule runtime engines that were released before June 30th 2018 to ensure you have the proper Visualizer agent. You can do this with zero downtime for CloudHub applications, APIs, and proxies.
+You must also update the Mule runtime engine for applications using Mule runtime engines that were released before June 30th 2018 to ensure you have the proper Visualizer agent. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
 ====
 
 == Verify Supported Standalone Mule Runtime Engines
 
-Anypoint Visualizer supports the following Mule runtime engines for *standalone Mule runtime engine* deployments:
+Anypoint Visualizer supports the following Mule runtime engines for standalone Mule runtime engine deployments:
 
 * Mule Runtime, version 3.8.5+
 * Mule Runtime, version 3.9.1+
@@ -67,7 +67,7 @@ For Mule runtime engine, version 4.1.x, the following connectors are supported:
 To support Visualizer for standalone Mule runtime engine deployments, you must xref:monitoring::am-installing.adoc[install the Anypoint Monitoring agent].
 
 [NOTE]
-Anypoint Visualizer currently supports Mule Applications, APIs, and proxies deployed in CloudHub or in standalone Mule runtimes. As of December 15, 2018, support for applications in standalone Mule runtimes is being rolled out incrementally. Contact your customer success representative for questions about gaining access.
+Anypoint Visualizer currently supports Mule Applications, APIs, and proxies deployed in CloudHub or in standalone Mule runtime engines. As of December 15, 2018, support for applications in standalone Mule runtimes is being rolled out incrementally. Contact your customer success representative for questions about gaining access.
 
 
 == Deploy an Application

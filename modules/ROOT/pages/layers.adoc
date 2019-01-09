@@ -15,7 +15,7 @@ To automate the classification of nodes into layers, configure the property `any
 When this property is used, the nodes automatically appear in the specified layer. If the layer doesn't exist it is automatically created. You can reassign a node layer through the Runtime Manager UI.
 
 [NOTE]
-For applications deployed to standalone Mule runtime engines, layer names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
+For applications deployed to standalone Mule runtime engines, layer names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `\_`.
 
 == Setting the Layer Through the UI
 
@@ -24,7 +24,7 @@ You can set the layer at deployment time using the Runtime Manager UI or API. By
 . Select the application node to add to a layer. +
 You can hold the shift key to select multiple nodes to apply layers to all the selected nodes at once. +
 +
-_Result_: The *Customization* panel for the node appears in the right-hand panel as shown in the following image:
+_Result_: The *Customization* panel for the node appears in the right side of the panel as shown in the following image:
 +
 image::select-node.png[Select Node]
 
@@ -46,14 +46,14 @@ In addition to the default layers provided by Anypoint Visualizer, you can creat
 . From the drop-down list in the *Customization* panel, select *New Layer*.
 . Enter a name for your layer in the dialog box, then click *Create Layer*. +
 
-_Result_: The node appears in the new layer. You can add additional nodes to this layer as necessary.
+_Result_: The node appears in the new layer. You can add additional nodes to the new layer as necessary.
 
 
 == Delete a Layer
 
 You can delete layers from Anypoint Visualizer as required. Deleting a layer does not delete the node.
 
-. In the Visualizer display, click inside the layer to delete. Do not click a node within the layer.
+. In the Visualizer display, click inside the layer. Do not click a node within the layer.
 . Click the *Delete Layer* icon above the *Details* panel.
 +
 image::delete-layer.png[]
@@ -64,8 +64,8 @@ _Result_: Anypoint Visualizer automatically adjusts the network display. Nodes t
 == Reorder Layers
 You can reorder the layers from Anypoint Visualizer:
 
-. In the Visualizer display, click inside the layer to delete. Do not click a node within the layer.
-. Use the arrows in the *Details* panel to move the layer up/down relative to the other layers.
+. In the Visualizer display, click inside the layer. Do not click a node within the layer.
+. Use the arrows in the *Details* panel to move the layer up or down relative to the other layers.
 
 == See Also
 
