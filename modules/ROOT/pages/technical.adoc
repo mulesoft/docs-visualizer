@@ -21,7 +21,7 @@ Anypoint Visualizer collects runtime information from running applications, APIs
 
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. To reduce performance impact for an application, you can do one of the following:
 
-* Deploy the application using a default Mule runtime.
+* Deploy the application using a default Mule runtime engine.
 * Disable data collection for a specific application. To disable data collection for an application, redeploy the application and set the following application property:
 +
 ----
