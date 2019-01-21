@@ -21,7 +21,7 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 +
 If Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
-. Select an environment from the drop-down list.
+. In the environment filters in the side panel, select an environment.
 +
 Anypoint Visualizer displays only the environments you have permissions to view.
 
@@ -41,7 +41,7 @@ In one drop-down, you can select one of the following metrics:
 * *avg. CPU consumption*
 * *avg. memory utilization*
 
-The other drop-down, you can select the time window used to calculate the average values of the selected metric.
+In the other drop-down, you can select the time window used to calculate the average values of the selected metric.
 
 To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view. For example:
 
