@@ -86,10 +86,11 @@ Filters have a cascading design, so all nodes that do not belong to the checked 
 == Export Your Network View
 
 You can export the view of your network showing on your canvas to a PNG file.
+
 * If you customized your view with filters, the customized network topology is exported.
 * If you selected metrics or durations, these settings are reflected in the export.
 
-To export a PNG view of your network, click *Export PNG* in the side panel.
+To export a PNG view of your network, click *Export as PNG* in the side panel.
 
 == See Also
 
