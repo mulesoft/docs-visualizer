@@ -82,6 +82,15 @@ This feature enables you to hide the nodes that you do not want to see see in th
 
 Filters have a cascading design, so all nodes that do not belong to the checked environments or tags are automatically hidden from the list of services. You can toggle *Show dependents and dependencies* to see  the services as well as dependencies of the nodes and services with the selected tags. The panel on the right and the canvas are updated to display the current selection.
 
+[[export-view]]
+== Export Your Network View
+
+You can export the view of your network showing on your canvas to a PNG file.
+
+* If you customized your view with filters, the customized network topology is exported.
+* If you selected metrics or durations, these settings are reflected in the export.
+
+To export a PNG view of your network, click *Export as PNG* in the side panel.
 
 == See Also
 
