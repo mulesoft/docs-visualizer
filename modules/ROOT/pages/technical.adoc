@@ -19,11 +19,36 @@ Anypoint Visualizer collects runtime information from running applications, APIs
 
 == Disable Data Collection for an Application
 
-The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. To reduce performance impact for an application, you can do one of the following:
+The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. 
+
+*CloudHub*
+
+To reduce performance impact for an application running in CloudHub, you can do one of the following:
 
 * Deploy the application using a default Mule runtime engine.
-* Disable data collection for a specific application. To disable data collection for an application, redeploy the application and set the following application property:
+* Disable data collection for a specific application. To disable data collection for an application, set the following application property and redeploy the application:
 +
 ----
 anypoint.platform.config.visualizer.agent.enabled=true/false
+----
+
+
+*Standalone Mule Runtime Engines*
+
+To reduce performance impact for an application running in a standalone mule runtime, you can do one of the following:
+
+* Deploy the application using a default Mule runtime engine without the Anypoint Monitoring agent.
+* Disable data collection for a specific application. To disable data collection for an application, set the following application property and redeploy the application:
++
+----
+anypoint.platform.config.analytics.agent.disabled=true/false 
+----
++
+[NOTE]
+This will disable monitoring for that application as well.
++
+To disable the header injection for an application, set the following application property and redeploy the application:
++
+----
+anypoint.platform.config.analytics.agent.header_injection.disabled=true/false 
 ----
