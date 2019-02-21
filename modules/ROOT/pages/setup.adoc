@@ -35,6 +35,7 @@ Anypoint Monitoring metrics appears only for applications running on a Mule `-AM
 You must also update the Mule runtime engine for applications using Mule runtime engines that were released before June 30th 2018 to ensure you have the proper Visualizer agent. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
 ====
 
+
 == Verify Supported Standalone Mule Runtime Engines
 
 Anypoint Visualizer supports the following Mule runtime engines for standalone Mule runtime engine deployments:
@@ -42,6 +43,11 @@ Anypoint Visualizer supports the following Mule runtime engines for standalone M
 * Mule Runtime, version 3.8.5+
 * Mule Runtime, version 3.9.1+
 * Mule Runtime, version 4.1.1+
+
+
+== Standalone Mule Runtime Engine Setup
+
+To support Visualizer for standalone Mule runtime engine deployments, you must xref:monitoring::am-installing.adoc[install the Anypoint Monitoring agent]. 
 
 
 == Verify Supported Connectors
@@ -62,13 +68,6 @@ For Mule runtime engine, version 4.1.x, the following connectors are supported:
 * Database
 * Mule 4 Extension Connectors
 
-== Standalone Mule Runtime Engine Setup
-
-To support Visualizer for standalone Mule runtime engine deployments, you must xref:monitoring::am-installing.adoc[install the Anypoint Monitoring agent].
-
-[NOTE]
-Anypoint Visualizer currently supports Mule Applications, APIs, and proxies deployed in CloudHub or in standalone Mule runtime engines. As of December 15, 2018, support for applications in standalone Mule runtimes is being rolled out incrementally. Contact your customer success representative for questions about gaining access.
-
 
 == Deploy an Application
 
@@ -78,11 +77,37 @@ After redeploying an application, all metadata collected by Anypoint Visualizer 
 
 == Disable Data Collection
 
-The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. To reduce performance impact for an application, you can do one of the following:
+The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. 
+
+*CloudHub*
+
+To reduce performance impact for an application running in CloudHub, you can do one of the following:
 
 * Deploy the application using a default Mule runtime engine.
-* Disable data collection for a specific application. To disable data collection for an application, redeploy the application and set the following application property:
+* Disable data collection for a specific application. To disable data collection for an application, set the following application property and redeploy the application:
 +
 ----
 anypoint.platform.config.visualizer.agent.enabled=true/false
 ----
+
+
+*Standalone Mule Runtime Engines*
+
+To reduce performance impact for an application running in a standalone mule runtime, you can do one of the following:
+
+* Deploy the application using a default Mule runtime engine without the Anypoint Monitoring agent.
+* Disable data collection for a specific application. To disable data collection for an application, set the following application property and redeploy the application:
++
+----
+anypoint.platform.config.analytics.agent.disabled=true/false 
+----
++
+[NOTE]
+This will disable monitoring for that application as well.
++
+To disable the header injection for an application, set the following application property and redeploy the application:
++
+----
+anypoint.platform.config.analytics.agent.header_injection.disabled=true/false 
+----
+
