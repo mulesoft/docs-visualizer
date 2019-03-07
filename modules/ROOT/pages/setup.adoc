@@ -104,10 +104,5 @@ anypoint.platform.config.analytics.agent.disabled=true/false
 +
 [NOTE]
 This will disable monitoring for that application as well.
-+
-To disable the header injection for an application, set the following application property and redeploy the application:
-+
-----
-anypoint.platform.config.analytics.agent.header_injection.disabled=true/false 
-----
+
 
