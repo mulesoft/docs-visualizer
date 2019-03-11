@@ -11,6 +11,7 @@ Use one of the default layers provided by Anypoint Visualizer, or create a custo
 Map a node to a layer in the application's properties file, or use the Anypoint Visualizer UI.
 
 === Set a Layer with Properties
+
 To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>` in the application's properties file.
 
 When this property is used, nodes automatically appear in the specified layer. If the layer doesn't exist it is created.
@@ -23,7 +24,12 @@ When this property is used, nodes automatically appear in the specified layer. I
 
 == Set a Layer with the Anypoint Visualizer UI
 
-You can set the layer at deployment time using the Anypoint Visualizer UI or Runtime Manager API. By default, when you view an environment using Anypoint Visualizer, none of the nodes in the application are assigned to a layer. You can assign a node to an existing layer. The following procedures are also applicable for changing the layer of a node.
+If a node was not assigned to a layer at deployment time using the Runtime Manager UI or API, by default, the node is not assigned to a layer in Anypoint Visualizer. Use the Anypoint Visualizer UI to:
+
+* Assign a node to an existing layer or, if the node does not have a layer set via properties, change the assigned layer.
+* Create a new layer.
+
+=== Assign a Layer to a Node
 
 . Select the application node to add to a layer. +
 You can hold the shift key to select multiple nodes to apply layers to all the selected nodes at once. +
@@ -42,7 +48,7 @@ _Result_: The node you selected appears within the layer as shown in the followi
 
 image::select-layer-result.png[Node in Layer]
 
-== Create a New Layer
+=== Create a New Layer
 
 In addition to the default layers provided by Anypoint Visualizer, you can create new layers to customize the view of your application network.
 
@@ -51,7 +57,6 @@ In addition to the default layers provided by Anypoint Visualizer, you can creat
 . Enter a name for your layer in the dialog box, then click *Create Layer*. +
 
 _Result_: The node appears in the new layer. You can add additional nodes to the new layer as necessary.
-
 
 == Delete a Layer
 
@@ -63,10 +68,8 @@ If a layer has no services assigned to it, Anypoint Visualizer deletes the layer
 Anypoint Visualizer also automatically adjusts the network display.
 
 == Reorder Layers
-You can reorder the layers from Anypoint Visualizer:
 
-. In the Visualizer display, click inside the layer. Do not click a node within the layer.
-. Use the arrows in the *System* panel to move the layer up or down relative to the other layers.
+In the Visualizer display, use the arrows on the right side of the layer to move it up or down relative to the other layers.
 
 == See Also
 
