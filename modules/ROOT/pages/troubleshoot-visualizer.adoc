@@ -39,10 +39,10 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 |`You don’t have permissions to edit this node. Learn more.`
 |You need to have the *Visualizer Editor* permission to edit in Visualizer.
 |Learn more about the different permissions in Visualizer and how to configure xref:access-management::roles.adoc#custom-roles[custom roles].
-|`Metrics are hidden for this app because you don’t have the “CloudHub viewer” role for its environment. Learn more.`
-|You have selected an application that belongs to an environment for which you are not a “CloudHub Viewer.” The node is showing only because it is a dependency of another node.
+|`Metrics are hidden for this app because you don’t have the *Runtime Manager >> Read Applications* permission for its environment. Learn more.`
+|You have selected an application that belongs to an environment for which you do not have the *Read Applications* permission. The node is showing only because it is a dependency of another node.
 |Learn more about xref:access-management::roles.adoc[configuring permissions].
-|`You cannot customize this service because you don't have the *CloudHub Viewer* role for its environment.`
-|The node you selected belongs to an environment for which you do not have the *CloudHub Viewer* permission. This node is displayed only because it is a dependency of another node.
+|`You cannot customize this service because you don't have the *Runtime Manager >> Read Applications* permission for its environment.`
+|The node you selected belongs to an environment for which you do not have the *Read Applications* permission. This node is displayed only because it is a dependency of another node.
 |Learn more about xref:access-management::roles.adoc[configuring permissions].
 |===
