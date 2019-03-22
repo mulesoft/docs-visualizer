@@ -17,7 +17,7 @@ The *Visualizer Editor* permission can only be assigned within the master organi
 
 == Set Up for CloudHub
 
-=== Verify Supported CloudHub Mule Runtime Engine (Mule)
+=== Verify Supported CloudHub Mule Runtime Engine (Mule) Versions
 
 Anypoint Visualizer only includes activity from applications deployed to a supported version of Mule runtime engine (Mule). When deploying a Mule application or API, you must ensure that you are using a supported version of Mule as the deployment target.
 
@@ -33,9 +33,9 @@ If your version of Mule was released before June 30th 2018, to ensure you have t
 
 These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Show old patch releases* section in the runtime versions drop-down.
 
-=== Verify Metrics Supported
+=== Verify Supported Mule Runtime Engine (Mule) Versions for Metrics
 
-Anypoint Monitoring metrics are only supported for applications running on these Mule versions:
+The metrics that Visualizer displays come from Anypoint Monitoring. As a result, metrics are only shown in Visualizer for applications running on these Mule versions:
 
 * Mule 3.9.1-AM
 * Mule 4.1.x.-AM
@@ -43,7 +43,9 @@ Anypoint Monitoring metrics are only supported for applications running on these
 
 === Enable the Monitoring Agent for Mule Version 4.1.x Upgrades After March 23, 2019
 
-If you upgrade to Mule version 4.1.x released after March 23, 2019, enable the Monitoring agent to see metrics in Visualizer:
+If you upgrade to Mule version 4.1.x released after March 23, 2019, you must enable the Anypoint Monitoring agent in order for your application appear in Visualizer and for metrics to be displayed.
+
+To enable the Anypoint Monitoring agent:
 
 . Verify that you are a user with *Anypiont Monitoring User* permission.
 . Sign in to Anypoint Platform and click *Anypoint Monitoring*.
@@ -57,7 +59,7 @@ For more information about Anypint Monitoring, see xref:monitoring::monitoring:e
 
 == Set up for Standalone Mule 
 
-=== Verify Supported Standalone Mule Version
+=== Verify Supported Standalone Mule Runtime Engine (Mule) Versions
 
 Anypoint Visualizer supports the following Mule versions for standalone Mule deployments:
 
