@@ -55,7 +55,7 @@ To enable the Anypoint Monitoring agent:
 . In *List of resources in <Environment Name>*, search for an application you wish to visualize.
 . Next to application, click *Enable & Apply* to enable visualization and monitoring for the application.
 
-For more information about Anypint Monitoring, see xref:monitoring::monitoring:enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
+For more information about Anypoint Monitoring, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
 
 == Set up for Standalone Mule 
 
