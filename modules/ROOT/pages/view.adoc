@@ -57,17 +57,14 @@ When you select a node within the graph, the node and its dependency stack are h
 * *Details*: Provides information about the node.
 * *Metrics summary*: Provides monitoring metrics for the selected node including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
 * *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* drop-down.
-* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can change the layer and the tags from this section. See xref:layers.adoc[Use Layers in Anypoint Visualizer] and xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer].
-
-From the side panel, you can click *Rename Node* to rename a node.
+* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can edit the node's display name or change the layer and tags from this section.
 
 You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
 
 == View Information About a Connection in Your Network
 
 When you select a connection within the graph, Anypoint Visualizer displays basic information about the connection in the panel on the right.
-
-From the side panel, you can rename the connection by clicking the *Set Edge Name* button.
+From the side panel, you can edit the display name, which adds a name to the edge on the canvas.
 
 [NOTE]
 Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Non-active edges do not appear on the canvas.  
