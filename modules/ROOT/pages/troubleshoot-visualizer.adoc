@@ -14,8 +14,8 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 |Visualizer currently supports only applications deployed to CloudHub and standalone Mule runtime engines with specific runtimes.
 |If you know that you have applications deployed in a supported environment, but are not seeing them on the Visualizer canvas, you may need to update your applications to use the supported Mule runtime engines. View a list of xref:setup.adoc[supported Mule runtime engines].
 |Apps aren't appearing (and you aren't getting a specific error message).
-|Visualizer supports only specific runtimes.
-|If you are not seeing some of your applications on the Visualizer canvas or in the services list, first, check your filters. If the filters are not the issue, you may need to update your applications to use a different runtime if you want them to appear. View a list of xref:setup.adoc[supported runtimes].
+|Visualizer only supports specific Mule versions (runtimes).
+|If you are not seeing some of your applications on the Visualizer canvas or in the services list, check your filters. If the filters are not the issue, you may need to update your applications to use a different Mule version if you want them to appear. View a list of xref:setup.adoc[supported Mule versions]. If you have upgraded to a Mule version released after March 23, 2019, you must xref:monitoring::enable-apps-deployed-to-cloud.adoc[enable monitoring] before the applications and metrics will appear.
 |===
 
 == Why can't I see metrics for my applications?
@@ -27,8 +27,8 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 |While all users have free access to Anypoint Visualizer and Anypoint Monitoring, your account must first be enabled.
 |File a support ticket or contact your Customer Success representative and ask for your account to be enabled.
 |`Metrics aren't available for this app. You may need to update its runtime version.`
-|The application is not using a Mule runtime engine that supports Anypoint Monitoring metrics.
-|For CloudHub applications, you must use an `-AM` Mule runtime engine to support Anypoint Monitoring. View a list of xref:setup.adoc[supported Mule runtime engines].
+|The application is not using a Mule version that supports Anypoint Monitoring metrics.
+|For CloudHub applications, you must use an `-AM` Mule runtime engine to support Anypoint Monitoring, or upgrade to a Mule 4 version available after March 23, 2019, and then enable the Monitoring agent. View a list of xref:setup.adoc[supported Mule runtime engines].
 |===
 
 == I seem to have permissions issues
