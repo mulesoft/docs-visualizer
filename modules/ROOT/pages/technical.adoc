@@ -27,7 +27,7 @@ To reduce any potential performance impact for an application running in CloudHu
 
 ==== Disable Data Collection for Mule version 4 released before March 23, 2019
 
-To reduce any potential impact on performance for an application running in CloudHub:
+To reduce any potential impact on performance for an application running in CloudHub, set this application property (not server property):
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
@@ -44,12 +44,12 @@ To reduce any potential impact on performance for an application running in Clou
 . In *List of resources in <Environment Name>*, search for an application whose metrics you wish to see.
 . Next to application, click *Disable & Apply* to disable monitoring for the application.
 
-=== Reduce Potential Perfromance Impact for Standalone Mule
+=== Reduce Potential Performance Impact for Standalone Mule
 
 Reducing potential performance impact for an application running in a standalone Mule must be done at the server level. You can do one of the following:
 
 * Deploy the application to a server without the Anypoint Monitoring agent installed.
-* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level:
+* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level):
 +
 ----
 anypoint.platform.config.analytics.agent.disabled=true 
@@ -57,9 +57,3 @@ anypoint.platform.config.analytics.agent.disabled=true
 +
 [NOTE]
 This will disable monitoring for applications on the server as well.
-+
-To disable the header injection for an application, set the following application property and redeploy the application:
-+
-----
-anypoint.platform.config.analytics.agent.header_injection.disabled=true
-----
