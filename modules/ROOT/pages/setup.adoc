@@ -74,8 +74,8 @@ To support Visualizer for standalone Mule deployments, xref:monitoring::am-insta
 === Enable Header Injection
 
 Visualizer requires an additional header injection to work properly.
-However, due to a potential performance impact for Mule 4.1.x, header injection has been disabled by default,
-so you must enable it at the server, not application, level.
+However, due to a potential performance impact for Mule 4.1.x, header injection has been disabled by default.
+You must enable it at the server, not application, level.
 
 Set the following property in the server's properties:
 +
@@ -83,7 +83,9 @@ Set the following property in the server's properties:
 `anypoint.platform.config.analytics.agent.header_injection.disabled=false`
 ----
 
-Note that you must set the property to `false` as shown in the example to enable header injection, since the property is `disabled`.
+[NOTE]
+You must set the property to `false` as shown in the example to enable header injection, since the property is `disabled`.
+
 All applications running on the server are affected by this setting.
 
 == Verify Supported Connectors

@@ -27,7 +27,7 @@ To reduce any potential performance impact for an application running in CloudHu
 
 ==== Disable Data Collection for Mule version 4 released before March 23, 2019
 
-To reduce any potential impact on performance for an application running in CloudHub, set this application property (not server property):
+To reduce any potential impact on performance for an application running in CloudHub, set this application property:
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
