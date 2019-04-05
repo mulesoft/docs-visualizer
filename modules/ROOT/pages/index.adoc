@@ -39,6 +39,14 @@ The following use cases provide examples of how you can use Anypoint Visualizer.
 
 * Resolving Production Issues Faster: Anypoint Visualizer allows you to understand the behavior of all your APIs together with their dependencies in a single view, which reduces the time needed to pinpoint the root cause of an error or understand the performance impact of a particular API on your clients.
 
+== Dedicated Load Balancers
+
+Visualizer supports dedicated load balancers for apps using Mule version 3.9.x or 3.9.x-AM.
+While Visualizer doesn't support dedicated load balancers for apps using Mule version 4.1.x and 4.1.x-AM, MuleSoft anticipates that support for Mule version 4.2.
+
+[NOTE]
+This anticipation is not a guarantee. Visualizer documentation and release notes will be updated when support is available.
+
 === See Also
 
 * xref:setup.adoc[Set up Anypoint Visualizer]

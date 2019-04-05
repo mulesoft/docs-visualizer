@@ -39,11 +39,12 @@ The metrics that Visualizer displays come from Anypoint Monitoring. As a result,
 
 * Mule 3.9.1-AM
 * Mule 4.1.x.-AM
-* Mule 4.1.x patch releases available after March 23, 2019. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
+* Mule 3.9.x patch releases available on Arpil 6, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section. 
+* Mule 4.1.x patch releases available on March 23, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
 
 === Enable the Monitoring Agent for Mule Version 4.1.x Upgrades After March 23, 2019
 
-If you upgrade to Mule version 4.1.x released after March 23, 2019, you must enable the Anypoint Monitoring agent in order for your application appear in Visualizer and for metrics to be displayed.
+If you upgrade to Mule version 3.9.x (released April 6, 2019 or later) or 4.1.x (released March 23, 2019 or later), you must enable the Anypoint Monitoring agent in order for your application appear in Visualizer and for metrics to be displayed.
 
 To enable the Anypoint Monitoring agent:
 
@@ -118,14 +119,14 @@ The agent that Anypoint Visualizer uses to collect metadata may affect performan
 
 To reduce any potential performance impact for an application running in CloudHub you can disable data collection.
 
-=== Disable Data Collection for Mule version 4 released before March 23, 2019
+=== Mule version 4 released before March 23, 2019 or Mule version 3 released before April 6, 2019
 
 To reduce any potential impact on performance for an application running in CloudHub:
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
 
-=== Disable Data Collection for Mule version 4 released after March 23, 2019
+=== Mule Version 4 Released on March 23, 2019 or Later, or Mule Version 3 Released on April 6, 2019 or Later
 
 To reduce the monitoring impact on performance for an application running in CloudHub, disable the Monitoring agent:
 
