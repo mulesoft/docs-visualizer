@@ -25,14 +25,14 @@ The agent that Anypoint Visualizer uses to collect metadata may have a performan
 
 To reduce any potential performance impact for an application running in CloudHub you can disable data collection.
 
-==== Disable Data Collection for Mule version 4 released before March 23, 2019
+==== Disable Data Collection for Mule Version 4 Released Before March 22, 2019 or Mule Version 3.9 Released Before April 5, 2019
 
 To reduce any potential impact on performance for an application running in CloudHub, set this application property:
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
 
-==== Disable Data Collection for Mule version 4 released after March 23, 2019
+==== Disable Data Collection for Mule Version 4 Released on March 22, 2019 or Later, or Mule Version 3 Released on April 5, 2019 or Later
 
 To reduce any potential impact on performance for an application running in CloudHub, disable the Monitoring agent:
 
