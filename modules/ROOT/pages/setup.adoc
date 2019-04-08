@@ -44,7 +44,7 @@ The metrics that Visualizer displays come from Anypoint Monitoring. As a result,
 
 === Enable the Monitoring Agent for Mule Version 4.1 Upgrades After March 22, 2019, or Mule Version 3.9 Upgrades After April 5, 2019
 
-If you upgrade to Mule version 3.9.x (released April 5, 2019 or later) or 4.1.x (released March 23, 2019 or later), you must enable the Anypoint Monitoring agent in order for your application appear in Visualizer and for metrics to be displayed.
+If you upgrade to Mule version 3.9.x (released April 5, 2019 or later) or 4.1.x (released March 22, 2019 or later), you must enable the Anypoint Monitoring agent in order for your application appear in Visualizer and for metrics to be displayed.
 
 To enable the Anypoint Monitoring agent:
 
@@ -134,7 +134,7 @@ To reduce any potential impact on performance for an application running in Clou
 
 To reduce the monitoring impact on performance for an application running in CloudHub, disable the Monitoring agent:
 
-. Verify that you are a user with *Anypiont Monitoring User* permission.
+. Verify that you are a user with *Anypoint Monitoring User* permission.
 . Sign in to Anypoint Platform and click *Anypoint Monitoring*.
 . Click *Settings*.
 . Select *CloudHub*.
