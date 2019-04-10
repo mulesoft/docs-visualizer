@@ -14,6 +14,7 @@ To access Anypoint Visualizer, you must be assigned a role that has one of the f
 You can create a xref:access-management::roles.adoc#custom-roles[custom role] and assign the *Visualizer Editor* permission to it.
 [NOTE]
 The *Visualizer Editor* permission can only be assigned within the master organization.
+* *Runtime Manager > Monitoring User*: If your apps run in a Mule 4 version released on March 23, 2019 or later, of if they run in a release of Mule version 3.9.x released after April 5, 2019, you need the Monitoring User permission as well.
 
 == Set Up for CloudHub
 
