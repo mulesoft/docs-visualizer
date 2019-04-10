@@ -23,7 +23,7 @@ Anypoint Visualizer only includes activity from applications deployed to a suppo
 
 Anypoint Visualizer supports the following Mule versions running on CloudHub:
 
-* Mule version 3.9.1+
+* Mule version 3.9.x
 * Mule version 3.9.1-AM
 * Mule version 4.1.x
 * Mule version 4.1.x-AM
