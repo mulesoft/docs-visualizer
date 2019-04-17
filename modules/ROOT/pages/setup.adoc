@@ -109,7 +109,7 @@ For Mule version 4.1.x, the following connectors are supported:
 
 == Dedicated Load Balancers
 
-Visualizer supports dedicated load balancers for apps using Mule version 3.9.x.
+Visualizer supports dedicated load balancers for apps using Mule version 3.9.x (version released April 5, 2019 or later).
 
 == Deploy an Application
 
