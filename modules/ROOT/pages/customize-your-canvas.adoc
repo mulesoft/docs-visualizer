@@ -1,0 +1,6 @@
+= Customize Your Canvas
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can do cool things. 
