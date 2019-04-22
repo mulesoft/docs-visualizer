@@ -46,7 +46,9 @@ To reduce any potential impact on performance for an application running in Clou
 
 === Reduce Potential Performance Impact for Standalone Mule
 
-Reducing potential performance impact for an application running in a standalone Mule must be done at the server level. You can do one of the following:
+Visualizer requires an additional header injection to work properly. To reduce potential performance impact for an app running in a standalone Mule 4.1.x, the header injection is disabled by default. You must enable the header injection at the server (not application) level. Reducing potential performance impact for an application running in a standalone Mule must be done at the server level. 
+
+You can do one of the following:
 
 * Deploy the application to a server without the Anypoint Monitoring agent installed.
 * Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level):
