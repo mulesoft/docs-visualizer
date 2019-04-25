@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is stored encrypted in a database.
+Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP address and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is encrypted and stored in a database.
 
 [%header%autowidth.spread]
 |===
@@ -36,7 +36,7 @@ To reduce any potential impact on performance for an application running in Clou
 
 To reduce any potential impact on performance for an application running in CloudHub, disable the Monitoring agent:
 
-. Verify that you are a user with *Anypiont Monitoring User* permission.
+. Verify that you are a user with *Anypoint Monitoring User* permission.
 . Sign in to Anypoint Platform and click *Anypoint Monitoring*.
 . Click *Settings*.
 . Select *CloudHub*.
