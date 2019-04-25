@@ -63,7 +63,8 @@ image::visualizer-rename-view.png[]
 Sharing a defined view is automatic in the sense that when a new view is created and saved, it is visible in the view list of users who have access to the environment and apps in the view. 
 
 You can also click *Copy* next to the shareable link and send it to the user you want to share the view with. 
-+
+
+
 image::visualizer-share-view.png[]
 
 == Delete a View
