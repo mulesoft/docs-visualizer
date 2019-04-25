@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Visualizer editors can create auto-discoverable views that are accessible to their team members across environments.  
+Visualizer editors can create auto-discoverable views that provide a single source of truth and that are accessible to their team members across environments.  
 
 Views display your saved filter selection, including:
 
@@ -12,32 +12,19 @@ Views display your saved filter selection, including:
 * Selected nodes in the list of services
 * Selected services
 * New services deployed that match the selected environments and tags
-* If the *Show dependents and dependencies* option is selected and the service is related to a selected service 
+* If the *Show dependents and dependencies* option is selected and a service that is deployed and related to a selected service 
 
 Views that you have access to appear in a list in the top navigation bar on the right of the view name (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because you don't need to readjust filters every time you access Visualizer to get the view that is relevant to you. 
 
-== Private View
-
-When you access Visualizer the first time, your private view is displayed. Each subsequent time you access Visualizer, you are returned to the view you last accessed. Your private view includes something views, providing a complete picture of the projects to which you have access.  
-In your private view, you can:
-
-* See a list of all the views to which you have access
-* Edit and save which apps are included in your private view
-* Rename your private view
-* Discard changes you made to your private view
-* Export your private view as a PNG file
-
-You can't delete a private view. 
-
-== Something Views
+== Defined Views
 
 As a Visualizer editor, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects. Any Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the side panel. Only editors can create, rename, and edit public views. 
 
-These views provide team members with a topological view of the apps that are specific to the areas they are responsible for. Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily.  
+These views provide team members with a topological view of the apps that are specific to the areas they are responsible for. Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency. 
 
-== Create a something View
+== Create a Defined View
 
-Only users with the *Visualizer Editor* permission can create something views. 
+Only users with the *Visualizer Editor* permission can create defined views. 
 
 . In the top navigation bar, on the right of the view name, click the drop-down arrow.
 . Click *+New*. 
@@ -47,15 +34,16 @@ This creates a view based on the selections of the view you were in.
 . Click *Save*. 
 . You can also create a new view by selecting *Save as* from the drop-down menu to save your updates as a new view and preserve the original view.
 
+[NOTE]
 When you save a view, it saves both your *Production* and *Sandbox* configurations.
 
 Once you save the view, it becomes accessible to other users, meaning that any user who has access to the apps in the environment sees the view in their list of views. 
 
 == Edit a View
 
-Users can make changes to their private view's filters, and save them. However, only users with the *Visualizer Editor* permission can edit something views. 
+Users can make changes to their private view's filters, and save them. However, only users with the *Visualizer Editor* permission can edit defined views. 
 
-. Make your changes to the Visualizer canvas. +
+. Make the desired changes to the current filters. +
 An asterisk appears next to the view name until you click *Save* in the side panel. 
 . Click *Save*. 
 . (Visualizer editor only) Click *Save as* to save your updates as a new view and preserve the original view. 
@@ -64,7 +52,7 @@ image::visualizer-save-as-new-view.png[]
 
 == Rename a View
 
-Users can rename their private view, but only users with *Visualizer Editor* permission can rename something views. 
+Users can rename their private view, but only users with *Visualizer Editor* permission can rename defined views. 
 
 . Click the drop-down arrow next to *Save*, and select *Rename*. 
 +
@@ -73,7 +61,7 @@ image::visualizer-rename-view.png[]
 
 == Share a View
 
-Sharing a view is automatic in the sense that when a new view is created and saved, it is visible in the view list of users who have access to the environment and apps in the view. 
+Sharing a defined view is automatic in the sense that when a new view is created and saved, it is visible in the view list of users who have access to the environment and apps in the view. 
 
 You can also click *Copy* next to the shareable link and send it to the user you want to share the view with. 
 +
@@ -85,5 +73,17 @@ Only users with the *Visualizer Editor* permission can delete views.
 
 . Click the drop-down arrow next to *Save*, and select *Delete*. 
 . In the confirmation dialog, click *Delete*. 
+
+== Private View
+
+When you access Visualizer the first time, your private view is displayed. Each subsequent time you access Visualizer, you are returned to the view you last accessed. Your private view includes defined views, providing a complete picture of the projects to which you have access.  
+In your private view, you can:
+
+* Edit and save which apps are included in your private view
+* Rename your private view
+* Discard changes you made to your private view
+* Export your private view as a PNG file
+
+You can't delete a private view. 
 
 
