@@ -2,7 +2,7 @@
 * xref:index.adoc[Anypoint Visualizer]
 * xref:setup.adoc[Set up Anypoint Visualizer]
 * xref:visualizer-app-network.adoc[Visualizer Application Network]
-* xref:customize-your-canvas.adoc[Customize Your Canvas]
+* xref:customize-your-canvas.adoc[Customize the Canvas]
  ** xref:layers.adoc[Use Layers in Anypoint Visualizer]
  ** xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
  ** xref:view.adoc[Views]
