@@ -7,7 +7,7 @@ When you associate a node with a layer, you create a visual representation of th
 Use one of the default layers provided by Anypoint Visualizer, or create a custom layer.
 
 [NOTE]
-The application will appear in its assigned layer in every something view in which it's included. 
+The application will appear in its assigned layer in every defined view in which it's included. 
 
 == Add an API, Application, or Proxy to a Layer
 
