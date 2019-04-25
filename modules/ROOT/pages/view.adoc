@@ -64,18 +64,22 @@ Users can rename their private view, but only users with *Visualizer Editor* per
 . Click the drop-down arrow next to *Save*, and select *Rename*. 
 +
 image::visualizer-rename-view.png[]
-. In the Rename view dialog, enter a new *Name*, and click *Save*. 
-
+. In the *Rename view* dialog, enter a new *Name*, and click *Save*. 
 
 
 == Share a View
 
-Only users with the *Visualizer Editor* permission can share views.
+Only users with the *Visualizer Editor* permission can share views. Sharing is automatic in the sense that when a new view is created and saved, it is visible in the view list of users who have access to the environment and apps in the view. 
+
+You can also click *Copy* next to the shareable link and send it to the user you want to share the view with. 
++
+image::visualizer-share-view.png[]
 
 == Delete a View
 
 Only users with the *Visualizer Editor* permission can delete views.
 
-
+. Click the drop-down arrow next to *Save*, and select *Delete*. 
+. In the confirmation dialog, click *Delete*. 
 
 
