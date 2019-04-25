@@ -64,7 +64,7 @@ For more information about Anypoint Monitoring, see xref:monitoring::enable-apps
 
 Anypoint Visualizer supports the following Mule versions for standalone Mule deployments:
 
-* Mule Runtime, version 3.8.5+
+* Mule Runtime, version 3.8.7
 * Mule Runtime, version 3.9.1+
 * Mule Runtime, version 4.1.1+
 
@@ -79,7 +79,7 @@ However, due to a potential performance impact for Mule 4.1.x, header injection 
 You must enable it at the server, not application, level.
 
 Set the following property in the server's properties:
-+
+
 ----
 `anypoint.platform.config.analytics.agent.header_injection.disabled=false`
 ----

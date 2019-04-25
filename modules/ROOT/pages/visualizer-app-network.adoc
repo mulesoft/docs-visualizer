@@ -70,15 +70,6 @@ From the side panel, you can edit the display name, which adds a name to the edg
 Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Non-active edges do not appear on the canvas.  
 
 
-[[customize-view]]
-== Customize Your View of Your Network
-
-Use the filtering feature in the side panel to customize your view and choose what appears in the canvas. You can filter by environments, tags, and services.
-
-This feature enables you to hide the nodes that you do not want to see see in the graph. Filter selections persist until you change them.  When you close Anypoint Visualizer and reload the canvas at a later time, the filter selections you last made are displayed.
-
-Filters have a cascading design, so all nodes that do not belong to the checked environments or tags are automatically hidden from the list of services. You can toggle *Show dependents and dependencies* to see  the services as well as dependencies of the nodes and services with the selected tags. The panel on the right and the canvas are updated to display the current selection.
-
 [[export-view]]
 == Export Your Network View
 
