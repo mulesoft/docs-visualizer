@@ -1,4 +1,4 @@
-= Views
+= Visualizer Views
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -27,7 +27,7 @@ You can modify public (shared) views to display information you are interested i
 
 As a Visualizer editor, you can create and share views to provide a consistent, high quality source of truth to your team members. Any user who has permission for the environment can see shared views, but only editors can create, rename, and edit public views. 
 
-You can share views to share the app network graph with team members so they can use it to plan work, study the architecture of the app network, and troubleshoot more easily.
+You can share views to provide team members app network graphs that are specific to the areas they are responsible for. This helps team members plan their work and understand the architecture of the app network that contains the apps they have access to. Providing a dynamic view for team members ensures their ability to troubleshoot the app network more quickly and easily.  
 
 == Create a View
 
@@ -36,7 +36,7 @@ Only users with the *Visualizer Editor* permission can create views.
 . In the top navigation bar, on the right of the view name, click *V*.
 . Click *+New*. 
 . In the New view dialog, enter a *Name* for the view, and click *Save*. +
-An asterisk ( * ) appears next to the view name until you click *Save* in the view designer. 
+An asterisk appears next to the view name until you click *Save* in the view designer. 
 +
 image::visualizer-unsaved-view.png[]
 . Select the environment and business group for the view. 
@@ -46,14 +46,13 @@ image::new-view-select-env.png[]
 . Click *Save*. +
 Once you save the view, it becomes public, meaning that any user who has access to the apps in the environment sees the view in their private view view list. 
 
-
 == Edit a View
 
 Users can make changes to their private views, and save them, however, only users with the *Visualizer Editor* permission can edit public views. The steps are the same in either case. 
 
 . Make your changes to the Visualizer canvas. 
 . Click *Save*. 
-. (Visual editor only) Click *Save as* to save the updated view as a new view while retaining the original view. 
+. (Visualizer editor only) Click *Save as* to save your updates as a new view and preserve the original view. 
 +
 image::visualizer-save-as-new-view.png[]
 
