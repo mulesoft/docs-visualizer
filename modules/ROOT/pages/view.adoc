@@ -10,15 +10,14 @@ Views display your saved filter selection, including:
 * Selected environments 
 * Selected tags
 * Selected nodes in the list of services
-* Selected services
 * New services deployed that match the selected environments and tags
-* If the *Show dependents and dependencies* option is selected and a service that is deployed and related to a selected service 
+* If the *Show dependents and dependencies* option is selected and the a service is deployed and related to a selected service 
 
 Views that you have access to appear in a list in the top navigation bar on the right of the view name (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because you don't need to readjust filters every time you access Visualizer to get the view that is relevant to you. 
 
 == Defined Views
 
-As a Visualizer editor, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects. Any Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the side panel. Only editors can create, rename, and edit public views. 
+As a Visualizer editor, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects. Any Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the side panel. Only editors can create, rename, and edit defined views. 
 
 These views provide team members with a topological view of the apps that are specific to the areas they are responsible for. Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency. 
 
