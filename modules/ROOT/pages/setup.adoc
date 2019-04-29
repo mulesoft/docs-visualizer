@@ -60,7 +60,7 @@ For more information about Anypoint Monitoring, see xref:monitoring::enable-apps
 
 == Set up for Standalone Mule 
 
-=== Supported Standalone Mule Runtime Engine (Mule) Versions
+=== Supported Standalone Mule and Runtime Fabric Mule Versions
 
 Anypoint Visualizer supports the following Mule versions for standalone Mule and Runtime Fabric deployments:
 
