@@ -39,8 +39,8 @@ The metrics that Visualizer displays come from Anypoint Monitoring. As a result,
 
 * Mule 3.9.1-AM
 * Mule 4.1.x.-AM
-* Mule 3.9.x patch releases available on April 5, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section. 
-* Mule 4.1.x patch releases available on March 22, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
+* Mule 3.9.x patch releases available on April 5, 2019 or later. To see your application and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section. 
+* Mule 4.1.x patch releases available on March 22, 2019 or later. To see your application and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
 
 === Enable the Monitoring Agent for Mule Version 4.1 Upgrades After March 22, 2019, or Mule Version 3.9 Upgrades After April 5, 2019
 
@@ -80,29 +80,29 @@ Visualizer relies on a header injection to display connections between services 
 
 Known Limitations:
 
-* If a CloudHub application with the old agent is calling a Runtime Fabric ingress endpoint, you see an extra edge from the CloudHub app to a node with the IP for the controller.
-* If a Mule app deployed to Runtime Fabric is calling a Mule app deployed to CloudHub using its DNS, the correct connection will be on the Visualizer canvas, but there will be an additional edge from the External Traffic node to the CloudHub application.
+* If a CloudHub application with the old Visualizer agent is calling a Runtime Fabric ingress endpoint, you see an extra edge from the CloudHub application to a node with the IP for the controller.
+* If a Mule application deployed to Runtime Fabric is calling a Mule application deployed to CloudHub using its DNS, the correct connection will be on the Visualizer canvas, but there will be an additional edge from the External Traffic node to the CloudHub application.
 
 
 [enable_header_injection]
 === Enable Header Injection
 
-Visualizer requires an additional header injection to work properly.
+Visualizer requires an additional header injection to work properly for standalone Mule and Runtime Fabric deployments.
 However, due to a potential performance impact for Mule 4.1.x, header injection is disabled by default.
 
 [NOTE]
-You must enable the header injection at the server, not application, level.
+For Runtime Fabric, you must enable the inject header at the application level, while for a standalone Mule deployment, you must enable the header injection at the server, not application, level.
 
 Set the following property in the server's properties:
 
 ----
-`anypoint.platform.config.analytics.agent.header_injection.disabled=false`
+anypoint.platform.config.analytics.agent.header_injection.disabled=false
 ----
 
 [NOTE]
 You must set the property to `false` as shown in the example to enable header injection, since the property is `disabled`.
 
-All applications running on the server are affected by this setting.
+For standalone Mule deployments, all applications running on the server are affected by this setting.
 
 == Verify Supported Connectors
 
