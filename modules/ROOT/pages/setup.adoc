@@ -66,7 +66,9 @@ Anypoint Visualizer supports the following Mule versions for standalone Mule and
 
 * Mule Runtime, version 3.8.7
 * Mule Runtime, version 3.9.1+
-* Mule Runtime, version 4.1.1+
+* Mule Runtime, version 4.1.1+ +
+[NOTE]
+By default, Visualizer is disabled for Mule 4. See <<enable_header_injection,enable the header injection>> for more information. 
 
 === Standalone Mule Setup
 
