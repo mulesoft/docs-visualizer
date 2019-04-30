@@ -58,7 +58,7 @@ To enable the Anypoint Monitoring agent:
 
 For more information about Anypoint Monitoring, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
 
-== Set up for Standalone Mule 
+== Setup for Standalone Mule and Runtime Fabric
 
 === Supported Standalone Mule and Runtime Fabric Mule Versions
 
@@ -87,7 +87,7 @@ To support Visualizer for standalone Mule deployments, xref:monitoring::am-insta
 
 === Runtime Fabric Setup
 
-Follow the instructions for xref:1.2@runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, Visualizer can display applications that are running and deployed to Runtime Fabric.
+Follow the instructions for xref:runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, Visualizer can display applications that are running and deployed to Runtime Fabric.
 
 Visualizer relies on a header injection to display connections between services correctly. The header injection is disabled by default for Mule 4. The correct connections will not be displayed for your Mule 4 Runtime Fabric applications unless you <<enable_header_injection,enable the header injection>>. 
 
