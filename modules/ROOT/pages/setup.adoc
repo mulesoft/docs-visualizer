@@ -64,9 +64,20 @@ For more information about Anypoint Monitoring, see xref:monitoring::enable-apps
 
 Anypoint Visualizer supports the following Mule versions for standalone Mule and Runtime Fabric deployments:
 
-* Mule Runtime, version 3.8.7
-* Mule Runtime, version 3.9.1+
-* Mule Runtime, version 4.1.1+ +
+[%header,cols="2*a"]
+|===
+|Deployment Type| Supported Mule versions
+| Mule standalone 
+a| * Mule 3.8.7
+* Mule 3.9.1+
+* Mule 4.1.1+ +
+
+| Runtime Fabric
+a| * Mule 3.8.7
+* Mule 3.9.1+
+* Mule 4.1.2+ +
+|===
+
 [NOTE]
 By default, Visualizer is disabled for Mule 4. See <<enable_header_injection,enable the header injection>> for more information. 
 
