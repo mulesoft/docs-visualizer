@@ -44,18 +44,27 @@ To reduce any potential impact on performance for an application running in Clou
 . In *List of resources in <Environment Name>*, search for an application whose metrics you wish to see.
 . Next to application, click *Disable & Apply* to disable monitoring for the application.
 
-=== Reduce Potential Performance Impact for Standalone Mule
+=== Reduce Potential Performance Impact for Standalone Mule and Runtime Fabric
 
-Visualizer requires an additional header injection to work properly. To reduce potential performance impact for an app running in a standalone Mule 4.1.x, the header injection is disabled by default. You must enable the header injection at the server (not application) level. Reducing potential performance impact for an application running in a standalone Mule must be done at the server level. 
+Visualizer requires an additional header injection to work for standalone Mule and Runtime Fabric deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default. 
 
-You can do one of the following:
+[NOTE]
+For Runtime Fabric, you must enable header injection at the application level, while for standalone Mule deployments, you must enable the header injection at the server (not application) level. 
+
+To disable the header injection for Mule 3, set the following property: 
+
+----
+anypoint.platform.config.analytics.agent.header_injection.disabled=true
+----
+
+Additionally, to reduce potential performance impact for applications running in a standalone Mule, you can do one of the following:
 
 * Deploy the application to a server without the Anypoint Monitoring agent installed.
-* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level):
+* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level): 
 +
 ----
 anypoint.platform.config.analytics.agent.disabled=true 
 ----
-+
+
 [NOTE]
-This will disable monitoring for applications on the server as well.
+This disables monitoring for applications on the server as well.
