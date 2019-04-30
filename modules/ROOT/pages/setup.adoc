@@ -82,8 +82,11 @@ Visualizer relies on a header injection to display connections between services 
 
 Known Limitations:
 
-* If a CloudHub application with the old Visualizer agent is calling a Runtime Fabric ingress endpoint, you see an extra edge from the CloudHub application to a node with the IP for the controller.
-* If a Mule application deployed to Runtime Fabric is calling a Mule application deployed to CloudHub using its DNS, the correct connection will be on the Visualizer canvas, but there will be an additional edge from the External Traffic node to the CloudHub application.
+* If a Mule 3 CloudHub application with the old Visualizer agent (version earlier than April 5, 2019) is calling a Runtime Fabric ingress endpoint, there will be extra edge from the CloudHub app to a node with the IP address for the controller. Please upgrade to the latest release of the Mule runtime engine.
+* If a Mule 4 CloudHub application is calling a Runtime Fabric ingress endpoint, there will be and extra edge from the CloudHub app to a node with the IP address for the controller. You can use your filters within Visualizer to hide this node.
+* If a Runtime Fabric Mule app is calling a Mule 3 CloudHub Mule app with the old Visualizer agent (version earlier than April 5, 2019) using its DNS, the correct connection will be drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub application.
+* If a Runtime Fabric Mule app is calling a Mule 4 CloudHub Mule app using its DNS, the correct connection will be drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub application.
+* If you have an application in two different clusters with the same name, these applications will appear as one node on the canvas. You should rename one application. 
 
 
 [[enable_header_injection]]
@@ -93,9 +96,10 @@ Visualizer requires an additional header injection to work properly for standalo
 However, due to a potential performance impact for Mule 4.1.x, header injection is disabled by default.
 
 [NOTE]
-For Runtime Fabric, you must enable the inject header at the application level, while for a standalone Mule deployment, you must enable the header injection at the server, not application, level.
+For Runtime Fabric, you must enable the header injection at the application level. +
+For a standalone Mule deployment, you must enable the header injection at the server, not application, level. This affects all applications running on the server.
 
-Set the following property in the server's properties:
+Set the following property in either the server (for Mule standalone deployment) or application (for a Runtime Fabric deployment):
 
 ----
 anypoint.platform.config.analytics.agent.header_injection.disabled=false
@@ -103,8 +107,6 @@ anypoint.platform.config.analytics.agent.header_injection.disabled=false
 
 [NOTE]
 You must set the property to `false` as shown in the example to enable header injection, since the property is `disabled`.
-
-For standalone Mule deployments, all applications running on the server are affected by this setting.
 
 == Verify Supported Connectors
 
