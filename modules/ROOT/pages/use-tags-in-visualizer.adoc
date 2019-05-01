@@ -5,9 +5,13 @@ endif::[]
 
 You can add tags to an API, application, proxy, or other service. Similar to layers, there are two ways of assigning a tag to a node--by using properties, or through the Runtime Manager UI.
 
+[NOTE]
+If a tag is assigned to an application, the application will appear in every view in which the tags are selected. 
+
 == Setting the Tag Through Properties
 
-To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>`. You can configure this property in the application's properties file, or at deployment time through the Runtime Manager UI or API.
+To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>` in the application's properties file, or at deployment time through the Runtime Manager UI or API.
+Note that this is an application property, not a server property.
 
 When this property is used, the nodes automatically show the assigned tag(s) in the side panel of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
 

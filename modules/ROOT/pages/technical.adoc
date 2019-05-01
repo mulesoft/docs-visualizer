@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is stored encrypted in a database.
+Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP address and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is encrypted and stored in a database.
 
 [%header%autowidth.spread]
 |===
@@ -21,34 +21,50 @@ Anypoint Visualizer collects runtime information from running applications, APIs
 
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. 
 
-*CloudHub*
+=== Reduce Potential Performance Impact for CloudHub
 
-To reduce performance impact for an application running in CloudHub, you can do one of the following:
+To reduce any potential performance impact for an application running in CloudHub you can disable data collection.
 
-* Deploy the application using a default Mule runtime engine.
-* Disable data collection for a specific application. To disable data collection for an application, set the following application property and redeploy the application:
-+
-----
-anypoint.platform.config.visualizer.agent.enabled=true/false
-----
+==== Disable Data Collection for Mule Version 4 Released Before March 22, 2019 or Mule Version 3.9 Released Before April 5, 2019
 
+To reduce any potential impact on performance for an application running in CloudHub, set this application property:
 
-*Standalone Mule Runtime Engines*
+. Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
+. Redeploy the application.
 
-To reduce performance impact for an application running in a standalone mule runtime, you can do one of the following:
+==== Disable Data Collection for Mule Version 4 Released on March 22, 2019 or Later, or Mule Version 3 Released on April 5, 2019 or Later
 
-* Deploy the application using a default Mule runtime engine without the Anypoint Monitoring agent.
-* Disable data collection for a specific application. To disable data collection for an application, set the following application property and redeploy the application:
-+
-----
-anypoint.platform.config.analytics.agent.disabled=true/false 
-----
-+
+To reduce any potential impact on performance for an application running in CloudHub, disable the Monitoring agent:
+
+. Verify that you are a user with *Anypoint Monitoring User* permission.
+. Sign in to Anypoint Platform and click *Anypoint Monitoring*.
+. Click *Settings*.
+. Select *CloudHub*.
+. From the *Environment* drop-down list, choose an environment.
+. In *List of resources in <Environment Name>*, search for an application whose metrics you wish to see.
+. Next to application, click *Disable & Apply* to disable monitoring for the application.
+
+=== Reduce Potential Performance Impact for Standalone Mule and Runtime Fabric
+
+Visualizer requires an additional header injection to work for standalone Mule and Runtime Fabric deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default. 
+
 [NOTE]
-This will disable monitoring for that application as well.
-+
-To disable the header injection for an application, set the following application property and redeploy the application:
+For Runtime Fabric, you must enable header injection at the application level, while for standalone Mule deployments, you must enable the header injection at the server (not application) level. 
+
+To disable the header injection for Mule 3, set the following property: 
+
+----
+anypoint.platform.config.analytics.agent.header_injection.disabled=true
+----
+
+Additionally, to reduce potential performance impact for applications running in a standalone Mule, you can do one of the following:
+
+* Deploy the application to a server without the Anypoint Monitoring agent installed.
+* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level): 
 +
 ----
-anypoint.platform.config.analytics.agent.header_injection.disabled=true/false 
+anypoint.platform.config.analytics.agent.disabled=true 
 ----
+
+[NOTE]
+This disables monitoring for applications on the server as well.
