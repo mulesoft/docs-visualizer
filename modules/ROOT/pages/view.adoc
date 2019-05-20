@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Visualizer editors can create auto-discoverable views that provide a single source of truth and that are accessible to their team members across environments.  
+*Visualizer editors* can create auto-discoverable views that provide a single source of truth and that are accessible to their team members across environments.  
 
 Views display your saved filter selection, including:
 
@@ -27,11 +27,11 @@ Only users with the *Visualizer Editor* permission can create defined views.
 
 . In the top navigation bar, on the right of the view name, click the drop-down arrow.
 . Click *+New*. 
-. In the *New view* dialog, enter a *Name* for the view, and click *Save*. +
-This creates a view based on the selections of the view you were in.  
+. In the *New view* dialog, enter a *Name* for the view, and click *Save*. 
 . Configure the view by selecting which environments, xref:use-tags-in-visualizer.adoc[tags], and services to include. 
 . Click *Save*. 
-. You can also create a new view by selecting *Save as* from the drop-down menu to save your updates as a new view and preserve the original view.
+
+You can also create a new view by selecting *Save as* from the drop-down menu to save your current filter selection updates as a new view and preserve the original view.
 
 [NOTE]
 When you save a view, it saves both your *Production* and *Sandbox* configurations.
