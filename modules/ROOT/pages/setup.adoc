@@ -15,7 +15,7 @@ You can create a xref:access-management::roles.adoc#custom-roles[custom role] an
 [NOTE]
 The *Visualizer Editor* permission can only be assigned within the master organization.
 
-== Set Up for CloudHub
+== Setup for CloudHub
 
 === Verify Supported CloudHub Mule Runtime Engine (Mule) Versions
 
@@ -116,14 +116,15 @@ Enable the header injection in the Runtime Manager.
 For Runtime Fabric, you must enable the header injection at the app level. +
 For a standalone Mule deployment, you must enable the header injection at the server (not app) level. This affects all applications running on the server.
 
-. In Runtime Manager, to enable the header injection in the management page,  click *Applications* or *Server* in the menu on the left. 
-.. From the list view, select the hybrid app or server for which to enable the header injection, and click *Manage Application* or *Manage Server*. 
-. To enable the header injection on the deployment page, click *Deploy application*. 
+. In Runtime Manager, to enable the header injection in the management page for an app or server: +  
+* To enable the header injection for apps deployed to Runtime Fabric, click *Applications* in the menu on the left, then select the app for which to enable the header injection, and click *Manage Application*. 
+* To enable the header injections for apps deployed to a standalone Mule, click *Server* in the menu on the left, then select the server for which to enable the header injection, and click *Manage Server*. 
+. To enable the header injection when you are deploying an app, on the deployment page, click *Deploy application*. 
 . Click the *Properties* tab, and set the following property in either the server (for Mule standalone deployment) or app (for a Runtime Fabric deployment): +
 ----
 anypoint.platform.config.analytics.agent.header_injection.disabled=false
 ----
-+
+
 [NOTE]
 You must set the property to `false` as shown in the example to enable header injection, since the property is `disabled` by default.
 
