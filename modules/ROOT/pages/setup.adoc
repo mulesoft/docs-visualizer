@@ -24,9 +24,7 @@ Anypoint Visualizer only includes activity from applications deployed to a suppo
 Anypoint Visualizer supports the following Mule versions running on CloudHub:
 
 * Mule version 3.9.x
-* Mule version 3.9.1-AM
 * Mule version 4.1.x
-* Mule version 4.1.x-AM
 * Mule version 4.2.x
 
 [NOTE]
@@ -36,10 +34,10 @@ These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Sh
 
 === Verify Supported Mule Runtime Engine (Mule) Versions for Metrics
 
-The metrics that Visualizer displays come from Anypoint Monitoring. As a result, metrics are only shown in Visualizer for applications running on these Mule versions:
+The metrics that Visualizer displays come from Anypoint Monitoring. As a result, metrics are shown in Visualizer only for applications running on Mule versions that are also supported for Anypoint Monitoring:
 
-* Mule 3.9.1-AM
-* Mule 4.1.x.-AM
+* Mule 3.9.1
+* Mule 4.1.x
 * Mule 3.9.x patch releases available on April 5, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section. 
 * Mule 4.1.x patch releases available on March 22, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
 * Mule 4.2.x
@@ -83,7 +81,7 @@ a| * Mule 3.8.7
 |===
 
 [NOTE]
-By default, Visualizer is disabled for Mule 4. See <<enable_header_injection,enable the header injection>> for more information. 
+By default, Visualizer is disabled for Mule 4, which means that even though Mule 4 apps are displayed in Visualizer, the proper connections for Mule 4 apps are not displayed.  See <<enable_header_injection,enable the header injection>> for more information. 
 
 === Standalone Mule Setup
 
