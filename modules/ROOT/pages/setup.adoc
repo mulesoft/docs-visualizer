@@ -43,7 +43,7 @@ The metrics that Visualizer displays come from Anypoint Monitoring. As a result,
 
 [NOTE]
 If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, monitoring will continue to work for those apps. +
-Update your applications to run on mainline Mule versions (3.9.x and 4.x) for better functionality and the latest patch updates as soon as they are available.
+Update your applications to run on non-AM Mule versions (3.9.x and 4.x) for better functionality and the latest patch updates as soon as they are available.
 
 === Enable the Monitoring Agent for Mule Version 4.1 Upgrades After March 22, 2019, or Mule Version 3.9 Upgrades After April 5, 2019
 
