@@ -6,14 +6,14 @@ endif::[]
 You can add tags to an API, application, proxy, or other service. Similar to layers, there are two ways of assigning a tag to a node--by using properties, or through the Runtime Manager UI.
 
 [NOTE]
-If a tag is assigned to an application, the application will appear in every view in which the tags are selected. 
+If a tag is assigned to an application, the application will appear in every view in which the tags are selected.
 
 == Setting the Tag Through Properties
 
 To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>` in the application's properties file, or at deployment time through the Runtime Manager UI or API.
 Note that this is an application property, not a server property.
 
-When this property is used, the nodes automatically show the assigned tag(s) in the side panel of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
+When this property is used, the nodes automatically show the assigned tag(s) in the *Contents* card of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
 
 [NOTE]
 For applications deployed to standalone Mule runtime engines, tag names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
@@ -28,10 +28,10 @@ By default, when you first view a node using Anypoint Visualizer, it does not ha
 
 . Select the application node to tag. +
 You can hold the shift key to select multiple nodes to apply tags to all the selected nodes at once. +
-_Result:_ The Customization panel for the node appears in the panel on the right as shown in the following image:
+_Result:_ The *Customization* section for the node appears in *Details/Monitoring* card as shown in the following image:
 +
 image::select-node.png[]
-. In the *Customization* panel, click *+ Add tag* as shown in the following image:
+. In the *Customization* section, click *+ Add tag* as shown in the following image:
 +
 image::add-tag.png[]
 . Type the name of the tag to apply. Existing tags appear in a drop-down list as you begin to type. +
@@ -44,7 +44,7 @@ You cannot apply the same tag multiple times to a node. All tags are converted t
 +
 image::create-tag.png[]
 +
-_Result:_ The tags that you added to a node is listed in the *Customization* panel. This node is included in the list of services if you xref:view.adoc#customize-view[filter by this tag].
+_Result:_ The tags that you added to a node is listed in the *Customization* section. This node is included in the list of services if you xref:view.adoc#customize-view[filter by this tag].
 
 == Delete a Tag
 
@@ -55,7 +55,7 @@ To delete a tag assigned using the `anypoint.platform.visualizer.tags=<name>` pr
 To delete a tag that was configured in the UI:
 
 . Select a node with the tag you wish to delete.
-. Locate the tag in the *Customization* panel, and click the *X* on the tag to delete.
+. Locate the tag in the *Customization* section, and click the *X* on the tag to delete.
 
 == See Also
 
