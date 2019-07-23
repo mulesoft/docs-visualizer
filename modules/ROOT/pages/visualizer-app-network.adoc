@@ -20,7 +20,7 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 +
 If Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
-. In the environment filters in the *Contents* card, select an environment.
+. In the environment filters in the *View* card, select an environment.
 +
 Anypoint Visualizer displays only the environments you have permissions to view.
 
@@ -30,7 +30,7 @@ After selecting the organization and environment group, Anypoint Visualizer disp
 
 == View Information About All Nodes In Your Network
 
-Use the options in the *Overlay* card to select the metric and the time window that you want to show for all the nodes in your application network.
+Use the options in the *Metric* card to select the metric and the time window that you want to show for all the nodes in your application network.
 In the *Metrics* section, you can select one of the following metrics:
 
 * *Inbound connections*
@@ -81,7 +81,7 @@ You can export the view of your network showing on your canvas to a PNG file.
 * If you customized your view with filters, the customized network topology is exported.
 * If you selected metrics or durations, these settings are reflected in the export.
 
-To export a PNG view of your network, click *Save as Image* next to the zoom buttons.
+To export a PNG view of your network, click *Export as Image* next to the zoom to fit.
 
 == See Also
 

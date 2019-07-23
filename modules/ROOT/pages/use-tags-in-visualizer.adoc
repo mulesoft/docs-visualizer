@@ -13,7 +13,7 @@ If a tag is assigned to an application, the application will appear in every vie
 To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>` in the application's properties file, or at deployment time through the Runtime Manager UI or API.
 Note that this is an application property, not a server property.
 
-When this property is used, the nodes automatically show the assigned tag(s) in the *Contents* card of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
+When this property is used, the nodes automatically show the assigned tag(s) in the *View* card of Visualizer. The tag cannot be overridden in the UI and can only be modified in properties. You can still add other tags to this node using the UI, however. All tags are displayed as lowercase.
 
 [NOTE]
 For applications deployed to standalone Mule runtime engines, tag names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.

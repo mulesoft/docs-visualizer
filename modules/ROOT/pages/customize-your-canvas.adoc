@@ -9,7 +9,7 @@ This enables you to hide the nodes that you do not want to see see in the applic
 Filters have a cascading design, so all nodes that don't belong to the checked environments or tags are automatically hidden from the list of services.
 
 You can toggle *Show dependents and dependencies* to see  the services as well as dependencies of the nodes and services with the selected tags.
-The the canvas and the *Contents* and *Overlay* cards are updated to display the current selection.
+The the canvas and the *View* and *Metric* cards are updated to display the current selection.
 
 Visualizer editors can save defined views so any Visualizer user can access them.
 When you close Anypoint Visualizer and reload the canvas at a later time, the views you last accessed are displayed.
