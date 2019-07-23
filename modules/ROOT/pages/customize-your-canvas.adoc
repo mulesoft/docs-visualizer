@@ -4,13 +4,17 @@ include::_attributes.adoc[]
 endif::[]
 
 
-You can choose what appears in your Visualizer canvas by applying filters for environments, tags, and services. This enables you to hide the nodes that you don't want to see see in the application graph. Filters have a cascading design, so all nodes that don't belong to the checked environments or tags are automatically hidden from the list of services. 
+You can choose what appears in your Visualizer canvas by applying filters for environments, tags, and services.
+This enables you to hide the nodes that you do not want to see see in the application graph.
+Filters have a cascading design, so all nodes that don't belong to the checked environments or tags are automatically hidden from the list of services.
 
-You can toggle *Show dependents and dependencies* to see  the services as well as dependencies of the nodes and services with the selected tags. The side panel on the right and the canvas are updated to display the current selection.
+You can toggle *Show dependents and dependencies* to see  the services as well as dependencies of the nodes and services with the selected tags.
+The the canvas and the Contents and Overlay cards are updated to display the current selection.
 
-Visualizer editors can save defined views so any Visualizer user can access them. When you close Anypoint Visualizer and reload the canvas at a later time, the views you last accessed are displayed. 
+Visualizer editors can save defined views so any Visualizer user can access them.
+When you close Anypoint Visualizer and reload the canvas at a later time, the views you last accessed are displayed.
 
-== Layers 
+== Layers
 
 You can use one of the default layers provided by Anypoint Visualizer, or create a custom layer to create a visual representation of the apps in your network.
 
@@ -18,12 +22,12 @@ For more information, see xref:layers.adoc[Use Layers in Anypoint Visualizer].
 
 == Tags
 
-You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view. 
+You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view.
 
 For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Visualizer].
 
 == Views
 
-Visualizer editors define views based on filtered environments and tags. These defined views are auto discoverable and available to all Visualizer users who have permission for the included environments. 
+Visualizer editors define views based on filtered environments and tags. These defined views are auto discoverable and available to all Visualizer users who have permission for the included environments.
 
 For more information, see xref:view.adoc[Visualizer Views]
