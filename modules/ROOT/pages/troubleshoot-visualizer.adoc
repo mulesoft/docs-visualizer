@@ -23,7 +23,7 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 [%header,cols="3*a"]
 |===
 |Error Message |Cause |Solution
-|`You can’t view metrics for selected environments. Learn more.`
+|`You cannot view metrics because you do not have Anypoint Monitoring for this account. Learn more`
 |While all users have free access to Anypoint Visualizer and Anypoint Monitoring, your account must first be enabled.
 |File a support ticket or contact your Customer Success representative and ask for your account to be enabled.
 |`Metrics aren't available for this app. You may need to update its runtime version.`

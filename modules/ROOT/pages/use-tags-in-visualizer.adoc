@@ -28,7 +28,7 @@ By default, when you first view a node using Anypoint Visualizer, it does not ha
 
 . Select the application node to tag. +
 You can hold the shift key to select multiple nodes to apply tags to all the selected nodes at once. +
-_Result:_ The *Customization* section for the node appears in *Details/Monitoring* card as shown in the following image:
+_Result:_ The *Customization* section for the node appears in the *Details* tab of the node's card as shown in the following image:
 +
 image::select-node.png[]
 . In the *Customization* section, click *+ Add tag* as shown in the following image:
@@ -44,7 +44,7 @@ You cannot apply the same tag multiple times to a node. All tags are converted t
 +
 image::create-tag.png[]
 +
-_Result:_ The tags that you added to a node is listed in the *Customization* section. This node is included in the list of services if you xref:view.adoc#customize-view[filter by this tag].
+_Result:_ The tags that you added to a node are listed in the *Customization* section. This node is included in the list of services if you xref:view.adoc#customize-view[filter by this tag].
 
 == Delete a Tag
 
