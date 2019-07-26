@@ -7,7 +7,7 @@ When you associate a node with a layer, you create a visual representation of th
 Use one of the default layers provided by Anypoint Visualizer, or create a custom layer.
 
 [NOTE]
-The application will appear in its assigned layer in every view in which it's included. 
+The application will appear in its assigned layer in every view in which it is included.
 
 == Add an API, Application, or Proxy to a Layer
 
@@ -18,7 +18,7 @@ Map a node to a layer in the application's properties file, or use the Anypoint 
 To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>` in the application's properties file.
 
 [NOTE]
-This is an application property, not a server property. 
+This is an application property, not a server property.
 
 When this property is used, nodes automatically appear in the specified layer. If the layer doesn't exist it is created.
 
@@ -39,11 +39,11 @@ If a node was not assigned to a layer at deployment time using the Runtime Manag
 . Select the application node to add to a layer. +
 You can hold the shift key to select multiple nodes to apply layers to all the selected nodes at once. +
 +
-_Result_: The *Customization* panel for the node appears in the right side of the panel as shown in the following image:
+_Result_: The *Customization* section for the node appears in the *Details* tab of the node's card as shown in the following image:
 +
 image::select-node.png[Select Node]
 
-. In the *Customization* panel, expand the drop-down list next to *Layer* as shown in the following image:
+. In the *Customization* section, expand the drop-down list next to *Layer* as shown in the following image:
 +
 image::select-layer.png[Select Layer]
 
@@ -58,7 +58,7 @@ image::select-layer-result.png[Node in Layer]
 In addition to the default layers provided by Anypoint Visualizer, you can create new layers to customize the view of your application network.
 
 . Select the node to add to a new layer.
-. From the drop-down list in the *Customization* panel, select *New Layer*.
+. From the drop-down list in the *Customization* section, select *New Layer*.
 . Enter a name for your layer in the dialog box, then click *Create Layer*. +
 
 _Result_: The node appears in the new layer. You can add additional nodes to the new layer as necessary.
