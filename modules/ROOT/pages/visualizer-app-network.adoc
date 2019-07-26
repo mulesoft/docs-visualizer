@@ -51,14 +51,14 @@ https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric pre
 
 == View Information About a Node in Your Network
 
-When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are grayed out. Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
+When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable. Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
 The *Details* tab contains:
 * *Details*: Provides information about the node.
 * *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can edit the node's display name or change the layer and tags from this section.
 
 The *Monitoring* tab contains:
-* *Metrics summary*: Provides monitoring metrics for the selected node including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
+* *Metrics summary*: Provides monitoring metrics for the selected node, including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
 * *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* card.
 
 
@@ -70,7 +70,7 @@ When you select a connection within the graph, Anypoint Visualizer displays basi
 In the card, you can edit the display name, which adds a name to the edge on the canvas.
 
 [NOTE]
-Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Non-active edges do not appear on the canvas.
+Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
 
 
 [[export-view]]
@@ -81,7 +81,7 @@ You can export the view of your network showing on your canvas to a PNG file.
 * If you customized your view with filters, the customized network topology is exported.
 * If you selected metrics or durations, these settings are reflected in the export.
 
-To export a PNG view of your network, click the *Export as Image* button next to the zoom controls in the bottom right.
+To export a view of your network as a PNG, click the *Export as Image* button next to the zoom controls in the bottom right.
 
 == See Also
 

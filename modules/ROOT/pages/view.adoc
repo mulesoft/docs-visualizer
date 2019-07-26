@@ -72,7 +72,7 @@ image::visualizer-share-view.png[]
 Only users with the *Visualizer Editor* permission can delete views.
 
 . Click the drop-down arrow next to *Save*, and select *Delete*.
-. In the confirmation dialog, click *Delete*.
+. Click *Delete* again.
 
 == Private View
 
