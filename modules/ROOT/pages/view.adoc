@@ -10,7 +10,7 @@ Views display your saved filter selection, including:
 * Selected environments
 * Selected tags
 * Selected nodes in the list of services
-* Nodes that have been filtered
+* Filtered nodes
 * New services deployed that match the selected environments and tags
 * If the *Show dependents and dependencies* option is selected and the a service is deployed and related to a selected service
 
@@ -25,7 +25,7 @@ Only editors can create, rename, and edit defined views.
 These views provide team members with a topological view of the apps that are specific to the areas they are responsible for.
 Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency.
 
-In a defined view, you can also select nodes and hide related services or hide services other than the node that you selected.
+In a defined view, you can also select nodes and then hide related services. You can also select nodes and then hide services other than the node that you selected.
 
 == Create a Defined View
 
