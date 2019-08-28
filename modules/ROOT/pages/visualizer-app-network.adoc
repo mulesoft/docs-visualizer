@@ -57,10 +57,12 @@ When you select a node within the graph, the node and its dependency stack are h
 Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
 The *Details* tab contains:
+
 * *Details*: Provides information about the node.
 * *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can edit the node's display name or change the layer and tags from this section.
 
 The *Monitoring* tab contains:
+
 * *Metrics summary*: Provides monitoring metrics for the selected node, including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
 * *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* card.
 
