@@ -68,6 +68,7 @@ The *Monitoring* tab contains:
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
 If a single node is selected and does not have any dependents or dependencies, this option is hidden.
+
 You can hide nodes through what you select in the canvas.
 
 * To hide a single node, select it, and then click *Hide selected service*.
