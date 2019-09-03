@@ -10,7 +10,6 @@ Views display your saved filter selection, including:
 * Selected environments
 * Selected tags
 * Selected nodes in the list of services
-* Filtered nodes
 * New services deployed that match the selected environments and tags
 * If the *Show dependents and dependencies* option is selected and the a service is deployed and related to a selected service
 
