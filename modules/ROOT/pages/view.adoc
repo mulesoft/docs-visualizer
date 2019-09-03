@@ -24,7 +24,6 @@ Only editors can create, rename, and edit defined views.
 These views provide team members with a topological view of the apps that are specific to the areas they are responsible for.
 Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency.
 
-In a defined view, you can also select nodes and then hide related services. You can also select nodes and then hide services other than the node that you selected.
 
 == Create a Defined View
 
