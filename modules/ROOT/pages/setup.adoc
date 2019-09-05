@@ -149,7 +149,10 @@ For Mule version 4.1.x, the following connectors are supported:
 
 == Dedicated Load Balancers
 
-Visualizer supports dedicated load balancers for CloudHub apps using Mule version 3.9.x (version released April 5, 2019 or later). Visualizer cannot correctly resolve dedicated load balancer connections for CloudHub apps using Mule 4 runtime versions at this time.
+Visualizer supports dedicated load balancers for CloudHub apps using Mule version 3.9.x (version released April 5, 2019 or later). 
+
+[NOTE]
+Visualizer cannot correctly resolve dedicated load balancer connections for CloudHub apps using Mule 4 runtime versions at this time.
 
 == Deploy an App
 
