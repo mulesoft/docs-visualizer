@@ -6,10 +6,14 @@ endif::[]
 Use Anypoint Visualizer to view a graph of your application network.
 
 Anypoint Visualizer automatically generates the topology of the application.
-To maximize visualization readability, consumer nodes (nodes that only have outbound connections) are shown at the top. All backend systems are also shown.
-(nodes with inbound connections only) are shown at the bottom.
-When the `ClientId` is detected for a consumer node, the nodes are grouped by `ClientId`. Otherwise, they are grouped under the *External Traffic* node.
- For the `ClientId` to be detected, the target `application/API/proxy` should have the *Client Id enforcement* policy.
+
+To maximize visualization readability, consumer nodes (nodes that have only outbound connections) are shown at the top. Backend systems (nodes that have only inbound connections) are shown at the bottom.
+
+When the `ClientId` is detected for a consumer node, the nodes are grouped by `ClientId`; otherwise, it is grouped under the *External Traffic* node. 
+The target `application/API/proxy` should have the `ClientId` enforcement policy to detect the `ClientId`. 
+For usability purposes, client app names replace `ClientIds` in the canvas. 
+All client apps that call the same Mule app are grouped into a single client app group node. 
+The number of client apps in the group is specified in the display name.
 
 When viewing or modifying a graph, Anypoint Visualizer provides the following functionality:
 
