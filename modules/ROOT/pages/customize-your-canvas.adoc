@@ -13,10 +13,17 @@ The *View* card and the canvas are updated to display the current selection.
 
 Visualizer editors can save defined views so that any Visualizer user can access them.
 When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
+Layers, Tags and Display Names can all be customized in the Visualizer UI or by using a runtime property.
+
+Note that the runtime property supports only alphanumeric characters and hyphens.
+Special characters and spaces will be replaced with a comma.
+
 
 == Layers
 
 You can use one of the default layers provided by Anypoint Visualizer, or add a custom layer to create a visual representation of the apps in your network.
+
+To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>`.
 
 For more information, see xref:layers.adoc[Use Layers in Anypoint Visualizer].
 
@@ -24,7 +31,15 @@ For more information, see xref:layers.adoc[Use Layers in Anypoint Visualizer].
 
 You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view.
 
+To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>`.
+
 For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Visualizer].
+
+== Display Name
+
+You can edit the display name of an API, application, or other service to provide a more readable, explanatory title.
+
+To automate adding a display name to the node, configure the property `anypoint.platform.visualizer.displayName=<name>`.
 
 == Views
 

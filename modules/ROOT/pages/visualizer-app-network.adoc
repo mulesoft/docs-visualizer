@@ -6,9 +6,14 @@ endif::[]
 Use Anypoint Visualizer to view a graph of your application network.
 
 Anypoint Visualizer automatically generates the topology of the application.
+
 To maximize visualization readability, consumer nodes (nodes that have only outbound connections) are shown at the top. Backend systems (nodes that have only inbound connections) are shown at the bottom.
 
-When the `ClientId` is detected for a consumer node, the nodes are grouped by `ClientId`; otherwise, it is grouped under the *External Traffic* node. The target `application/API/proxy` should have the `ClientId` enforcement policy to detect the `ClientId`. For usability purposes, client app names replace `ClientIds` in the canvas. All client apps that call the same Mule app are grouped into a single client app group node. The number of client apps in the group are specified in the display name.
+When the `ClientId` is detected for a consumer node, the nodes are grouped by `ClientId`; otherwise, it is grouped under the *External Traffic* node. 
+The target `application/API/proxy` should have the `ClientId` enforcement policy to detect the `ClientId`. 
+For usability purposes, client app names replace `ClientIds` in the canvas. 
+All client apps that call the same Mule app are grouped into a single client app group node. 
+The number of client apps in the group is specified in the display name.
 
 When viewing or modifying a graph, Anypoint Visualizer provides the following functionality:
 
@@ -52,7 +57,8 @@ https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric pre
 
 == View Information About a Node in Your Network
 
-When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable. Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
+When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
+Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
 The *Details* tab contains:
 
@@ -64,6 +70,14 @@ The *Monitoring* tab contains:
 * *Metrics summary*: Provides monitoring metrics for the selected node, including Errors count, avg. response time, avg. throughput, avg. CPU consumption, and avg. memory utilization.
 * *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* card.
 
+When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
+If a single node is selected and does not have any dependents or dependencies, this option is hidden.
+
+You can hide nodes through what you select in the canvas.
+
+* To hide a single node, select it, and then click *Hide selected service*.
+* To hide multiple nodes, multiselect them, and then click *Hide selected services*.
+* To hide all of the services other than the selected nodes, you can click *Hide other services*. If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
 
 You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
 

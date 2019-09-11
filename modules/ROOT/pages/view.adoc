@@ -17,9 +17,12 @@ Views that you have access to appear in a list in the *View* card (click the dro
 
 == Defined Views
 
-As a Visualizer editor, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects. Any Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the *View* card. Only editors can create, rename, and edit defined views.
+As a Visualizer editor, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects.
+Any Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the *View* card.
+Only editors can create, rename, and edit defined views.
 
 These views provide team members with a topological view of the apps that are specific to the areas they are responsible for. Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency.
+
 
 == Create a Defined View
 
@@ -29,6 +32,8 @@ Only users with the *Visualizer Editor* permission can create defined views.
 . Click *+New*.
 . In the *New view* dialog, enter a *Name* for the view, and click *Save*.
 . Configure the view by selecting which environments, xref:use-tags-in-visualizer.adoc[tags], and services to include.
+. Hide the nodes which you have selected in the canvas using the *Hide selected services* option.
+. Hide the services other than the nodes which you have selected using the *Hide other services* option.
 . Click *Save*.
 
 You can also create a new view by selecting *Save as* from the drop-down menu to save your current filter selection updates as a new view and preserve the original view.
