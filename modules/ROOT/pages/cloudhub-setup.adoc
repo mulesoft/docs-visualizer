@@ -61,6 +61,7 @@ Visualizer supports dedicated load balancers for CloudHub apps using Mule versio
 Visualizer cannot correctly resolve dedicated load balancer connections for CloudHub apps using Mule 4 runtime versions at this time.
 
 == Data Collection
+
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
 
-For more information on data collection and performance, see xref:visualizer::technical.adoc[How Anypoint Visualizer Collects Application Data].
+For more information on data collection and performance, see xref:visualizer::technical.adoc[Data Collection and Managing Performance].
