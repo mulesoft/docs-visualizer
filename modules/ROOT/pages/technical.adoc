@@ -1,4 +1,4 @@
-= How Anypoint Visualizer Collects Application Data
+= Data Collection and Managing Performance
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -17,11 +17,9 @@ Anypoint Visualizer collects runtime information from running applications, APIs
 | url | The fully qualified domain of the application.
 |===
 
-== Disable Data Collection for an Application
-
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
 
-=== Reduce Potential Performance Impact for CloudHub
+== Reduce Potential Performance Impact for CloudHub
 
 To reduce any potential performance impact for an application running in CloudHub, you can disable data collection and the Anypoint Monitoring agent.
 
@@ -36,12 +34,12 @@ If you are using the following Mule versions, you can disable the Anypoint Monit
 * Mule Version 3.9 Released on April 5, 2019 or Later
 * Mule Version 3.8.7 Released on August 14, 2019 or Later
 
-==== Disable Data Collection in CloudHub
+=== Disable Data Collection in CloudHub
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
 
-==== Disable the Anypoint Monitoring agent in CloudHub
+=== Disable the Anypoint Monitoring agent in CloudHub
 
 . Verify that you are a user with *Anypoint Monitoring User* permission.
 . Sign in to Anypoint Platform and click *Anypoint Monitoring*.
@@ -51,7 +49,7 @@ If you are using the following Mule versions, you can disable the Anypoint Monit
 . In *List of resources in <Environment Name>*, search for an application whose metrics you wish to see.
 . Next to application, click *Disable & Apply* to disable monitoring for the application.
 
-=== Reduce Potential Performance Impact for Standalone Mule and Runtime Fabric
+== Reduce Potential Performance Impact for Standalone Mule and Runtime Fabric
 
 Visualizer requires an additional header injection to work for standalone Mule and Runtime Fabric deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default.
 
