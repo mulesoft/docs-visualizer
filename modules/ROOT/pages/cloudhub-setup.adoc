@@ -64,4 +64,4 @@ Visualizer cannot correctly resolve dedicated load balancer connections for Clou
 
 The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
 
-For more information on data collection and performance, see xref:visualizer::technical.adoc[Data Collection and Managing Performance].
+For more information on data collection and performance, see xref:visualizer::technical.adoc[Data Collection and Manage Performance].

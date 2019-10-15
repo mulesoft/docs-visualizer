@@ -1,4 +1,4 @@
-= Data Collection and Managing Performance
+= Data Collection and Manage Performance
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
