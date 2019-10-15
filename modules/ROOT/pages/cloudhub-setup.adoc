@@ -1,0 +1,66 @@
+= CloudHub Setup
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== Verify Supported CloudHub Mule Runtime Engine (Mule) Versions
+
+Anypoint Visualizer only includes activity from applications deployed to a supported version of Mule runtime engine (Mule). When deploying a Mule app or API, you must ensure that you are using a supported version of Mule as the deployment target.
+Anypoint Visualizer supports the following Mule versions running on CloudHub:
+
+* Mule version 3.8.7
+* Mule version 3.9.x
+* Mule version 4.1.x
+* Mule version 4.2.x
+
+[NOTE]
+If your version of Mule was released before June 30th 2018, to ensure you have the correct Visualizer agent, upgrade your version of Mule to any of the supported versions listed in this section. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
+These versions are listed in Runtime Manager > Runtime Version. Expand the Show old patch releases section in the runtime versions drop-down.
+
+== Verify Supported Mule Runtime Engine (Mule) Versions for Metrics
+
+The metrics that Visualizer displays come from Anypoint Monitoring. As a result, metrics are shown in Visualizer only for applications running on Mule versions that are also supported for Anypoint Monitoring:
+
+* Mule 3.8.7 patch releases available on August 14, 2019 or later.
+* Mule 3.9.x patch releases available on April 5, 2019 or later.
+* Mule 4.1.x patch releases available on March 22, 2019 or later.
+* Mule 4.2.x.
+
+To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
+
+[NOTE]
+If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, monitoring will continue to work for those apps.
+Update your applications to run on non-AM Mule versions (3.9.x and 4.x) for better functionality and the latest patch updates as soon as they are available.
+
+== Enable the Monitoring Agent
+
+You must manually enable the Anypoint Monitoring agent for the following Mule versions in order for your app to appear in Visualizer, and for metrics to be displayed:
+
+* Mule Version 3.8.7 Upgrades After August 14, 2019
+* Mule Version 3.9 Upgrades After April 5, 2019
+* Mule Version 4.1 Upgrades After March 22, 2019
+* Mule Version 4.2
+
+To enable the Anypoint Monitoring agent:
+
+. Verify that you are a user with Anypoint Monitoring User permission.
+. Sign in to Anypoint Platform and click *Anypoint Monitoring*.
+. Click *Settings*.
+. Select *CloudHub*.
+. From the *Environment* drop-down list, choose an environment.
+. In *List of resources in <Environment Name>*, search for an app to visualize.
+. Next to the app, click *Enable & Apply* to enable visualization and monitoring for the app.
+
+For more information about Anypoint Monitoring, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
+
+== Dedicated Load Balancers
+
+Visualizer supports dedicated load balancers for CloudHub apps using Mule version 3.9.x (version released April 5, 2019 or later).
+
+[NOTE]
+Visualizer cannot correctly resolve dedicated load balancer connections for CloudHub apps using Mule 4 runtime versions at this time.
+
+== Data Collection
+The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
+
+For more information on data collection and performance, see xref:visualizer::technical.adoc[How Anypoint Visualizer Collects Application Data].

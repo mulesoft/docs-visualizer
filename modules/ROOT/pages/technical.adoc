@@ -19,22 +19,29 @@ Anypoint Visualizer collects runtime information from running applications, APIs
 
 == Disable Data Collection for an Application
 
-The agent that Anypoint Visualizer uses to collect metadata may have a performance impact. 
+The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
 
 === Reduce Potential Performance Impact for CloudHub
 
-To reduce any potential performance impact for an application running in CloudHub you can disable data collection.
+To reduce any potential performance impact for an application running in CloudHub, you can disable data collection and the Anypoint Monitoring agent.
 
-==== Disable Data Collection for Mule Version 4 Released Before March 22, 2019 or Mule Version 3.9 Released Before April 5, 2019
+If you are using the following Mule versions, you can disable data collection by setting an application property:
 
-To reduce any potential impact on performance for an application running in CloudHub, set this application property:
+* Mule Version 4 Released Before March 22, 2019
+* Mule Version 3.9 Released Before April 5, 2019
+
+If you are using the following Mule versions, you can disable the Anypoint Monitoring agent:
+
+* Mule Version 4 Released on March 22, 2019 or Later
+* Mule Version 3.9 Released on April 5, 2019 or Later
+* Mule Version 3.8.7 Released on August 14, 2019 or Later
+
+==== Disable Data Collection in CloudHub
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
 
-==== Disable Data Collection for Mule Version 4 Released on March 22, 2019 or Later, Mule Version 3.9 Released on April 5, 2019 or Later, or Mule Version 3.8.7 Released on August 14, 2019 or Later
-
-To reduce any potential impact on performance for an application running in CloudHub, disable the Monitoring agent:
+==== Disable the Anypoint Monitoring agent in CloudHub
 
 . Verify that you are a user with *Anypoint Monitoring User* permission.
 . Sign in to Anypoint Platform and click *Anypoint Monitoring*.
@@ -46,12 +53,12 @@ To reduce any potential impact on performance for an application running in Clou
 
 === Reduce Potential Performance Impact for Standalone Mule and Runtime Fabric
 
-Visualizer requires an additional header injection to work for standalone Mule and Runtime Fabric deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default. 
+Visualizer requires an additional header injection to work for standalone Mule and Runtime Fabric deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default.
 
 [NOTE]
-For Runtime Fabric, you must enable header injection at the application level, while for standalone Mule deployments, you must enable the header injection at the server (not application) level. 
+For Runtime Fabric, you must enable header injection at the application level, while for standalone Mule deployments, you must enable the header injection at the server (not application) level.
 
-To disable the header injection for Mule 3, set the following property: 
+To disable the header injection for Mule 3, set the following property:
 
 ----
 anypoint.platform.config.analytics.agent.header_injection.disabled=true
@@ -60,10 +67,10 @@ anypoint.platform.config.analytics.agent.header_injection.disabled=true
 Additionally, to reduce potential performance impact for applications running in a standalone Mule, you can do one of the following:
 
 * Deploy the application to a server without the Anypoint Monitoring agent installed.
-* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level): 
+* Disable data collection for a specific server. To disable data collection for a server and all the applications deployed to that server, set the following property at the server level (not application level):
 +
 ----
-anypoint.platform.config.analytics.agent.disabled=true 
+anypoint.platform.config.analytics.agent.disabled=true
 ----
 
 [NOTE]
