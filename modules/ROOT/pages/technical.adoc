@@ -1,4 +1,4 @@
-= Data Collection and Manage Performance
+= Manage Performance and Data Collection
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -23,23 +23,23 @@ The agent that Anypoint Visualizer uses to collect metadata may have a performan
 
 To reduce any potential performance impact for an application running in CloudHub, you can disable data collection and the Anypoint Monitoring agent.
 
+=== Disable Data Collection in CloudHub
+
 If you are using the following Mule versions, you can disable data collection by setting an application property:
 
 * Mule Version 4 Released Before March 22, 2019
 * Mule Version 3.9 Released Before April 5, 2019
+
+. Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
+. Redeploy the application.
+
+=== Disable the Anypoint Monitoring agent in CloudHub
 
 If you are using the following Mule versions, you can disable the Anypoint Monitoring agent:
 
 * Mule Version 4 Released on March 22, 2019 or Later
 * Mule Version 3.9 Released on April 5, 2019 or Later
 * Mule Version 3.8.7 Released on August 14, 2019 or Later
-
-=== Disable Data Collection in CloudHub
-
-. Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
-. Redeploy the application.
-
-=== Disable the Anypoint Monitoring agent in CloudHub
 
 . Verify that you are a user with *Anypoint Monitoring User* permission.
 . Sign in to Anypoint Platform and click *Anypoint Monitoring*.
@@ -49,12 +49,9 @@ If you are using the following Mule versions, you can disable the Anypoint Monit
 . In *List of resources in <Environment Name>*, search for an application whose metrics you wish to see.
 . Next to application, click *Disable & Apply* to disable monitoring for the application.
 
-== Reduce Potential Performance Impact for Standalone Mule and Runtime Fabric
+== Reduce Potential Performance Impact for Standalone Mule
 
-Visualizer requires an additional header injection to work for standalone Mule and Runtime Fabric deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default.
-
-[NOTE]
-For Runtime Fabric, you must enable header injection at the application level, while for standalone Mule deployments, you must enable the header injection at the server (not application) level.
+Visualizer requires an additional header injection to work for standalone Mule deployments. To reduce potential performance impact for applications running in a standalone Mule 4.1.x, the header injection is disabled by default.
 
 To disable the header injection for Mule 3, set the following property:
 
@@ -73,3 +70,15 @@ anypoint.platform.config.analytics.agent.disabled=true
 
 [NOTE]
 This disables monitoring for applications on the server as well.
+
+== Reduce Potential Performance Impact for Runtime Fabric
+
+Anypoint Visualizer requires an additional header injection to work for Runtime Fabric deployments. 
+To reduce potential performance impact for applications, the header injection is disabled by default.
+For Runtime Fabric, you must enable header injection at the application level.
+
+To disable the header injection for Mule 3, set the following property:
+
+----
+anypoint.platform.config.analytics.agent.header_injection.disabled=true
+----

@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-== Supported Standalone Mule
+== Verify Supported Standalone Mule Versions
 
 Anypoint Visualizer supports the following Mule versions for standalone Mule deployments:
 
@@ -15,11 +15,11 @@ Anypoint Visualizer supports the following Mule versions for standalone Mule dep
 == Install Agent
 
 To support Anypoint Visualizer for standalone Mule deployments, install the xref:monitoring::am-install.adoc[Anypoint Monitoring agent].
+Anypoint Visualizer also requires an additional header injection for standalone Mule deployments.
+However, due to a potential performance impact for Mule 4, header injection is disabled by default. 
 
 == Enable Header Injection
 
-Visualizer requires an additional header injection for standalone Mule deployments.
-However, due to a potential performance impact for Mule 4, header injection is disabled by default.
 For a standalone Mule deployment, you must enable the header injection at the server (not app) level.
 This affects all applications running on the server.
 
@@ -29,14 +29,8 @@ This affects all applications running on the server.
 `anypoint.platform.config.analytics.agent.header_injection.disabled=false`.
 You must set the property to `false` as shown in the example to enable header injection, since the property is disabled by default.
 
-== Manage Performance for Standalone Mule
+=== Manage Performance and Data Collection
 
-The agent that Anypoint Visualizer uses to collect metadata may affect performance.
-To reduce any potential performance impact for an app running in standalone Mule, you can disable data collection.
+The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
 
-Reduce performance impact for an app running in a standalone Mule at the server level. You can do one of the following:
-
-* Deploy the app to a server that doesn’t have the Anypoint Monitoring agent installed.
-* Disable data collection for a specific server and all the applications deployed to that server by setting the following property at the server level:
-`anypoint.platform.config.analytics.agent.disabled=true`.
-This property disables monitoring for applications on the server as well.
+For more information on data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].
