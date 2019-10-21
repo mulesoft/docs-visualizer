@@ -9,9 +9,9 @@ Anypoint Visualizer automatically generates the topology of the application.
 
 To maximize visualization readability, consumer nodes (nodes that have only outbound connections) are shown at the top. Backend systems (nodes that have only inbound connections) are shown at the bottom.
 
-When the `ClientId` is detected for a consumer node, the nodes are grouped by `ClientId`; otherwise, it is grouped under the *External Traffic* node.
-The target `application/API/proxy` should have the `ClientId` enforcement policy to detect the `ClientId`.
-For usability purposes, client app names replace `ClientIds` in the canvas.
+When the `ClientId` category is detected for a consumer node, the nodes are grouped by `ClientId`; otherwise, they are grouped under the *External Traffic* node.
+The target specified by `application/API/proxy` must have the `ClientId` enforcement policy to detect the `ClientId` value.
+For usability purposes, client app names replace `ClientIds` values in the canvas.
 All client apps that call the same Mule app are grouped into a single client app group node.
 The number of client apps in the group is specified in the display name.
 
@@ -34,7 +34,7 @@ Anypoint Visualizer displays only the environments you have permissions to view.
 
 After selecting the organization and environment group, Anypoint Visualizer displays a graph of your application network.
 
-== View Information About All Services In Your Network
+== View Information About All Services in Your Network
 
 Use the options in the *Metric* card to select the metric that you want to show for all the nodes in your application network.
 In the *Metrics* section, you can select one of the following metrics:
@@ -71,7 +71,8 @@ The *Details* tab contains:
 
 The *Monitoring* tab contains:
 
-* *Metrics summary*: Provides monitoring metrics for the selected node, including Avg response time, Avg throughput, Failures, Avg CPU utilization, and Avg memory utilization. This shows either inbound or outbound values for Avg response time, Avg throughput, and Failures depending on what you’ve selected in the *Metric* card.
+* *Metrics summary*
+Provides monitoring metrics for the selected node, including average response time, average throughput, failures, average CPU utilization, and average memory utilization. This shows either inbound or outbound values for Avg response time, Avg throughput, and Failures, depending on what you’ve selected in the *Metric* card.
 * *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* card.
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
