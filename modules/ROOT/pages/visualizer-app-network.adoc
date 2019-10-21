@@ -46,7 +46,7 @@ In the *Metrics* section, you can select one of the following metrics:
 * *Avg CPU utilization*
 * *Avg memory utilization*
 
-For Avg response time, Avg throughput, and Failures, you have the ability to select inbound or outbound metrics.
+For Avg response time, Avg throughput, and Failures, you can select inbound or outbound metrics.
 If you select inbound, the value that appears on the application is the weighted average of that particular metric for all inbound connections to that node.
 If you select outbound, the value is the weighted average of that metric for all outbound connections.
 
