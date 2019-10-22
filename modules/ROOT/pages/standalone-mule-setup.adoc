@@ -20,14 +20,14 @@ However, due to a potential performance impact for Mule 4, header injection is d
 
 == Enable Header Injection
 
-For a standalone Mule deployment, you must enable the header injection at the server (not app) level.
+For a standalone Mule deployment, you must enable header injection at the server (not app) level.
 This affects all applications running on the server.
 
-. To enable the header injections for apps deployed to a standalone Mule, click *Server* in the menu on the left of *Runtime Manager*.
-. Select the server for which to enable the header injection, and click *Manage Server*.
-. Click the Properties tab, and set the following property in the server:
-`anypoint.platform.config.analytics.agent.header_injection.disabled=false`.
-You must set the property to `false` as shown in the example to enable header injection, since the property is disabled by default.
+. To enable header injection for apps deployed to a standalone Mule instance, click *Server* in the menu on the left of *Runtime Manager*.
+. Select the server for which to enable header injection and click *Manage Server*.
+. Click the Properties tab and set the following property in the server:
+`anypoint.platform.config.analytics.agent.header_injection.disabled=false`
+You must set the property to `false`, as shown in the example to enable header injection, because the property is disabled by default.
 
 === Manage Performance and Data Collection
 
