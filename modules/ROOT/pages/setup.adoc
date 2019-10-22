@@ -50,6 +50,6 @@ For Mule version 4.1.x, the following connectors are supported:
 
 === Manage Performance and Data Collection
 
-The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
+The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
 
-For more information on data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].
+For more information about data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].
