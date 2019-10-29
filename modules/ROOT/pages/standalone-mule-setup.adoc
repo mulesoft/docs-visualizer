@@ -1,0 +1,36 @@
+= Standalone Mule Setup
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== Verify Supported Standalone Mule Versions
+
+Anypoint Visualizer supports the following Mule versions for standalone Mule deployments:
+
+* Mule 3.8.7
+* Mule 3.9.1+
+* Mule 4.1.x
+* Mule 4.2.x
+
+== Install Agent
+
+To support Anypoint Visualizer for standalone Mule deployments, install the xref:monitoring::am-install.adoc[Anypoint Monitoring agent].
+Anypoint Visualizer also requires an additional header injection for standalone Mule deployments.
+However, due to a potential performance impact for Mule 4, header injection is disabled by default. 
+
+== Enable Header Injection
+
+For a standalone Mule deployment, you must enable header injection at the server (not app) level.
+This affects all applications running on the server.
+
+. To enable header injection for apps deployed to a standalone Mule instance, click *Server* in the menu on the left of *Runtime Manager*.
+. Select the server for which to enable header injection and click *Manage Server*.
+. Click the Properties tab and set the following property in the server:
+`anypoint.platform.config.analytics.agent.header_injection.disabled=false`
+You must set the property to `false`, as shown in the example to enable header injection, because the property is disabled by default.
+
+=== Manage Performance and Data Collection
+
+The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
+
+For more information about data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].

@@ -15,120 +15,19 @@ You can create a xref:access-management::roles.adoc#custom-roles[custom role] an
 [NOTE]
 The *Visualizer Editor* permission can only be assigned within the master organization.
 
-== Setup for CloudHub
+== Select a Deployment Type
 
-=== Verify Supported CloudHub Mule Runtime Engine (Mule) Versions
+Anypoint Visualizer supports the following deployment types:
 
-Anypoint Visualizer only includes activity from applications deployed to a supported version of Mule runtime engine (Mule). When deploying a Mule app or API, you must ensure that you are using a supported version of Mule as the deployment target.
+* xref:visualizer::cloudhub-setup.adoc[CloudHub]
+* xref:visualizer::standalone-mule-setup.adoc[Standalone Mule]
+* xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric]
 
-Anypoint Visualizer supports the following Mule versions running on CloudHub:
+== Deploy an App
 
-* Mule version 3.8.7
-* Mule version 3.9.x
-* Mule version 4.1.x
-* Mule version 4.2.x
+When you deploy an app you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
 
-[NOTE]
-If your version of Mule was released before June 30th 2018, to ensure you have the correct Visualizer agent, upgrade your version of Mule to any of the supported versions listed in this section. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
-
-These versions are listed in *Runtime Manager > Runtime Version*. Expand the *Show old patch releases* section in the runtime versions drop-down.
-
-=== Verify Supported Mule Runtime Engine (Mule) Versions for Metrics
-
-The metrics that Visualizer displays come from Anypoint Monitoring. As a result, metrics are shown in Visualizer only for applications running on Mule versions that are also supported for Anypoint Monitoring:
-
-* Mule 3.8.7 patch releases available on August 14, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section. 
-* Mule 3.9.x patch releases available on April 5, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section. 
-* Mule 4.1.x patch releases available on March 22, 2019 or later. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
-* Mule 4.2.x. To see your app and the related metrics in Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
-
-[NOTE]
-If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, monitoring will continue to work for those apps. +
-Update your applications to run on non-AM Mule versions (3.9.x and 4.x) for better functionality and the latest patch updates as soon as they are available.
-
-=== Enable the Monitoring Agent for Mule Version 3.8.7 Upgrades After August 14, 2019, Mule Version 3.9 Upgrades After April 5, 2019, Mule Version 4.1 Upgrades After March 22, 2019, or Mule Version 4.2
-
-If you upgrade to any of these versions, you must separately enable the Anypoint Monitoring agent in order for your app to appear in Visualizer, and for metrics to be displayed.
-
-To enable the Anypoint Monitoring agent:
-
-. Verify that you are a user with *Anypoint Monitoring User* permission.
-. Sign in to Anypoint Platform and click *Anypoint Monitoring*.
-. Click *Settings*.
-. Select *CloudHub*.
-. From the *Environment* drop-down list, choose an environment.
-. In *List of resources in <Environment Name>*, search for an app to visualize.
-. Next to the app, click *Enable & Apply* to enable visualization and monitoring for the app.
-
-For more information about Anypoint Monitoring, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
-
-== Setup for Standalone Mule and Runtime Fabric
-
-=== Supported Standalone Mule and Runtime Fabric Mule Versions
-
-Anypoint Visualizer supports the following Mule versions for standalone Mule and Runtime Fabric deployments:
-
-[%header,cols="2*a"]
-|===
-|Deployment Type| Supported Mule versions
-| Mule standalone 
-a| * Mule 3.8.7
-* Mule 3.9.1+
-* Mule 4.1.x 
-* Mule 4.2.x
-
-| Runtime Fabric
-a| * Mule 3.8.7
-* Mule 3.9.1+
-* Mule 4.1.2+ 
-* Mule 4.2.0
-|===
-
-[NOTE]
-By default, Visualizer is disabled for Mule 4, which means that even though Mule 4 apps are displayed in Visualizer, the proper connections for Mule 4 apps are not displayed.  See <<enable_header_injection,enable the header injection>> for more information. 
-
-=== Standalone Mule Setup
-
-To support Visualizer for standalone Mule deployments, xref:monitoring::am-installing.adoc[install the Anypoint Monitoring agent]. 
-
-=== Runtime Fabric Setup
-
-Follow the instructions for xref:runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, Visualizer can display applications that are running and deployed to Runtime Fabric.
-
-Visualizer relies on a header injection to display connections between services correctly. The header injection is disabled by default for Mule 4. The correct connections will not be displayed for your Mule 4 Runtime Fabric applications unless you <<enable_header_injection,enable the header injection>>. 
-
-Known Limitations:
-
-* If a Mule 3 CloudHub app with the old Visualizer agent (version earlier than April 5, 2019) calls a Runtime Fabric ingress endpoint, there will be an extra edge from the CloudHub app to a node with the IP address for the controller. Please upgrade to the latest release of the Mule runtime engine.
-* If a Mule 4 CloudHub app calls a Runtime Fabric ingress endpoint, there will be and extra edge from the CloudHub app to a node with the IP address for the controller. You can use your filters within Visualizer to hide this node.
-* If a Runtime Fabric Mule app calls a Mule 3 CloudHub Mule app with the old Visualizer agent (version earlier than April 5, 2019) using its DNS, the correct connection is drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub app.
-* If a Runtime Fabric Mule app calls a Mule 4 CloudHub Mule app using its DNS, the correct connection is drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub app.
-* If you have an app in two different clusters with the same name, these applications are drawn as one node on the canvas. You should rename one app. 
-
-
-[[enable_header_injection]]
-=== Enable Header Injection
-
-Visualizer requires an additional header injection for standalone Mule and Runtime Fabric deployments.
-However, due to a potential performance impact for Mule 4.1.x, header injection is disabled by default.
-
-Enable the header injection in the Runtime Manager.
-
-[NOTE]
-For Runtime Fabric, you must enable the header injection at the app level. +
-For a standalone Mule deployment, you must enable the header injection at the server (not app) level. This affects all applications running on the server.
-
-. In Runtime Manager, to enable the header injection in the management page for an app or server: +  
-* To enable the header injection for apps deployed to Runtime Fabric, click *Applications* in the menu on the left, then select the app for which to enable the header injection, and click *Manage Application*. 
-* To enable the header injections for apps deployed to a standalone Mule, click *Server* in the menu on the left, then select the server for which to enable the header injection, and click *Manage Server*. 
-. To enable the header injection when you are deploying an app, on the deployment page, click *Deploy application*. 
-. Click the *Properties* tab, and set the following property in either the server (for Mule standalone deployment) or app (for a Runtime Fabric deployment): +
-----
-anypoint.platform.config.analytics.agent.header_injection.disabled=false
-----
-
-[NOTE]
-You must set the property to `false` as shown in the example to enable header injection, since the property is `disabled` by default.
+After redeploying an app, all metadata collected by Anypoint Visualizer is removed for that app. The number of inbound connections for the app node is reset.
 
 == Verify Supported Connectors
 
@@ -148,54 +47,9 @@ For Mule version 4.1.x, the following connectors are supported:
 * Database
 * Mule 4 Extension Connectors
 
-== Dedicated Load Balancers
 
-Visualizer supports dedicated load balancers for CloudHub apps using Mule version 3.9.x (version released April 5, 2019 or later). 
+=== Manage Performance and Data Collection
 
-[NOTE]
-Visualizer cannot correctly resolve dedicated load balancer connections for CloudHub apps using Mule 4 runtime versions at this time.
+The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
 
-== Deploy an App
-
-When you deploy an app you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
-
-After redeploying an app, all metadata collected by Anypoint Visualizer is removed for that app. The number of inbound connections for the app node is reset.
-
-== Disable Data Collection
-
-The agent that Anypoint Visualizer uses to collect metadata may affect performance. 
-
-To reduce any potential performance impact for an app running in CloudHub you can disable data collection.
-
-=== Mule Version 4 Released before March 22, 2019 or Mule Version 3.9 Released Before April 5, 2019
-
-To reduce any potential impact on performance for an app running in CloudHub:
-
-. Set the app property `anypoint.platform.config.visualizer.agent.enabled=false`.
-. Redeploy the app.
-
-=== Mule Version 4 Released on March 22, 2019 or Later, Mule Version 3.9 Released on April 5, 2019 or Later, or Mule Version 3.8.7 Released on August 14, 2019 or Later
-
-To reduce the monitoring impact on performance for an app running in CloudHub, disable the Monitoring agent:
-
-. Verify that you are a user with *Anypoint Monitoring User* permission.
-. Sign in to Anypoint Platform and click *Anypoint Monitoring*.
-. Click *Settings*.
-. Select *CloudHub*.
-. From the *Environment* drop-down list, choose an environment.
-. In *List of resources in <Environment Name>*, search for an app whose metrics you wish to see.
-. Next to the app, click *Disable & Apply* to disable monitoring for the app.
-
-=== Manage Performance for Standalone Mule
-
-Reduce performance impact for an app running in a standalone Mule at the server level. You can do one of the following:
-
-* Deploy the app to a server that doesn't have the Anypoint Monitoring agent installed.
-* To disable data collection for a specific server and all the applications deployed to that server, set the following property at the server level:
-+
-----
-anypoint.platform.config.analytics.agent.disabled=true 
-----
-+
-[NOTE]
-This property disables monitoring for applications on the server as well.
+For more information about data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].

@@ -1,0 +1,46 @@
+= Runtime Fabric Setup
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== Verify Supported Mule Versions for Runtime Fabric
+
+Anypoint Visualizer supports the following Mule versions for Runtime Fabric deployments:
+
+* Mule 3.8.7
+* Mule 3.9.1+
+* Mule 4.1.2+
+* Mule 4.2.0
+
+Follow the instructions for xref:runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric].
+After you install Runtime Fabric, Anypoint Visualizer can display applications that are running and deployed to Runtime Fabric.
+
+Anypoint Visualizer relies on a header injection to display connections between services correctly.
+
+== Enable Header Injection
+
+Anypoint Visualizer requires an additional header injection for Anypoint Runtime Fabric deployments. However, due to a potential performance impact in Mule 4, header injection is disabled by default.
+For Runtime Fabric, you must enable the header injection at the app level. You can enable the header injection in the *Properties* tab for an app:
+
+. If you have already deployed apps to Runtime Fabric:
+.. Click *Applications* in the menu on the left of Runtime Manager.
+.. Select the app for which to enable the header injection, and click *Manage Application*.
+. If you are deploying an app for the first time:
+.. On the deployment page, click *Deploy application*.
+. Click the *Properties* tab, and set the following property in the app: `anypoint.platform.config.analytics.agent.header_injection.disabled=false`.
+
+You must set the property to `false`, as shown in the example to enable header injection, because the property is disabled by default.
+
+== Known Limitations
+
+* If a Mule 3 CloudHub app with the old Anypoint Visualizer agent (version earlier than April 5, 2019) calls a Runtime Fabric ingress endpoint, there will be an extra edge from the CloudHub app to a node with the IP address for the controller. Please upgrade to the latest release of the Mule runtime engine.
+* If a Mule 4 CloudHub app calls a Runtime Fabric ingress endpoint, there will be and extra edge from the CloudHub app to a node with the IP address for the controller. You can use your filters within Anypoint Visualizer to hide this node.
+* If a Runtime Fabric Mule app calls a Mule 3 CloudHub Mule app with the old Anypoint Visualizer agent (version earlier than April 5, 2019) using its DNS, the correct connection is drawn, but there will be an additional edge from the External Traffic node to the CloudHub app.
+* If a Runtime Fabric Mule app calls a Mule 4 CloudHub Mule app using its DNS, the correct connection is drawn, but there will be an additional edge from the External Traffic node to the CloudHub app.
+* If you have an app in two different clusters with the same name, these applications are drawn as one node on the canvas. You should rename one app.
+
+== Manage Performance and Data Collection
+
+The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
+
+For more information about data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].
