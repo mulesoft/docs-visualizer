@@ -26,10 +26,11 @@ The metrics that Anypoint Visualizer displays come from Anypoint Monitoring. As 
 * Mule 4.1.x patch releases available on March 22, 2019 or later.
 * Mule 4.2.x.
 
-To see your app and the related metrics in Anypoint Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
+To see your app, its connections, and the related metrics in Anypoint Visualizer, you must also enable the Monitoring agent after you upgrade as described in the next section.
 
 [NOTE]
-If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, monitoring will continue to work for those apps.
+If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, app-level monitoring will continue to work for those apps.
+However, metrics on the connection level will not appear. 
 Update your applications to run on non-AM Mule versions (3.9.x and 4.x) for better functionality and the latest patch updates as soon as they are available.
 
 == Enable the Monitoring Agent

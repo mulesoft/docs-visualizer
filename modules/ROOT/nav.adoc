@@ -11,3 +11,4 @@
  ** xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
  ** xref:view.adoc[Views]
 * xref:troubleshoot-visualizer.adoc[Troubleshoot Visualizer]
+* xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics]

@@ -1,0 +1,220 @@
+= Supported Connection-Level Metrics
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Depending on your deployment type (CloudHub, Standalone Mule, or Runtime Fabric), some inbound or outbound metrics do not appear at the  connection level.
+
+Metric is Not Available: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. You may see this message in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
+
+[NOTE]
+You may also see the same message if you are using a dedicated load balancer. See below.
+
+Metric is Not Applicable: If support for a type of metric on a connection level is listed as _not applicable_, Anypoint Visualizer does not have access to the data associated with this connection type.
+For example, you have selected inbound average response time and have a Mule app calling Salesforce. This metric refers to the average time that Salesforce took to respond to the inbound call. This is not data that Anypoint Visualizer currently registers.
+In this case, the following message appears: `Inbound/Outbound metrics are not applicable for this type of connection.`
+
+
+== CloudHub
+
+The following connection types and directions support or do not support connection-level metrics, depending on the specified requirements and restrictions.
+
+=== Client App Group to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions: None
+
+Direction: Outbound
+
+Support: Not applicable
+
+=== External Traffic to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x to the same app, then the Mule app-to-Mule app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
+
+Direction: Outbound
+Support: Not applicable
+
+=== Mule App to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If the source node is a CloudHub app using Mule 4.x, then metrics do not appear on that connection and the following message appears:
+
+`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x. Learn more.`
+
+Direction: Outbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+* Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
+
+`Outbound metrics are not available for this connection. You may need to update the runtime version of the destination Mule app.`
+
+* If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
+
+`Outbound metrics are not available for this connection. Learn more.`
+
+=== Mule App to a Non-Mule Node
+
+Direction: Inbound
+
+Support: Not applicable
+
+Direction: Outbound
+
+Support: Yes
+
+Requirements and restrictions: None
+
+== Standalone Mule
+
+The following connection types and directions support or do not support connection-level metrics, depending on the specified requirements and restrictions.
+
+=== Client App Group to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions: None
+
+Direction: Outbound
+
+Support: Not applicable.
+
+=== External Traffic to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x to the same app, then the Mule app-to-Mule app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
+
+Direction: Outbound
+
+Support: Not applicable
+
+=== Mule App to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If the source node is a standalone Mule app using Mule 4 and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
+
+`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
+
+Learn more about xref:standalone-mule-setup.adoc#enable-header-injection[enabling the header injection].
+
+Direction: Outbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
+
+`Outbound metrics are not available for this connection. Learn more.`
+
+This message also appears if there has not been traffic in the selected time range.
+
+=== Mule App to a Non-Mule Node
+
+Direction: Inbound
+
+Support: Not applicable
+
+Direction: Outbound
+
+Support: Yes
+
+Requirements and restrictions: None
+
+
+== Runtime Fabric
+
+The following connection types and directions support or do not support connection-level metrics, depending on the specified requirements and restrictions.
+
+=== Client App Group to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions: None
+
+Direction: Outbound
+
+Support: Not applicable
+
+=== External Traffic to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions: None
+
+Direction: Outbound
+
+Support: Not applicable
+
+=== Mule App to a Mule App
+
+Direction: Inbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If the source node is a Runtime Fabric app using Mule 4 and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
+
+`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
+
+Learn more about xref:runtime-fabric-setup.adoc#enable-header-injection[enabling the header injection].
+
+Direction: Outbound
+
+Support: Yes
+
+Requirements and restrictions:
+
+If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
+
+`Outbound metrics are not available for this connection. Learn more.`
+
+This message also appears if there has not been traffic in the selected time range.
+
+=== Mule App to a Non-Mule Node
+
+Direction: Inbound
+
+Support: Not applicable
+
+Requirements and restrictions: None
+
+Direction: Outbound
+
+Support: Yes
+
+Requirements and restrictions: None
