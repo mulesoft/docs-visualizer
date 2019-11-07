@@ -91,7 +91,7 @@ You can search for a node (service) in the *Search services* text field. Service
 == View Information About a Connection in Your Network
 
 If the selected metric is compatible, the canvas also displays metrics on the connections. When you select a connection within the graph, Anypoint Visualizer displays the edge’s metrics details in a card.
-For more information about which connections support this feature, see xref:connection-level-metrics.adoc[Supported Connection-Level Metrics].
+For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
 
 [NOTE]
 Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
