@@ -59,7 +59,7 @@ To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your v
 |===
 https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric prefixes], but note that, in Anypoint Visualizer, *u* represents micro, rather than *μ*.
 
-Metrics are also available for connections, or _edges_, in your network. When you select average response time or average throughput, metrics also appear on the related connection. For more information on which metrics are available, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
+Metrics are also available for connections, or _edges_, in your network. When you select average response time or average throughput, metrics also appear on applicable connections. 
 
 == View Information About a Service in Your Network
 

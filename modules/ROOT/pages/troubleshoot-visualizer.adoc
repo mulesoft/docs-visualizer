@@ -33,7 +33,7 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 
 == Why can't I see metrics for my connections?
 
-Metrics at the connection level are only available for certain types of connection. For more information on edge metrics compatibility, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
+Metrics at the connection level are only available for certain types of connections. For more information on edge metrics compatibility, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
 
 == I seem to have permissions issues
 
