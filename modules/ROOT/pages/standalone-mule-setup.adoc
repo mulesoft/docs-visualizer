@@ -15,7 +15,7 @@ Anypoint Visualizer supports the following Mule versions for standalone Mule dep
 == Install Agent
 
 To support Anypoint Visualizer for standalone Mule deployments, install the xref:monitoring::am-installing.adoc[Anypoint Monitoring agent].
-Anypoint Visualizer requires an additional header injection for standalone Mule deployments to appear properly with their correct connections.
+Anypoint Visualizer requires an additional header injection for standalone Mule deployments so that the deployments display the correct connections.
 Due to a potential performance impact, however, the header injection is disabled by default for Mule 4 apps. 
 
 == Enable Header Injection
