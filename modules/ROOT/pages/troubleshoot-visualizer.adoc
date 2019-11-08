@@ -31,6 +31,10 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 |For CloudHub applications, you must use an `-AM` Mule to support Anypoint Monitoring, or upgrade to a Mule 4 version available after March 22, 2019, or Mule 3.9 version available after April 5, 2019, and then enable the Monitoring agent. View a list of xref:setup.adoc[supported Mule versions].
 |===
 
+== Why can't I see metrics for my connections?
+
+Metrics at the connection level are only available for certain types of connections. For more information on edge metrics compatibility, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
+
 == I seem to have permissions issues
 
 [%header,cols="3*a"]
