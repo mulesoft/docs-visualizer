@@ -3,6 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+[NOTE]
+This feature is being rolled out in phases.
+
 Depending on your deployment type (CloudHub, Standalone Mule, or Runtime Fabric), some inbound or outbound metrics do not appear at the connection level.
 
 Metric is Not Available: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. You may see this message in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
