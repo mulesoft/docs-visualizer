@@ -56,9 +56,9 @@ Support: Yes
 
 Requirements and restrictions:
 
-If the source node is a CloudHub app using Mule 4.x, then metrics do not appear on that connection and the following message appears:
+If the source node is a CloudHub app using Mule 4.x or a version with an -AM extension, then metrics do not appear on that connection and the following message appears:
 
-`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x. Learn more.`
+`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
 
 Direction: Outbound
 
