@@ -51,6 +51,37 @@ The following connection types and directions support or do not support connecti
 
 |===
 
+|===
+| Connection Type | Supported | Requirements and Restrictions
+
+// This cell spans 2 rows,
+// because the number after
+// the dot (.) specifies the number
+// of rows to span. The + sign
+// tells Asciidoctor to span this
+// cell over multiple rows.
+.4+| *Inbound Metrics* 
+| Client App Group to a Mule App
+| Yes
+| None
+
+| External Traffic to a Mule App
+| Yes
+| If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x or an -AM extension to the same app, then the Mule app-to-Mule app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
+
+| Mule App to a Mule App
+| Yes
+| If the source node is a CloudHub app using Mule 4.x or an -AM extension, then metrics do not appear on that connection and the following message appears:
+`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
+
+| Mule App to a Non-Mule Node
+| Not applicable
+| None
+
+.4+| *Outbound Metrics*
+
+|===
+
 === Client App Group to a Mule App
 
 Direction: Inbound
