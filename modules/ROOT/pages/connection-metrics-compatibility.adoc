@@ -56,7 +56,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-a |
+a|
 
 * Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
 
