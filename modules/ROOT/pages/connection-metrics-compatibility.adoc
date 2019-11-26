@@ -37,6 +37,7 @@ The following connection types and directions support or do not support connecti
 | Mule App to a Mule App
 | Yes
 | If the source node is a CloudHub app using Mule 4.x or an -AM extension, then metrics do not appear on that connection and the following message appears:
+
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
 
 | Mule App to a Non-Mule Node
@@ -45,95 +46,31 @@ The following connection types and directions support or do not support connecti
 
 3+| *Outbound Metrics*
 
-| Insert
-| Stuff
-| Here
-
-|===
-
-|===
-| Metrics | Connection Type | Supported | Requirements and Restrictions
-
-// This cell spans 2 rows,
-// because the number after
-// the dot (.) specifies the number
-// of rows to span. The + sign
-// tells Asciidoctor to span this
-// cell over multiple rows.
-.4+| *Inbound Metrics*
-
 | Client App Group to a Mule App
-| Yes
-| None
-
-| External Traffic to a Mule App
-| Yes
-| If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x or an -AM extension to the same app, then the Mule app-to-Mule app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
-
-| Mule App to a Mule App
-| Yes
-| If the source node is a CloudHub app using Mule 4.x or an -AM extension, then metrics do not appear on that connection and the following message appears:
-`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
-
-| Mule App to a Non-Mule Node
 | Not applicable
 | None
 
-.4+| *Outbound Metrics*
+| External Traffic to a Mule App
+| Not applicable
+| None
 
-|===
-
-=== Client App Group to a Mule App
-
-Direction: Inbound
-
-Support: Yes
-
-Requirements and restrictions: None
-
-Direction: Outbound
-
-Support: Not applicable
-
-=== External Traffic to a Mule App
-
-Direction: Inbound
-
-Support: Yes
-
-Requirements and restrictions:
-
-If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x to the same app, then the Mule app-to-Mule app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
-
-Direction: Outbound
-
-Support: Not applicable
-
-=== Mule App to a Mule App
-
-Direction: Inbound
-
-Support: Yes
-
-Requirements and restrictions:
-
-If the source node is a CloudHub app using Mule 4.x or a version with an -AM extension, then metrics do not appear on that connection and the following message appears:
-
-`Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
-
-Direction: Outbound
-
-Support: Yes
-
-Requirements and restrictions:
-
-* Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
+| Mule App to a Mule App
+| Yes
+| * Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
 
 `Outbound metrics are not available for this connection. You may need to update the runtime version of the destination Mule app.`
 
 * If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
 
 `Outbound metrics are not available for this connection. Learn more.`
+
+| Mule App to a Non-Mule Node
+| Yes
+| None
+
+|===
+
+
 
 === Mule App to a Non-Mule Node
 
