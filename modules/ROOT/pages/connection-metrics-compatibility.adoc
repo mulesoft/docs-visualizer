@@ -23,7 +23,7 @@ In this case, the following message appears: `Inbound/Outbound metrics are not a
 The following connection types and directions support or do not support connection-level metrics, depending on the specified requirements and restrictions.
 
 |===
-| Connection Type | Requirements and Restrictions
+| Connection Type | Supported | Requirements and Restrictions
 
 3+| Inbound Metrics
 | Client App Group to a Mule App
