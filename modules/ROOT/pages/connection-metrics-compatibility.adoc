@@ -52,7 +52,7 @@ The following connection types and directions support or do not support connecti
 |===
 
 |===
-| Connection Type | Supported | Requirements and Restrictions
+| Metrics | Connection Type | Supported | Requirements and Restrictions
 
 // This cell spans 2 rows,
 // because the number after
@@ -60,7 +60,8 @@ The following connection types and directions support or do not support connecti
 // of rows to span. The + sign
 // tells Asciidoctor to span this
 // cell over multiple rows.
-.4+| *Inbound Metrics* 
+.4+| *Inbound Metrics*
+
 | Client App Group to a Mule App
 | Yes
 | None
