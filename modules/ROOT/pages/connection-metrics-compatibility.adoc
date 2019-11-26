@@ -25,7 +25,7 @@ The following connection types and directions support or do not support connecti
 |===
 | Connection Type | Supported | Requirements and Restrictions
 
-3+| Inbound Metrics
+3+| *Inbound Metrics*
 | Client App Group to a Mule App
 | Yes
 | None
@@ -43,7 +43,7 @@ The following connection types and directions support or do not support connecti
 | Not applicable
 | None
 
-3+| Outbound Metrics
+3+| *Outbound Metrics*
 
 | Insert
 | Stuff
