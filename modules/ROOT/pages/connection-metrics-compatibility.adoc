@@ -22,6 +22,35 @@ In this case, the following message appears: `Inbound/Outbound metrics are not a
 
 The following connection types and directions support or do not support connection-level metrics, depending on the specified requirements and restrictions.
 
+|===
+| Connection Type | Requirements and Restrictions
+
+3+| Inbound Metrics
+| Client App Group to a Mule App
+| Yes
+| None
+
+| External Traffic to a Mule App
+| Yes
+| If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x or an -AM extension to the same app, then the Mule app-to-Mule app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
+
+| Mule App to a Mule App
+| Yes
+| If the source node is a CloudHub app using Mule 4.x or an -AM extension, then metrics do not appear on that connection and the following message appears:
+`Inbound metrics may be inaccurate or not appear when the source of the connection is a mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
+
+| Mule App to a Non-Mule Node
+| Not applicable
+| None
+
+3+| Outbound Metrics
+
+| Insert
+| Stuff
+| Here
+
+|===
+
 === Client App Group to a Mule App
 
 Direction: Inbound
