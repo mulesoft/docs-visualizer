@@ -56,7 +56,9 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| * Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
+a |
+
+* Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
 
 `Outbound metrics are not available for this connection. You may need to update the runtime version of the destination Mule app.`
 
@@ -70,19 +72,6 @@ The following connection types and directions support or do not support connecti
 
 |===
 
-
-
-=== Mule App to a Non-Mule Node
-
-Direction: Inbound
-
-Support: Not applicable
-
-Direction: Outbound
-
-Support: Yes
-
-Requirements and restrictions: None
 
 == Standalone Mule
 
