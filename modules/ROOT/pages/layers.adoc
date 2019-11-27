@@ -23,7 +23,6 @@ This is an application property, not a server property.
 When this property is used, nodes automatically appear in the specified layer. If the layer doesn't exist it is created.
 
 [NOTE]
-For applications deployed to standalone Mule runtime engines, layer names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with an underscore. +
 You cannot reassign a node layer using the Anypoint Visualizer UI if you assign it using application property file.
 
 

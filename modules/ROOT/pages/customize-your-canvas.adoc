@@ -15,8 +15,7 @@ Visualizer editors can save defined views so that any Visualizer user can access
 When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
 Layers, Tags and Display Names can all be customized in the Visualizer UI or by using a runtime property.
 
-Note that the runtime property supports only alphanumeric characters and hyphens.
-Special characters and spaces will be replaced with a comma.
+Anypoint Visualizer supports the use of international characters when you set layer names, tag names, and display names, whether you set them in the UI or using a runtime property.
 
 
 == Layers
