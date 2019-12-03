@@ -13,7 +13,7 @@ The *View* card and the canvas are updated to display the current selection.
 
 Visualizer editors can save defined views so that any Visualizer user can access them.
 When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
-Layers, Tags and Display Names can all be customized in the Visualizer UI or by using a runtime property.
+You can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers) to customize Layers, Tags, and Display Names in the Visualizer UI or by using a runtime property.
 
 Anypoint Visualizer supports all unicode characters with UTF-8 encoding, including international characters, when you set layer names, tag names, and display names, whether you set them in the UI or using a runtime property.
 
