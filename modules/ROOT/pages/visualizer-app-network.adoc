@@ -50,7 +50,7 @@ For Avg response time, Avg throughput, and Failure rate, you can select *Inbound
 If you select inbound, the value that appears on the application is the weighted average of that particular metric for all inbound connections to that node.
 If you select outbound, the value is the weighted average of that metric for all outbound connections.
 
-// define Failure rate here
+For the selected time range, _failure rate_ is equal to the total number of failures divided by the total number of requests.
 
 In the *Time Range* section, you can select the time window used to calculate the average values of the selected metric.
 
