@@ -55,7 +55,7 @@ The following connection types and directions support or do not support connecti
 | Yes
 a|
 
-* Outbound metrics on a connection are only available if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
+* Outbound metrics on a connection are available only if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
 
 `Outbound metrics are not available for this connection. You may need to update the runtime version of the destination Mule app.`
 
@@ -110,7 +110,7 @@ Learn more about xref:standalone-mule-setup.adoc#enable-header-injection[enablin
 
 | Mule App to a Mule App
 | Yes
-| If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
+| If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and the following message appears:
 
 `Outbound metrics are not available for this connection. Learn more.`
 
@@ -162,7 +162,7 @@ Learn more about xref:runtime-fabric-setup.adoc#enable-header-injection[enabling
 
 | Mule App to a Mule App
 | Yes
-| If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
+| If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and the following message appears:
 
 `Outbound metrics are not available for this connection. Learn more.`
 
