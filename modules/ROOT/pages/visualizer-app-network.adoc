@@ -42,13 +42,15 @@ In the *Metrics* section, you can select one of the following metrics:
 * *Inbound connections*
 * *Avg response time*
 * *Avg throughput*
-* *Failures*
+* *Failure rate*
 * *Avg CPU utilization*
 * *Avg memory utilization*
 
-For Avg response time, Avg throughput, and Failures, you can select *Inbound* or *Outbound* metrics.
+For Avg response time, Avg throughput, and Failure rate, you can select *Inbound* or *Outbound* metrics.
 If you select inbound, the value that appears on the application is the weighted average of that particular metric for all inbound connections to that node.
 If you select outbound, the value is the weighted average of that metric for all outbound connections.
+
+For the selected time range, _failure rate_ is equal to the total number of failures divided by the total number of requests.
 
 In the *Time Range* section, you can select the time window used to calculate the average values of the selected metric.
 
@@ -59,7 +61,7 @@ To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your v
 |===
 https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric prefixes], but note that, in Anypoint Visualizer, *u* represents micro, rather than *μ*.
 
-Metrics are also available for connections, or _edges_, in your network. When you select average response time or average throughput, metrics also appear on applicable connections. 
+Metrics are also available for connections, or _edges_, in your network. When you select average response time, average throughput, or failure rate, metrics also appear on applicable connections.
 
 == View Information About a Service in Your Network
 
@@ -74,7 +76,7 @@ The *Details* tab contains:
 The *Monitoring* tab contains:
 
 * *Metrics summary*
-Provides monitoring metrics for the selected node, including average response time, average throughput, failures, average CPU utilization, and average memory utilization. This shows either inbound or outbound values for Avg response time, Avg throughput, and Failures, depending on what you’ve selected in the *Metric* card.
+Provides monitoring metrics for the selected node, including average response time, average throughput, failure rate, average CPU utilization, and average memory utilization. This shows either inbound or outbound values for Avg response time, Avg throughput, and Failure rate, depending on what you’ve selected in the *Metric* card.
 * *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* card.
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
