@@ -17,7 +17,7 @@ Map a node to a layer in the application's properties file, or use the Anypoint 
 
 To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>` in the application's properties file. Note that this is an application property, not a server property.
 
-When this property is used, nodes automatically appear in the specified layer. If the layer doesn't exist, it is created.
+When you use this property, nodes automatically appear in the specified layer. If the layer doesn't exist, it is created.
 
 [NOTE]
 You cannot reassign a node layer using the Anypoint Visualizer UI if you assign it using application property file.
