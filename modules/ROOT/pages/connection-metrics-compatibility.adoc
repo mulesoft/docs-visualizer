@@ -5,12 +5,12 @@ endif::[]
 
 Depending on your deployment type (CloudHub, Standalone Mule, or Runtime Fabric), some inbound or outbound metrics do not appear at the connection level.
 
-Metric is Not Available: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. You may see this message in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
+Metric is Not Available:: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. You may see this message in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
 
 [NOTE]
 You may also see the same message if you are using a dedicated load balancer. See below.
 
-Metric is Not Applicable: If support for a type of metric on a connection level is listed as _not applicable_, Anypoint Visualizer does not have access to the data associated with this connection type.
+Metric is Not Applicable:: If support for a type of metric on a connection level is listed as _not applicable_, Anypoint Visualizer does not have access to the data associated with this connection type.
 For example, you have selected inbound average response time and have a Mule app calling Salesforce. This metric refers to the average time that Salesforce took to respond to the inbound call. This is not data that Anypoint Visualizer currently registers.
 In this case, the following message appears: `Inbound/Outbound metrics are not applicable for this type of connection.`
 
