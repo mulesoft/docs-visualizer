@@ -22,7 +22,7 @@ Anypoint Visualizer relies on a header injection to display connections between 
 Anypoint Visualizer requires an additional header injection for Anypoint Runtime Fabric deployments. However, due to a potential performance impact in Mule 4, header injection is disabled by default.
 For Runtime Fabric, you must enable the header injection at the app level. You can enable the header injection in the *Properties* tab for an app:
 
-. Navigate to the *Properties* tab and take on of the following actions:
+. Navigate to the *Properties* tab and take one of the following actions:
 * If you have already deployed apps to Runtime Fabric:
 .. Click *Applications* in the menu on the left of Runtime Manager.
 .. Select the app for which to enable the header injection, and click *Manage Application*.
