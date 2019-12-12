@@ -26,7 +26,7 @@ For Runtime Fabric, you must enable the header injection at the app level. You c
 * If you have already deployed apps to Runtime Fabric:
 .. Click *Applications* in the menu on the left of Runtime Manager.
 .. Select the app for which to enable the header injection, and click *Manage Application*.
-* If you are deploying an app for the first time:, navigate to the deployment page and click *Deploy application*.
+* If you are deploying an app for the first time, navigate to the deployment page and click *Deploy application*.
 . In the *Properties* tab, set the following property in the app: `anypoint.platform.config.analytics.agent.header_injection.disabled=false`
 
 You must set the property to `false`, as shown in the example to enable header injection, because the property is disabled by default.
