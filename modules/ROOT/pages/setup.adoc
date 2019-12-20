@@ -40,7 +40,7 @@ For Mule version 3.9.x, the following connectors are supported:
 * Database
 * All connectors based on the Connector DevKit
 
-For Mule version 4.1.x, the following connectors are supported:
+For Mule version 4.x, the following connectors are supported:
 
 * Salesforce
 * HTTP/HTTPS
