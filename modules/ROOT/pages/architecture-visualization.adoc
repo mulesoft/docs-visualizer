@@ -5,7 +5,7 @@ endif::[]
 
 == About the Architecture Visualization
 
-The Architecture Visualization shows the topology of your application network. In this visualization, you can assign change display names of nodes, add tags, and assign nodes to layers. The Architecture Visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
+The Architecture Visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. The Architecture Visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
 
 == View Information about One Service in your Network
 
@@ -13,7 +13,7 @@ When you select a node within the graph, the node and its dependency stack are h
 Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
 * *Details*: Provides information about the node.
-* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc[tags] from this section.
+* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc#set-tag-ui[tags] from this section.
 
 == Filtering your View
 

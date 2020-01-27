@@ -54,7 +54,7 @@ To enable the Anypoint Monitoring agent:
 
 For more information about Anypoint Monitoring, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
 
-==Verify Supported Mule Runtime Engine (Mule) Versions for Policies
+== Verify Supported Mule Runtime Engine (Mule) Versions for Policies
 
 The APIs and policies that Anypoint Visualizer displays in the Policy Visualization come from an update to the agent in the Mule runtime. As a result, policies are shown in Anypoint Visualizer only for applications running on these Mule versions:
 

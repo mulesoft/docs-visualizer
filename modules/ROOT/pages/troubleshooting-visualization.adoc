@@ -6,7 +6,7 @@ endif::[]
 
 == About the Troubleshooting Visualization
 
-The Troubleshooting Visualization shows you the current and past health of your Mule apps and APIs. It allows you to quickly visualize where your network is slow, receiving heavy traffic or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
+The Troubleshooting Visualization shows you the current and past health of your Mule apps. It allows you to quickly visualize where your network is slow, receiving heavy traffic or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
 
 == Choosing your Metric
 
@@ -62,6 +62,7 @@ For more information about which connections support this feature, see xref:conn
 
 [NOTE]
 Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
+
 == Filtering your View
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.

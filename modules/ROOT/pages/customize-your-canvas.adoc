@@ -14,7 +14,7 @@ The *View* card and the canvas are updated to display the current selection.
 Visualizer editors can save defined views so that any Visualizer user can access them.
 When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
 
-You can customize layers, tags, and display names in the Visualizer UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
+You can customize layers, tags, and display names in the Architecture Visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
 
 == Layers
 
