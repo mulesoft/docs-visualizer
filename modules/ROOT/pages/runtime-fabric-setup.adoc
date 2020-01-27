@@ -31,6 +31,15 @@ For Runtime Fabric, you must enable the header injection at the app level:
 
 You must set the property to `false` because the property is disabled by default.
 
+==Verify Supported Mule Runtime Engine (Mule) Versions for Policies
+
+The APIs and policies that Anypoint Visualizer displays in the Policy Visualization come from an update to the agent in the Mule runtime. As a result, policies are shown in Anypoint Visualizer only for applications running on these Mule versions:
+
+* Mule 3.9.3+ patch releases available on <DATE> or later.
+* Mule 4.2.1+ patch releases available on <DATE> or later.
+
+// add date! dependency!
+
 == Known Limitations
 
 * If a Mule 3 CloudHub app with the old Anypoint Visualizer agent (version earlier than April 5, 2019) calls a Runtime Fabric ingress endpoint, there will be an extra edge from the CloudHub app to a node with the IP address for the controller. Please upgrade to the latest release of the Mule runtime engine.

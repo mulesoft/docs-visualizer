@@ -1,0 +1,51 @@
+= Policy Visualization
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== About the Policy Visualization
+
+[NOTE]
+When deploying a Mule app, you must ensure that you are using a version of Mule that supports the Policy Visualization. Learn more about which xref:setup.adoc#select-a-deployment-type[runtimes are supported].
+
+The Policy Visualization enables you to see the relationship between Mule app deployments and the APIs they are implementing and which policies have been applied to those APIs. Data about which policies have been applied to your APIs comes from API Manager.
+
+There are two modes available within the Policy Visualization: _overview_ and _compliance_. Both modes show you your deployed APIs, but each shows which policies have been applied in a different manner.
+
+_Overview_ mode shows you the number of policies that are applied to each of your APIs in your canvas. The number on the API reflects this.
+
+_Compliance_ mode allows you to explore which APIs are compliant with policies that you select. Compliance mode is active when you select policies from the *Policies* card; your canvas then changes to show which of your APIs are compliant with the policies you selected.
+The list of policies includes custom policies and is grouped by policy category.
+
+When you select multiple policies, the number on the API node represents how many of the selected policies the API is complying with. The fraction may indicate that your API is not compliant with all of the selected policies. If an API in the canvas is compliant with all of the selected policies, it turns green.
+
+
+
+== View Information about One Service in your Network
+
+When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
+
+In the Policy Visualization, the top card contains information about the Mule app. If the Mule app is an implementation of one or more APIs, cards for each of the APIs will appear below. The card will contain the API, version, and instance names as well as a list of which policies have been applied. The policies are listed in order of application and identified if they are applied at the API level or as automated policies.
+
+== Filtering your View
+
+When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
+If a single node is selected and does not have any dependents or dependencies, this option is hidden.
+
+You can hide nodes through what you select in the canvas.
+
+* To hide a single node, select it, and then click *Hide selected service*.
+* To hide multiple nodes, multiselect them, and then click *Hide selected services*.
+* To hide all of the services other than the selected nodes, you can click *Hide other services*. If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
+
+You can search for a node, or _service_, in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
+
+[[export-view]]
+== Export Your Network View
+
+You can export the view of your network showing on your canvas to a PNG file.
+
+* If you customized your view with filters, the customized network topology is exported.
+* If you selected specific policies, these settings are reflected in the export.
+
+To export a view of your network as a PNG, click the *Export as Image* button next to the zoom controls in the bottom right.
