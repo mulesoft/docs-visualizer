@@ -18,6 +18,7 @@ In the following example, the tag `project-b` was added through properties and t
 
 image::properties-tags.png[]
 
+[[set-tag-ui]]
 == Setting the Tag Through the Architecture Visualization UI
 
 By default, when you first view a node using Anypoint Visualizer, it does not have any tags assigned. You can assign a tag to an existing node using the UI if it does not already have the same tag applied through properties.

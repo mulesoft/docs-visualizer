@@ -32,6 +32,7 @@ To automate adding tag(s) to a node, use the property `anypoint.platform.visuali
 
 For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Visualizer].
 
+[[display-name]]
 == Display Name
 
 You can edit the display name of a service to provide a more readable, explanatory title. You can use display names across Anypoint Visualizer, but note that you can only define display names in the xref:architecture-visualization.adoc[Architecture Visualization].
