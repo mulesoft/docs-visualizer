@@ -31,7 +31,7 @@ For Runtime Fabric, you must enable the header injection at the app level:
 
 You must set the property to `false` because the property is disabled by default.
 
-==Verify Supported Mule Runtime Engine (Mule) Versions for Policies
+== Verify Supported Mule Runtime Engine (Mule) Versions for Policies
 
 The APIs and policies that Anypoint Visualizer displays in the Policy Visualization come from an update to the agent in the Mule runtime. As a result, policies are shown in Anypoint Visualizer only for applications running on these Mule versions:
 
