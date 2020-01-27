@@ -21,7 +21,7 @@ Understanding these dependencies has powerful implications — especially when y
 
 == Use Cases
 
-The following use cases provide examples of how you can use the Anypoint Visualizer and its various visualizations.
+The following use cases provide examples of how you can use Anypoint Visualizer and its various visualizations.
 
 * Discussing Current Design State: Enterprise architect Kara has developed a plan for how the architecture she’s responsible for will accommodate a new product. She needs to capture its current state so she can plan the transition and get buy-in from stakeholders on her proposal. She can use the Architecture Visualization to assess the structure of her network and export it to share with her audience.
 
