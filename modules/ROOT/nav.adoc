@@ -5,7 +5,7 @@
  ** xref:standalone-mule-setup.adoc[Standalone Mule Setup]
  ** xref:runtime-fabric-setup.adoc[Runtime Fabric Setup]
  ** xref:technical.adoc[Manage Performance and Data Collection]
-* xref:visualizer-app-network.adoc[Visualizer Application Network]
+* xref:visualizer-app-network.adoc[Visualizations by Use Case]
  ** xref:architecture-visualization.adoc[Architecture Visualization]
  ** xref:troubleshooting-visualization.adoc[Troubleshooting Visualization]
  ** xref:policy-visualization.adoc[Policy Visualization]

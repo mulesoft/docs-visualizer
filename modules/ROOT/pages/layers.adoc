@@ -22,7 +22,7 @@ When you use this property, nodes automatically appear in the specified layer. I
 [NOTE]
 You cannot reassign a node layer using the Anypoint Visualizer UI if you assign it using application property file.
 
-
+[[set-a-layer-ui]]
 == Set a Layer with the Architecture Visualization UI
 
 If a node was not assigned to a layer at deployment time using the Runtime Manager UI or API, by default, the node is not assigned to a layer in Anypoint Visualizer. Use the Anypoint Visualizer UI to:
