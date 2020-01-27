@@ -62,6 +62,7 @@ For more information about which connections support this feature, see xref:conn
 
 [NOTE]
 Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
+
 == Filtering your View
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
