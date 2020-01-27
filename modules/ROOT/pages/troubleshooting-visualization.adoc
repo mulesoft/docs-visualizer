@@ -6,7 +6,7 @@ endif::[]
 
 == About the Troubleshooting Visualization
 
-The Troubleshooting Visualization shows you the current and past health of your Mule apps and APIs. It allows you to quickly visualize where your network is slow, receiving heavy traffic or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
+The Troubleshooting Visualization shows you the current and past health of your Mule apps. It allows you to quickly visualize where your network is slow, receiving heavy traffic or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
 
 == Choosing your Metric
 
