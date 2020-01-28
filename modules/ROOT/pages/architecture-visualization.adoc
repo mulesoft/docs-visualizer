@@ -9,7 +9,7 @@ The Architecture visualization shows the topology of your application network. I
 
 == View Information About One Service in Your Network
 
-When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
+When you select a node within the canvas, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
 Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
 * *Details*
