@@ -55,7 +55,7 @@ Within the *Monitoring* tab, you can also select *View logs* or *View dashboard*
 
 == View Metrics for a Connection in Your Network
 
-If the selected metric is compatible, the canvas also displays metrics on the connections. When you select a connection within the graph, Anypoint Visualizer displays the edge’s metrics details in a card.
+If the selected metric is compatible, the canvas also displays metrics on the connections, or _edges_. When you select a connection within the graph, Anypoint Visualizer displays the edge’s metrics details in a card.
 For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
 
 [NOTE]

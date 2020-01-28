@@ -19,8 +19,6 @@ The list of policies includes custom policies and is grouped by policy category.
 
 When you select multiple policies, the number on the API node represents how many of the selected policies the API is complying with. A fraction might indicate that your API is not compliant with all of the selected policies. If an API in the canvas is compliant with all of the selected policies, it turns green.
 
-
-
 == View Information About One Service in Your Network
 
 When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
