@@ -6,11 +6,11 @@ endif::[]
 
 == About the Troubleshooting Visualization
 
-The Troubleshooting Visualization shows you the current and past health of your Mule apps. It allows you to quickly visualize where your network is slow, receiving heavy traffic or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
+The Troubleshooting Visualization shows you the current and past health of your Mule apps. It enables you to quickly visualize where your network is slow, receiving heavy traffic, or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
 
-== Choosing your Metric
+== Choosing Your Metric
 
-Use the options in the *Metric* card to select the metric that you want to show for all the nodes in your application network. For applicable metrics, the metric value will also appear on the connection, or _edge_.
+Select options in the *Metric* card to show metrics for all the nodes in your application network. For applicable metrics, these values also appear on the connection, or _edge_.
 
 In the *Metrics* section, you can select one of the following metrics:
 
@@ -30,7 +30,7 @@ In the *Time Range* section, you can select the time window used to calculate th
 
 === Metrics Notation
 
-To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view. For example:
+To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view:
 
 |===
 | Avg throughput | 66.7m TPM | 66.7 milli transactions per minute | 0.0667 TPM
@@ -39,7 +39,7 @@ https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric pre
 
 
 
-== View Metrics for One Service in your Network
+== View Metrics for One Service in Your Network
 
 When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
 Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
@@ -61,7 +61,7 @@ If the selected metric is compatible, the canvas also displays metrics on the co
 For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
 
 [NOTE]
-Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
+Edges displayed between services are active, meaning that there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
 
 == Filtering your View
 

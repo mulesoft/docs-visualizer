@@ -5,9 +5,9 @@ endif::[]
 
 == About the Architecture Visualization
 
-The Architecture Visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. The Architecture Visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
+Architecture Visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. Architecture Visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
 
-== View Information about One Service in your Network
+== View Information About One Service in Your Network
 
 When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
 Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
@@ -15,12 +15,12 @@ Anypoint Visualizer displays information about the node in a card. This card is 
 * *Details*: Provides information about the node.
 * *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc#set-tag-ui[tags] from this section.
 
-== Filtering your View
+== Filtering Your View
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
 If a single node is selected and does not have any dependents or dependencies, this option is hidden.
 
-You can hide nodes through what you select in the canvas.
+You can hide nodes through what you select in the canvas:
 
 * To hide a single node, select it, and then click *Hide selected service*.
 * To hide multiple nodes, multiselect them, and then click *Hide selected services*.
