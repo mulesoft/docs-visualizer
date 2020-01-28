@@ -1,11 +1,9 @@
-= Visualizer Application Network
+= Use-Case Specific Visualizations
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Use Anypoint Visualizer to view a graph of your application network.
-
-Anypoint Visualizer automatically generates the topology of the application.
+Use Anypoint Visualizer to view a graph of your application network. The _base unit_ is a Mule application that is deployed and running on a supported instance of Mule.
 
 To maximize visualization readability, consumer nodes (nodes that have only outbound connections) are shown at the top. Backend systems (nodes that have only inbound connections) are shown at the bottom.
 
@@ -19,6 +17,17 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 
 * Zoom control: Use the zoom in, zoom out, and zoom fit buttons on the bottom right corner of the canvas to control the zoom. You can also use scroll to zoom in and out.
 * Pan the visualization: Click and drag on the canvas to pan the visualization.
+* Search: Search for the name of a service on the canvas and the nodes that contain your search will be highlighted.
+
+== Select Your Use Case
+
+Anypoint Visualizer has three use cases, or _visualizations_: Architecture, Troubleshooting, and Policies. By identifying your use case, you can select the visualization that suits your needs.
+
+The xref:architecture-visualization.adoc[_Architecture visualization_] shows the topology of your apps and APIs. This visualization is the most useful for understanding your system architecture. You can view and modify the names of your services, give them specific tags, and assign them to layers.
+
+The xref:troubleshooting-visualization.adoc[_Troubleshooting visualization_] enables you to view the health of the system and evaluate performance-based metrics. This visualization helps you identify issues or unusual behavior across your apps and APIs.
+
+The xref:policy-visualization.adoc[_Policy visualization_] enables you to see the policy landscape of your application network at a glance. You can view which components are compliant with policies you select, and you can determine where lapses in security or policy application may have occurred.
 
 == View an Application Network in an Organization
 
@@ -26,90 +35,25 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 +
 If Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
+. In the list in the canvas, select the visualization you want to use.
+
 . In the environment filters in the *View* card, select an environment.
 +
 Anypoint Visualizer displays only the environments you have permissions to view.
 
-. Click the check box for the business group you want to view.
+. Click the checkboxes for the business groups you want to view.
 
 After selecting the organization and environment group, Anypoint Visualizer displays a graph of your application network.
 
-== View Information About All Services in Your Network
+== Views
 
-Use the options in the *Metric* card to select the metric that you want to show for all the nodes in your application network.
-In the *Metrics* section, you can select one of the following metrics:
+Visualizer editors can define views based on filtered environments and tags. These defined views are auto-discoverable and available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use-case specific visualizations.
 
-* *Inbound connections*
-* *Avg response time*
-* *Avg throughput*
-* *Failure rate*
-* *Avg CPU utilization*
-* *Avg memory utilization*
-
-For Avg response time, Avg throughput, and Failure rate, you can select *Inbound* or *Outbound* metrics.
-If you select inbound, the value that appears on the application is the weighted average of that particular metric for all inbound connections to that node.
-If you select outbound, the value is the weighted average of that metric for all outbound connections.
-
-For the selected time range, _failure rate_ is equal to the total number of failures divided by the total number of requests.
-
-In the *Time Range* section, you can select the time window used to calculate the average values of the selected metric.
-
-To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view. For example:
-
-|===
-| Avg throughput | 66.7m TPM | 66.7 milli transactions per minute | 0.0667 TPM
-|===
-https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric prefixes], but note that, in Anypoint Visualizer, *u* represents micro, rather than *μ*.
-
-Metrics are also available for connections, or _edges_, in your network. When you select average response time, average throughput, or failure rate, metrics also appear on applicable connections.
-
-== View Information About a Service in Your Network
-
-When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
-Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
-
-The *Details* tab contains:
-
-* *Details*: Provides information about the node.
-* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can edit the node's display name or change the layer and tags from this section.
-
-The *Monitoring* tab contains:
-
-* *Metrics summary*
-Provides monitoring metrics for the selected node, including average response time, average throughput, failure rate, average CPU utilization, and average memory utilization. This shows either inbound or outbound values for Avg response time, Avg throughput, and Failure rate, depending on what you’ve selected in the *Metric* card.
-* *Metrics chart*: Shows the time-series chart of the selected metric in the *Metric* card.
-
-When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
-If a single node is selected and does not have any dependents or dependencies, this option is hidden.
-
-You can hide nodes through what you select in the canvas.
-
-* To hide a single node, select it, and then click *Hide selected service*.
-* To hide multiple nodes, multiselect them, and then click *Hide selected services*.
-* To hide all of the services other than the selected nodes, you can click *Hide other services*. If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
-
-You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
-
-== View Information About a Connection in Your Network
-
-If the selected metric is compatible, the canvas also displays metrics on the connections. When you select a connection within the graph, Anypoint Visualizer displays the edge’s metrics details in a card.
-For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
-
-[NOTE]
-Edges displayed between services are active, meaning that they appear only if there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
-
-
-[[export-view]]
-== Export Your Network View
-
-You can export the view of your network showing on your canvas to a PNG file.
-
-* If you customized your view with filters, the customized network topology is exported.
-* If you selected metrics or durations, these settings are reflected in the export.
-
-To export a view of your network as a PNG, click the *Export as Image* button next to the zoom controls in the bottom right.
+For more information, see xref:view.adoc[Visualizer Views].
 
 == See Also
 
-* xref:layers.adoc[Use Layers in Anypoint Visualizer]
-* xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
+* xref:architecture-visualization.adoc[Architecture Visualization]
+* xref:troubleshooting-visualization.adoc[Troubleshooting Visualization]
+* xref:policy-visualization.adoc[Policy Visualization]
+* xref:view.adoc[Define a View]

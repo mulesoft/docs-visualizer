@@ -1,0 +1,84 @@
+= Troubleshooting Visualization
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+3
+
+== About the Troubleshooting Visualization
+
+The Troubleshooting visualization shows you the current and past health of your Mule apps. It enables you to quickly visualize where your network is slow, receiving heavy traffic, or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
+
+== Choosing Your Metric
+
+Select options in the *Metric* card to show metrics for all the nodes in your application network. For applicable metrics, these values also appear on the connection, or _edge_.
+
+In the *Metrics* section, you can select one of the following metrics:
+
+* *Avg response time*
+* *Avg throughput*
+* *Failure rate*
+* *Avg CPU utilization*
+* *Avg memory utilization*
+
+For the selected time range, _failure rate_ is equal to the total number of failures divided by the total number of requests.
+
+For average response time, average throughput, and failure rate, you can select *Inbound* or *Outbound* metrics.
+If you select inbound, the value that appears on the application is the weighted average of that particular metric for all inbound connections to that node.
+If you select outbound, the value is the weighted average of that metric for all outbound connections.
+
+In the *Time Range* section, you can select the time window used to calculate the average values of the selected metric.
+
+=== Metrics Notation
+
+To avoid long numbers, Anypoint Visualizer uses unit prefixes to simplify your view:
+
+|===
+| Avg throughput | 66.7m TPM | 66.7 milli transactions per minute | 0.0667 TPM
+|===
+https://en.wikipedia.org/wiki/Metric_prefix[Here is a quick review of metric prefixes].
+
+== View Metrics for One Service in Your Network
+
+When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
+Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
+
+The *Details* tab contains the *Details* section, which provides information about the node.
+
+The *Monitoring* tab contains:
+
+Metrics summary::
+Provides monitoring metrics for the selected node, including average response time, average throughput, failure rate, average CPU utilization, and average memory utilization. This shows either inbound or outbound values for average response time, average throughput, and failure rate, depending on what you’ve selected in the *Metric* card.
+
+Metrics chart:: Shows the time-series chart of the selected metric in the *Metric* card.
+
+Within the *Monitoring* tab, you can also select *View logs* or *View dashboard* to navigate to the associated logs or dashboard in Anypoint Monitoring.
+
+== View Metrics for a Connection in Your Network
+
+If the selected metric is compatible, the canvas also displays metrics on the connections, or _edges_. When you select a connection within the graph, Anypoint Visualizer displays the edge’s metrics details in a card.
+For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
+
+[NOTE]
+Edges displayed between services are active, meaning that there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
+
+== Filtering your View
+
+When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
+If a single node is selected and does not have any dependents or dependencies, this option is hidden.
+
+You can hide nodes through what you select in the canvas.
+
+* To hide a single node, select it, and then click *Hide selected service*.
+* To hide multiple nodes, multiselect them, and then click *Hide selected services*.
+* To hide all of the services other than the selected nodes, you can click *Hide other services*. 
+If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
+
+You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
+
+[[export-view]]
+== Export Your Network View
+
+You can export the view of your network showing on your canvas to a PNG file by clicking the *Export as Image* button next to the zoom controls in the bottom right.
+
+* If you customized your view with filters, the customized network topology is exported.
+* If you selected metrics or durations, these settings are reflected in the export.

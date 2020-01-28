@@ -3,7 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Visualizer displays views of different aspects of an application network graph. You can use the graph to explore your application network and view multiple metrics, including throughput, response time, and errors for each node in your application network. Use cases for Anypoint Visualizer include architectural review and compliance, troubleshooting, and security. Anypoint Visualizer also enables you to view multiple metrics including throughput, response time, and errors for each node within your application network.
+Anypoint Visualizer displays views of different aspects of an application network graph. You can use the graph to explore your application network. Use cases for Anypoint Visualizer include architectural review, troubleshooting, and policy compliance.
+
 
 Anypoint Visualizer provides a real-time, graphical representation of the APIs, and Mule applications that are running and discoverable. It also displays third-party systems that are invoked by a Mule API, proxy, or application within your application network. The data displayed in the graph is dynamically updated and does not require prior configuration. Additionally, the data displayed is secure, as only users with the proper permissions can view the application network graph.
 
@@ -13,25 +14,32 @@ image::application-network.png[Application Network]
 
 The connections between nodes are based on traffic between applications or APIs that occurred in the last seven days. If an application appears in multiple workers, they appear as two distinct nodes in the graph.
 
-Anypoint Visualizer collects data from Mule applications, APIs, and proxies deployed to CloudHub or standalone Mule runtime engines (Mules) to discover all incoming and outgoing connections through an embedded plugin. As long as the application, API, or proxy is running on a supported Mule, it is discovered along with any associated dependencies. See xref:technical.adoc[How Anypoint Visualizer Collects Application Data] for additional information on how Anypoint Visualizer collects data displayed in the graph.
+Anypoint Visualizer collects data from Mule applications, APIs, and proxies deployed to CloudHub; from standalone Mule runtime engines (Mule instances); or from Runtime Fabric, to discover all incoming and outgoing connections through an embedded plugin. As long as the application, API, or proxy is running on a supported Mule instance, it is discovered along with any associated dependencies. See xref:technical.adoc[How Anypoint Visualizer Collects Application Data] for additional information about how Anypoint Visualizer collects data displayed in the graph.
 
-From Anypoint Visualizer you can customize the view arrange applications in layers, inspect their operational monitoring information, and customize the labels displayed for nodes and connections. See xref:customize-your-canvas.adoc[Customize the Canvas] for more information.
+
+Understanding these dependencies has powerful implications, especially when you can overlay additional data about these apps onto the network diagram. The power of Visualizer, and the visualizations tailored for Architecture, Troubleshooting, and Policies, is understanding this data in the context of your application network. From Anypoint Visualizer, you can inspect performance metrics or policy information, define views, arrange applications in layers, and customize the labels displayed for nodes and connections. See xref:customize-your-canvas.adoc[Customize the Canvas] for more information.
 
 == Use Cases
 
-The following use cases provide examples of how you can use Anypoint Visualizer.
+The following use cases provide examples of how you can use Anypoint Visualizer and its various visualizations.
 
-* Discussing Current Design State: Enterprise architect Kara has developed a plan for how the architecture she’s responsible for will accommodate a new product. She needs to capture its current state so she can plan the transition and get buy-in from stakeholders on her proposal.
+* Discussing Current Design State: Enterprise architect Kara has developed a plan for how the architecture she’s responsible for will accommodate a new product. She needs to capture its current state so she can plan the transition and get buy-in from stakeholders on her proposal. She can use the Architecture visualization to assess the structure of her network and export it to share with her audience.
 
-* Implementing API-Led Connectivity: Site reliability engineer Tom is tired of maintaining several separate connections to Salesforce. He wants to identify redundant point-to-point connections so he can come up with requirements for a new process API.
+* Implementing API-Led Connectivity: Site reliability engineer Tom is tired of maintaining several separate connections to Salesforce. He wants to identify redundant point-to-point connections so he can come up with requirements for a new process API. Tom can view the network topology using the Architecture visualization to see if there are redundant connections.
 
-* Exploring the Application Network: Anypoint Visualizer provides a real-time view of the application network. Architects and product owners can see how the application network evolves, explore the application network to discover and plan how to unlock data and break down siloed systems, while knowing that the visualization is always up-to-date.
+* Exploring the Application Network
+Anypoint Visualizer provides a real-time view of the application network. Architects and product owners can see how the application network evolves, explore the application network to discover and plan how to unlock data, and break down siloed systems, all while knowing that the visualization is always up-to-date. They can use the Architecture visualization to plan how to connect systems more efficiently.
 
-* Define API-Led Connectivity Classifications: Anypoint Visualizer enables you to assign the nodes of the graph into layers. Layers help you quickly determine if the APIs are correctly categorized, and if the architectural principles of API-led connectivity are being followed.
+* Define API-Led Connectivity Classifications: Anypoint Visualizer enables you to assign the nodes of the graph into layers. Layers help you quickly determine if the APIs are correctly categorized, and if the architectural principles of API-led connectivity are being followed. The Architecture visualization enables you to organize the nodes efficiently so that API-led connectivity is easy to interpret.
 
-* Accelerating Time-to-Production: Architect Kara can see how projects are being built from the development environment, throughout testing, staging, and production phases. Kara reviews the architecture as the code is being deployed and raises any concerns to ensure that best practices and agreed-upon architecture are being followed without waiting for the documentation to be generated.
+* Accelerating Time-to-Production
+Architect Kara can see how projects are being built from the development environment, throughout testing, staging, and production phases. Kara reviews the architecture as the code is being deployed and raises any concerns to ensure that best practices and agreed-upon architecture are being followed without waiting for the documentation to be generated. Using the Architecture visualization, Kara can monitor the deployment and organization of assets in real time. Using the Policy visualization, she can ensure all APIs are compliant with InfoSec rules before promoting a project to production.
 
-* Resolving Production Issues Faster: Anypoint Visualizer allows you to understand the behavior of all your APIs together with their dependencies in a single view, which reduces the time needed to pinpoint the root cause of an error or understand the performance impact of a particular API on your clients.
+* Resolving Production Issues Faster
+Anypoint Visualizer enables you to understand the behavior of all your APIs and their dependencies in a single view, which reduces the time needed to pinpoint the root cause of an error or understand the performance impact of a particular API on your clients. The Troubleshooting visualization provides insight into performance issues, enabling you to identify errors and quickly navigate to information provided by Anypoint Monitoring.
+
+* Ensuring Policy Compliance
+Lead API Architect Ayesha needs to understand which APIs comply or don’t comply with policies mandated by InfoSec. With the Policy visualization, she can select a set of policies; see which APIs have none, one, or all of these policies applied, and thus ensure adherence to company standards before promoting an API or project to production.
 
 === See Also
 

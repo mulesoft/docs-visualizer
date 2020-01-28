@@ -30,7 +30,7 @@ To see your app, its connections, and the related metrics in Anypoint Visualizer
 
 [NOTE]
 If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, app-level monitoring continues to work for those apps.
-However, metrics at the connection level do not appear. 
+However, metrics at the connection level do not appear.
 Update your applications to run on non-AM Mule versions (3.9.x and 4.x) for better functionality and the latest patch updates as soon as they are available.
 
 == Enable the Monitoring Agent
@@ -53,6 +53,15 @@ To enable the Anypoint Monitoring agent:
 . Next to the app, click *Enable & Apply* to enable visualization and monitoring for the app.
 
 For more information about Anypoint Monitoring, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring Using the UI].
+
+== Verify Supported Mule Versions for Policies
+
+The APIs and policies that Anypoint Visualizer displays in the Policy Visualization come from an update to the agent in Mule runtime engine (Mule). As a result, policies are shown in Anypoint Visualizer only for applications running on these Mule versions:
+
+* Mule 3.9.3+ patch releases available on December 12, 2019 or later.
+* Support for Mule 4.2.x will be available in the next patch update.
+
+// add! dates! above! dependency
 
 == Dedicated Load Balancers
 
