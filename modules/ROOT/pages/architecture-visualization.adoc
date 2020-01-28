@@ -5,7 +5,7 @@ endif::[]
 
 == About the Architecture Visualization
 
-Architecture Visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. Architecture Visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
+The Architecture visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. The Architecture visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
 
 == View Information About One Service in Your Network
 

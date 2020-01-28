@@ -14,11 +14,11 @@ The *View* card and the canvas are updated to display the current selection.
 Visualizer editors can save defined views so that any Visualizer user can access them.
 When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
 
-You can customize layers, tags, and display names in the Architecture Visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
+You can customize layers, tags, and display names in the Architecture visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
 
 == Layers
 
-You can use one of the default layers provided by Anypoint Visualizer, or add a custom layer to create a visual representation of the apps in your network. You can use layers across Anypoint Visualizer, but note that you can only define layers in the xref:architecture-visualization.adoc[Architecture Visualization].
+You can use one of the default layers provided by Anypoint Visualizer, or add a custom layer to create a visual representation of the apps in your network. You can use layers across Anypoint Visualizer, but note that you can only define layers in the xref:architecture-visualization.adoc[Architecture visualization].
 
 To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>`.
 
@@ -26,7 +26,7 @@ For more information, see xref:layers.adoc[Use Layers in Anypoint Visualizer].
 
 == Tags
 
-You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view. You can use tags across Anypoint Visualizer, but note that you can only define tags in the xref:architecture-visualization.adoc[Architecture Visualization].
+You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view. You can use tags across Anypoint Visualizer, but note that you can only define tags in the xref:architecture-visualization.adoc[Architecture visualization].
 
 To automate adding tags to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>`.
 
@@ -35,6 +35,6 @@ For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Visualize
 [[display-name]]
 == Display Name
 
-You can edit the display name of a service to provide a more readable, explanatory title. You can use display names across Anypoint Visualizer, but note that you can define display names only in the xref:architecture-visualization.adoc[Architecture Visualization].
+You can edit the display name of a service to provide a more readable, explanatory title. You can use display names across Anypoint Visualizer, but note that you can define display names only in the xref:architecture-visualization.adoc[Architecture visualization].
 
 To automate adding a display name to the node, configure the property `anypoint.platform.visualizer.displayName=<name>`.

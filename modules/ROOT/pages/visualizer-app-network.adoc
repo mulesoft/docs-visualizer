@@ -23,11 +23,11 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 
 Anypoint Visualizer has three use cases, or _visualizations_: Architecture, Troubleshooting, and Policies. By identifying your use case, you can select the visualization that suits your needs.
 
-The xref:architecture-visualization.adoc[_Architecture Visualization_] shows the topology of your apps and APIs. This visualization is the most useful for understanding your system architecture. You can view and modify the names of your services, give them specific tags, and assign them to layers.
+The xref:architecture-visualization.adoc[_Architecture visualization_] shows the topology of your apps and APIs. This visualization is the most useful for understanding your system architecture. You can view and modify the names of your services, give them specific tags, and assign them to layers.
 
-The xref:troubleshooting-visualization.adoc[_Troubleshooting Visualization_] enables you to view the health of the system and evaluate performance-based metrics. This visualization helps you identify issues or unusual behavior across your apps and APIs.
+The xref:troubleshooting-visualization.adoc[_Troubleshooting visualization_] enables you to view the health of the system and evaluate performance-based metrics. This visualization helps you identify issues or unusual behavior across your apps and APIs.
 
-The xref:policy-visualization.adoc[_Policy Visualization_] enables you to see the policy landscape of your application network at a glance. You can view which components are compliant with policies you select, and you can determine where lapses in security or policy application may have occurred.
+The xref:policy-visualization.adoc[_Policy visualization_] enables you to see the policy landscape of your application network at a glance. You can view which components are compliant with policies you select, and you can determine where lapses in security or policy application may have occurred.
 
 == View an Application Network in an Organization
 

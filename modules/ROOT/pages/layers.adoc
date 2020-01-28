@@ -11,7 +11,7 @@ The application appears in its assigned layer in every defined view in which it 
 
 == Add a Service to a Layer
 
-Map a node to a layer in the application's properties file, or using the UI in the Architecture Visualization.
+Map a node to a layer in the application's properties file, or using the UI in the Architecture visualization.
 
 === Set a Layer with Properties
 
@@ -23,7 +23,7 @@ When you use this property, nodes automatically appear in the specified layer. I
 You cannot reassign a node layer using the Anypoint Visualizer UI if you assign it using application property file.
 
 [[set-a-layer-ui]]
-== Set a Layer with the Architecture Visualization UI
+== Set a Layer with the Architecture visualization UI
 
 If a node was not assigned to a layer at deployment time using the Runtime Manager UI or API, by default, the node is not assigned to a layer in Anypoint Visualizer. Use the Anypoint Visualizer UI to:
 
@@ -32,7 +32,7 @@ If a node was not assigned to a layer at deployment time using the Runtime Manag
 
 === Assign a Layer to a Node
 
-. Within the Architecture Visualization, select the application node to add to a layer. +
+. Within the Architecture visualization, select the application node to add to a layer. +
 You can hold the shift key to select multiple nodes to apply layers to all the selected nodes at once. +
 +
 _Result_: The *Customization* section for the node appears in the *Customization* tab of the node's card as shown in the following image:
@@ -70,7 +70,7 @@ Anypoint Visualizer also automatically adjusts the network display.
 
 == Reorder Layers
 
-In the canvas of the Architecture Visualization, use the arrows on the right side of the layer to move it up or down relative to the other layers.
+In the canvas of the Architecture visualization, use the arrows on the right side of the layer to move it up or down relative to the other layers.
 
 == See Also
 
