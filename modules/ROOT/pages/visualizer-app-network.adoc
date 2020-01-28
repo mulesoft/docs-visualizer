@@ -49,7 +49,7 @@ After selecting the organization and environment group, Anypoint Visualizer disp
 
 Visualizer editors can define views based on filtered environments and tags. These defined views are auto-discoverable and available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use-case specific visualizations.
 
-For more information, see xref:view.adoc[Visualizer Views]
+For more information, see xref:view.adoc[Visualizer Views].
 
 == See Also
 
