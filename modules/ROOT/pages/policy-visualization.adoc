@@ -9,7 +9,7 @@ When deploying a Mule app, you must ensure that you are using a version of Mule 
 
 The Policy visualization enables you to see the relationship between Mule app deployments and the APIs they are implementing and which policies have been applied to those APIs. Data about which policies have been applied to your APIs comes from API Manager.
 
-The Policy visualization feature has two modes: _overview_ and _compliance_. Both modes show your deployed APIs, but each in a different manner:
+The Policy visualization has two modes: _overview_ and _compliance_. Both modes show your deployed APIs, but each in a different manner:
 
 * _Overview_ mode shows you the number of policies that are applied to each API in your canvas. The number on the API reflects this.
 
@@ -36,16 +36,15 @@ You can hide nodes through what you select in the canvas.
 
 * To hide a single node, select it, and then click *Hide selected service*.
 * To hide multiple nodes, multiselect them, and then click *Hide selected services*.
-* To hide all of the services other than the selected nodes, you can click *Hide other services*. If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
+* To hide all of the services other than the selected nodes, you can click *Hide other services*. 
+If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
 
 You can search for a node, or _service_, in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
 
 [[export-view]]
 == Export Your Network View
 
-You can export the view of your network showing on your canvas to a PNG file.
+You can export the view of your network showing on your canvas to a PNG file by clicking the *Export as Image* button next to the zoom controls in the bottom right.
 
 * If you customized your view with filters, the customized network topology is exported.
 * If you selected specific policies, these settings are reflected in the export.
-
-To export a view of your network as a PNG, click the *Export as Image* button next to the zoom controls in the bottom right.

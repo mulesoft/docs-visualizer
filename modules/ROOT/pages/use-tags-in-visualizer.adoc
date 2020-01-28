@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can add tags to an application, proxy, or other service. Similar to layers, there are two ways of assigning a tag to a node--by using properties, or through the Anypoint Visualizer UI.
+You can add tags to an application, proxy, or other service. Similar to layers, there are two ways of assigning a tag to a node: by using properties or through the Anypoint Visualizer UI.
 
 If a tag is assigned to an application, the application will appear in every view in which the tags are selected.
 
@@ -37,7 +37,7 @@ You can either: +
 * Enter a name for a new tag, and click *Create tag <your-tag>*, or
 * Enter a name for the new tag, and press enter. +
 [NOTE]
-You cannot apply the same tag multiple times to a node. All tags are converted to lowercase.
+You cannot apply the same tag to one node multiple times. All tags are converted to lowercase.
 +
 image::create-tag.png[]
 +

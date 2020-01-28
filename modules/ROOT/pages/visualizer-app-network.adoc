@@ -1,9 +1,9 @@
-= Use-case Specific Visualizations
+= Use-Case Specific Visualizations
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Use Anypoint Visualizer to view a graph of your application network. The _base unit_ is a Mule application that has been deployed and is running on a supported Mule runtime.
+Use Anypoint Visualizer to view a graph of your application network. The _base unit_ is a Mule application that is deployed and running on a supported instance of Mule.
 
 To maximize visualization readability, consumer nodes (nodes that have only outbound connections) are shown at the top. Backend systems (nodes that have only inbound connections) are shown at the bottom.
 
@@ -19,7 +19,7 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 * Pan the visualization: Click and drag on the canvas to pan the visualization.
 * Search: Search for the name of a service on the canvas and the nodes that contain your search will be highlighted.
 
-== Select your Use Case
+== Select Your Use Case
 
 Anypoint Visualizer has three use cases, or _visualizations_: Architecture, Troubleshooting, and Policies. By identifying your use case, you can select the visualization that suits your needs.
 
@@ -35,7 +35,7 @@ The xref:policy-visualization.adoc[_Policy visualization_] enables you to see th
 +
 If Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
-. In the drop-down in the canvas, select the visualization you want to use.
+. In the list in the canvas, select the visualization you want to use.
 
 . In the environment filters in the *View* card, select an environment.
 +
@@ -47,7 +47,7 @@ After selecting the organization and environment group, Anypoint Visualizer disp
 
 == Views
 
-Visualizer editors can define views based on filtered environments and tags. These defined views are auto discoverable and available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use case-specific visualizations.
+Visualizer editors can define views based on filtered environments and tags. These defined views are auto-discoverable and available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use-case specific visualizations.
 
 For more information, see xref:view.adoc[Visualizer Views]
 

@@ -12,30 +12,31 @@ The Architecture visualization shows the topology of your application network. I
 When you select a node within the graph, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
 Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
-* *Details*: Provides information about the node.
-* *Customization*: Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc#set-tag-ui[tags] from this section.
+* *Details*
+Provides information about the node.
+* *Customization* 
+Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc#set-tag-ui[tags] from this section.
 
 == Filtering Your View
 
-When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
-If a single node is selected and does not have any dependents or dependencies, this option is hidden.
+When you select a node (service) that has dependents and dependencies, you have the option to also select all nodes related to the service you selected. If the node you select does not have dependents and dependencies, this option is not offered.
 
 You can hide nodes through what you select in the canvas:
 
 * To hide a single node, select it, and then click *Hide selected service*.
 * To hide multiple nodes, multiselect them, and then click *Hide selected services*.
-* To hide all of the services other than the selected nodes, you can click *Hide other services*. If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
+* To hide all of the services other than the selected nodes, you can click *Hide other services*. 
+If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
 
 You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
 
 [[export-view]]
 == Export Your Network View
 
-You can export the view of your network showing on your canvas to a PNG file.
+You can export the view of your network showing on your canvas to a PNG file by clicking the *Export as Image* button next to the zoom controls in the bottom right.
 
 If you customized your view, the customized network topology is exported.
 
-To export a view of your network as a PNG, click the *Export as Image* button next to the zoom controls in the bottom right.
 
 == See More
 

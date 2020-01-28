@@ -35,7 +35,7 @@ If a node was not assigned to a layer at deployment time using the Runtime Manag
 . Within the Architecture visualization, select the application node to add to a layer. +
 You can hold the shift key to select multiple nodes to apply layers to all the selected nodes at once. +
 +
-_Result_: The *Customization* section for the node appears in the *Customization* tab of the node's card as shown in the following image:
+The *Customization* section for the node appears in the *Customization* tab of the node's card:
 +
 image::select-node.png[Select Node]
 
