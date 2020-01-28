@@ -19,7 +19,7 @@ Anypoint Visualizer requires header injection for standalone Mule deployments so
 Due to a potential performance impact, however, header injection is disabled by default for Mule 4 apps.
 
 [NOTE]
-The APIs and policies that Anypoint Visualizer displays in the Policy Visualization come from an update to the agent. As a result, policies are shown in Anypoint Visualizer only if your deployments use an agent from <DATE> or later.
+The APIs and policies that Anypoint Visualizer displays in the Policy visualization come from an update to the agent. As a result, policies are shown in Anypoint Visualizer only if your deployments use an agent from December 19, 2019 or later.
 
 // add date! dependency!
 

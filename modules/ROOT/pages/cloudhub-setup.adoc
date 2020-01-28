@@ -58,8 +58,8 @@ For more information about Anypoint Monitoring, see xref:monitoring::enable-apps
 
 The APIs and policies that Anypoint Visualizer displays in the Policy Visualization come from an update to the agent in Mule runtime engine (Mule). As a result, policies are shown in Anypoint Visualizer only for applications running on these Mule versions:
 
-* Mule 3.9.3+ patch releases available on <DATE> or later.
-* Mule 4.2.1+ patch releases available on <DATE> or later.
+* Mule 3.9.3+ patch releases available on December 12, 2019 or later.
+* Support for Mule 4.2.x will be available in the next patch update.
 
 // add! dates! above! dependency
 
