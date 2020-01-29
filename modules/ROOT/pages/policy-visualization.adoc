@@ -5,7 +5,7 @@ endif::[]
 
 == About the Policy Visualization
 
-When deploying a Mule app, you must ensure that you are using a version of Mule that supports the Policy visualization. Learn more about which xref:setup.adoc#select-a-deployment-type[runtimes are supported]. The Policy visualization is not supported for customers with API Manager 1.x
+When deploying a Mule app, you must ensure that you are using a version of Mule that supports the Policy visualization. Learn more about which xref:setup.adoc#select-a-deployment-type[runtimes are supported]. The Policy visualization is not supported for API Manager 1.x.
 
 The Policy visualization enables you to see the relationship between Mule app deployments and the APIs they are implementing and which policies have been applied to those APIs. Data about which policies have been applied to your APIs comes from API Manager.
 

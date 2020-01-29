@@ -56,7 +56,7 @@ For more information about Anypoint Monitoring, see xref:monitoring::enable-apps
 
 == Verify Supported Mule Versions for Policies
 
-The APIs and policies that Anypoint Visualizer displays in the Policy visualization come from an update to the agent in Mule runtime engine (Mule). As a result, policies are shown in Anypoint Visualizer only for applications running on any of the patches of Anypoint Visualizer supported Mule versions available on December 12, 2019 or later.
+The APIs and policies that Anypoint Visualizer displays in the Policy visualization come from an update to the agent in Mule runtime engine (Mule). As a result, Anypoint Visualizer shows policies only for apps running on supported Mule versions released on December 12, 2019 or later.
 
 == Dedicated Load Balancers
 
