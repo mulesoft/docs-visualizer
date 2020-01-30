@@ -27,6 +27,8 @@ Anypoint Visualizer supports the following deployment types:
 * xref:visualizer::standalone-mule-setup.adoc[Standalone Mule]
 * xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric]
 
+The set up process and supported Mule runtimes differ depending on deployment type. Further details are included in each section.
+
 == Deploy an App
 
 When you deploy an app you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
