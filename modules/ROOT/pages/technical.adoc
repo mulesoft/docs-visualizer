@@ -51,9 +51,9 @@ If you are using the following Mule versions, you can disable the Anypoint Monit
 
 == Reduce Potential Performance Impact for Standalone Mule
 
-Visualizer requires an additional header injection to work for standalone Mule deployments. To reduce potential performance impact for applications running in a standalone instance of Mule 4.1.x, the header injection is disabled by default.
+Anypoint Visualizer requires an additional header injection to work for standalone Mule deployments that use Mule version 4.x released before <date>. To reduce potential performance impact for applications running in a standalone instance of Mule 4.1.x, the header injection is disabled by default.
 
-To disable the header injection for Mule 3, set the following property:
+To disable the header injection, set the following property:
 
 ----
 anypoint.platform.config.analytics.agent.header_injection.disabled=true
@@ -74,11 +74,11 @@ This disables monitoring for applications on the server as well.
 
 == Reduce Potential Performance Impact for Runtime Fabric
 
-Anypoint Visualizer requires an additional header injection to work for Runtime Fabric deployments. 
+Anypoint Visualizer requires an additional header injection to work for Runtime Fabric deployments using Mule 4.x released before <date>.
 To reduce potential performance impact for applications, the header injection is disabled by default.
 For Runtime Fabric, you must enable header injection at the application level.
 
-To disable the header injection for Mule 3, set the following property:
+To disable the header injection, set the following property:
 
 ----
 anypoint.platform.config.analytics.agent.header_injection.disabled=true
