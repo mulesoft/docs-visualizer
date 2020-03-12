@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Connection level metrics, or _edge metrics_, are available for many of your connections in the Anypoint Visualizer canvas. Depending on your deployment type (CloudHub, Standalone Mule, or Runtime Fabric), some inbound or outbound metrics do not appear at the connection level. You can use this guide to determine why connections may be absent from your canvas.
+Connection level metrics, or _edge metrics_, are available for many of your connections in the Anypoint Visualizer canvas. Depending on your deployment type (CloudHub, Standalone Mule, or Runtime Fabric), some inbound or outbound metrics do not appear at the connection level. You can use this guide to determine why metrics may be absent from your canvas.
 
 Metric is Not Available:: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. You may see this message in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
 
@@ -29,11 +29,11 @@ The following connection types and directions support or do not support connecti
 
 | External Traffic to a Mule App
 | Yes
-| If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule version 4.x before <date> or an -AM extension to the same app, then the Mule-app-to-Mule-app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
+| If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule version 4.x before <CH Release date with UA 2.2.2> or an -AM extension to the same app, then the Mule-app-to-Mule-app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a CloudHub app using Mule version 4.x before <date> or an -AM extension, then metrics do not appear on that connection and the following message appears:
+| If the source node is a CloudHub app using Mule version 4.x before <CH Release date with UA 2.2.2> or an -AM extension, then metrics do not appear on that connection and the following message appears:
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
 
@@ -88,7 +88,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a standalone Mule app using Mule version 4.x before <date> and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
+| If the source node is a standalone Mule app using http connector version below 1.5.12 on Mule version 4.x with Anypoint monitoring agent before <UA 2.2.2 hybrid release date> and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
 
@@ -140,7 +140,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a Runtime Fabric app using Mule version 4.x before <date> and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
+| If the source node is a Runtime Fabric app using http connector below 1.5.12 on Mule version 4.x before <rtf release date with UA 2.2.2> and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
 
