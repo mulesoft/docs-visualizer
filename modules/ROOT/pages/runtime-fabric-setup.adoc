@@ -30,6 +30,7 @@ For Runtime Fabric, you must enable the header injection at the app level:
 . In the *Properties* tab, set the following property in the app: `anypoint.platform.config.analytics.agent.header_injection.disabled=false`
 
 Additionally, you must use version 1.5.12 or higher of the HTTP connector in your Mule 4 applications.
+
 == Verify Supported Mule Runtime Engine (Mule) Versions for Policies
 
 The APIs and policies that Anypoint Visualizer displays in the Policy visualization come from an update to the agent in Mule runtime engine (Mule). As a result, Anypoint Visualizer shows policies only for apps running on supported Mule versions released on December 12, 2019 or later.

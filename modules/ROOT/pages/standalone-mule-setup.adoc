@@ -32,6 +32,7 @@ This affects all applications running on the server.
 You must set the property to `false`, as shown in the example to enable header injection, because the property is disabled by default.
 
 Additionally, you must use version 1.5.12 or higher of the HTTP connector in your Mule 4 applications.
+
 === Manage Performance and Data Collection
 
 The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
