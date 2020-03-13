@@ -33,7 +33,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a CloudHub app using Mule version 4.x before <insert CH Release date with UA 2.2.2> or an -AM extension, then metrics do not appear on that connection and the following message appears:
+| If the source node is a CloudHub app using Mule version 4.x before <insert CH Release date with UA 2.2.2> or an -AM extension, then metrics do not appear on that connection, and the following message appears:
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
 
@@ -88,7 +88,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a standalone Mule app using http connector version below 1.5.12 on Mule version 4.x with Anypoint monitoring agent before <insert UA 2.2.2 hybrid release date> and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
+| If the source node is a standalone Mule app using HTTP connector version below 1.5.12 on Mule version 4.x with Anypoint Monitoring Agent before <insert UA 2.2.2 hybrid release date> and you have not enabled the additional header injection, then metrics do not appear on that connection, and the following message appears:
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
 
@@ -140,7 +140,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a Runtime Fabric app using http connector below 1.5.12 on Mule version 4.x before <insert rtf release date with UA 2.2.2> and you have not enabled the additional header injection, then metrics do not appear on that connection and the following message appears:
+| If the source node is a Runtime Fabric app using HTTP connector below 1.5.12 on Mule version 4.x before <insert rtf release date with UA 2.2.2> and you have not enabled the additional header injection, then metrics do not appear on that connection, and the following message appears:
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
 
