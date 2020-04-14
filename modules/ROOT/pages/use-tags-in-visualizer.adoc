@@ -9,7 +9,7 @@ If a tag is assigned to an application, the application will appear in every vie
 
 == Setting the Tag Through Properties
 
-To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>` in the application's properties file, or at deployment time through the Runtime Manager UI or API.
+To automate adding tag(s) to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>` in the application's properties file, or at deployment time through the Runtime Manager UI or API. You can only use the Runtime Manager UI for Cloudhub deployments.
 Note that this is an application property, not a server property.
 
 When you use this property, the nodes automatically show the assigned tags in the *View* card of Visualizer. You can add but cannot override tags in the UI; you can modify them only in properties. All letters in tag names are displayed in lowercase.
