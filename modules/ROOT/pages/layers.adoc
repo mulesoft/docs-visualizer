@@ -19,7 +19,7 @@ To automate adding layer(s) to a node, use the property `anypoint.platform.visua
 You cannot reassign a node layer using the Anypoint Visualizer UI if you assign it using an application property.
 
 [NOTE]
-Setting the layer using the property file is not currently supported for Mule 4 runtimes. You can only use the Runtime Manager UI for Cloudhub deployments.
+Setting the layer using the property file is not currently supported for Mule 4 runtimes. You can only use the Runtime Manager UI for Cloudhub and Runtime Fabric deployments.
 
 [[set-a-layer-ui]]
 == Set a Layer with the Architecture visualization UI
