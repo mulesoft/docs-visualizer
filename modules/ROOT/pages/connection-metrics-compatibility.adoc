@@ -88,7 +88,13 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a standalone Mule app using HTTP connector version below 1.5.12 on Mule version 4.x with Anypoint Monitoring Agent before April 6, 2020 and you have not enabled the additional header injection, then metrics do not appear on that connection, and the following message appears:
+a| 
+If the following conditions exist, then metrics do not appear for a connection:
+
+* The source node is a standalone Mule app
+* The app uses an HTTP Connector version earlier than 1.5.12
+* The app uses a Mule 4.x version with Anypoint Monitoring Agent released before April 6, 2020
+* Additional header injection is not enabled
 
 `Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
 
