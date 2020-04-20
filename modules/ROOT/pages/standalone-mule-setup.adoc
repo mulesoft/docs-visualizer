@@ -22,7 +22,7 @@ The APIs and policies that Anypoint Visualizer displays in the Policy visualizat
 == Enable Header Injection
 
 Anypoint Visualizer requires header injection for standalone Mule deployments so that the deployments display the correct connections.
-However, due to a potential performance impact, header injection is disabled by default for Mule version 4.x with Anypoint Monitoring agent released before <insert UA 2.2.2 hybrid release date>. You must enable header injection at the server (not app) level.
+However, due to a potential performance impact, header injection is disabled by default for Mule version 4.x with Anypoint Monitoring Agent released before April 6, 2020. You must enable header injection at the server (not app) level.
 This affects all applications running on the server.
 
 . To enable header injection for apps deployed to a standalone Mule instance, click *Server* in the menu on the left of *Runtime Manager*.
