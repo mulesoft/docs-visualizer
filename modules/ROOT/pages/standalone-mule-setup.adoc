@@ -31,7 +31,7 @@ This affects all applications running on the server.
 `anypoint.platform.config.analytics.agent.header_injection.disabled=false`
 You must set the property to `false`, as shown in the example to enable header injection, because the property is disabled by default.
 
-Additionally, you must use version 1.5.12 or higher of the HTTP connector in your Mule 4 applications.
+Additionally, you must use version 1.5.12 or later of the HTTP Connector in your Mule 4 applications.
 
 === Manage Performance and Data Collection
 
