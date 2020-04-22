@@ -9,11 +9,10 @@ If a tag is assigned to an application, the application will appear in every vie
 
 == Setting the Tag Through Properties
 
-You can automate adding tags to a node by using `anypoint.platform.visualizer.tags=<name>, <name>`, either in the application's properties file or at deployment time through the Runtime Manager UI or API. 
+You can automate adding tags to nodes by using `anypoint.platform.visualizer.tags=<name>, <name>`, either in the application's properties file or at deployment time through the Runtime Manager UI or API. Note that this is an application property, not a server property.
 
 [NOTE]
-You can only use the Runtime Manager UI for Cloudhub and Runtime Fabric deployments.
-Note that this is an application property, not a server property.
+Setting a tag using the property file is not currently supported for Mule 4 runtimes. You can only use the Runtime Manager UI for Cloudhub and Runtime Fabric deployments. 
 
 When you use this property, the nodes automatically show the assigned tags in the *View* card of Visualizer. You can add but cannot override tags in the UI; you can modify them only in properties. All letters in tag names are displayed in lowercase.
 
@@ -22,7 +21,7 @@ In the following example, the tag `project-b` was added through properties and t
 image::properties-tags.png[]
 
 [[set-tag-ui]]
-== Setting the Tag Through the s UI
+== Set Tags Using the UI
 
 By default, when you first view a node using Anypoint Visualizer, it does not have any tags assigned. You can assign a tag to an existing node using the UI if it does not already have the same tag applied through properties.
 
