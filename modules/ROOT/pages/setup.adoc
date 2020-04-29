@@ -7,14 +7,14 @@ Configure the roles and permissions required to use Anypoint Visualizer and unde
 
 == Configure Permissions
 
-To access Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
+To view content in Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
 
 * *Runtime Manager > Read Applications* 
 Enables a user to view the graph of an app network, but does not allow them to make changes.
 * *API Manager > View Policies or Manage Policies*
 Enables a user to view the APIs linked to their Mule applications and the policies applied to those APIs. Only relevant for the Policy Visualization.
 * *Visualizer > Visualizer Editor* 
-Enables a user to view and modify the graph of an app network. 
+Enables a user to manage and customize certain aspects of the visualization of an application network.
 You can create a xref:access-management::roles.adoc#custom-roles[custom role] and assign the *Visualizer Editor* permission to it.
 [NOTE]
 The *Visualizer Editor* permission can only be assigned within the master organization.
