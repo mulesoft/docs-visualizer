@@ -50,3 +50,9 @@ Metrics at the connection level are only available for certain types of connecti
 |The node you selected belongs to an environment for which you do not have the *Read Application* permission. This node is displayed only because it is a dependency of another node.
 |Learn more about xref:access-management::roles.adoc[configuring permissions].
 |===
+
+== Limitations
+
+=== Why can't I see the source of traffic from Anypoint Connector for Database (Database Connector)?
+
+When you use Database Connector, Anypoint Visualizer does not indicate the type of database, such as Postgres or Oracle, from which the traffic originates. Additionally, Anypoint Visualizer cannot differentiate between instances of a database. 
