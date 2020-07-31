@@ -15,7 +15,7 @@ Map a node to a layer in the application's properties file, or using the UI in t
 
 === Set a Layer with Properties
 
-You can automate adding nodes to a layer by using `anypoint.platform.visualizer.layer=<name>`, either in the application’s properties file or at deployment time through the Runtime Manager UI or API (required for Mule 4). Note that this is an application property, not a server property. When you use this property, nodes automatically appear in the specified layer and, if that layer doesn't exist, it is automatically created.
+You can automate adding nodes to a layer by using `anypoint.platform.visualizer.layer=<name>`, either in the application’s properties file or at deployment time through the Runtime Manager UI or API. Note that this is an application property, not a server property. When you use this property, nodes automatically appear in the specified layer and, if that layer doesn't exist, it is automatically created.
 You cannot reassign a node layer using the Anypoint Visualizer UI if you assign it using an application property.
 
 [[set-a-layer-ui]]
