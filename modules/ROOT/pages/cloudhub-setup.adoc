@@ -62,9 +62,6 @@ The APIs and policies that Anypoint Visualizer displays in the Policy visualizat
 
 Anypoint Visualizer supports dedicated load balancers for CloudHub apps using Mule version 3.9.x (version released April 5, 2019 or later).
 
-[NOTE]
-Anypoint Visualizer cannot correctly resolve dedicated load balancer connections for CloudHub apps using Mule 4 runtime versions at this time.
-
 == Manage Performance and Data Collection
 
 The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
