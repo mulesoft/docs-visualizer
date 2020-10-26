@@ -24,7 +24,7 @@ Understanding these dependencies has powerful implications, especially when you 
 The following use cases provide examples of how you can use Anypoint Visualizer and its various visualizations.
 
 * Discussing Current Design State +
-Enterprise architect Kara has developed a plan for how the architecture she’s responsible for will accommodate a new product. She needs to capture its current state so she can plan the transition and get buy-in from stakeholders on her proposal. She can use the Architecture visualization to assess the structure of her network and export it to share with her audience.
+Enterprise architect Kara has developed a plan for how the architecture she’s responsible for will accommodate a new product. She needs to capture its current state so she can plan the transition and get buy-in from stakeholders on her proposal. She can use the Architecture visualization to assess the structure of her network and export a diagram to share with her audience.
 
 * Implementing API-Led Connectivity +
 Site reliability engineer Tom is tired of maintaining several separate connections to Salesforce. He wants to identify redundant point-to-point connections so he can come up with requirements for a new process API. Tom can view the network topology using the Architecture visualization to see if there are redundant connections.
@@ -33,7 +33,7 @@ Site reliability engineer Tom is tired of maintaining several separate connectio
 Anypoint Visualizer provides a real-time view of the application network. Architects and product owners can see how the application network evolves, explore the application network to discover and plan how to unlock data, and break down siloed systems, all while knowing that the visualization is always up-to-date. They can use the Architecture visualization to plan how to connect systems more efficiently.
 
 * Define API-Led Connectivity Classifications +
-Anypoint Visualizer enables you to assign the nodes of the graph into layers. Layers help you quickly determine if the APIs are correctly categorized, and if the architectural principles of API-led connectivity are being followed. The Architecture visualization enables you to organize the nodes efficiently so that API-led connectivity is easy to interpret.
+Anypoint Visualizer enables you to assign the nodes of the graph to layers. Layers help you quickly determine if the APIs are correctly categorized, and if the architectural principles of API-led connectivity are being followed. The Architecture visualization enables you to organize the nodes efficiently so that API-led connectivity is easy to interpret.
 
 * Accelerating Time-to-Production +
 Architect Kara can see how projects are being built from the development environment, throughout testing, staging, and production phases. Kara reviews the architecture as the code is being deployed and raises any concerns to ensure that best practices and agreed-upon architecture are being followed without waiting for the documentation to be generated. Using the Architecture visualization, Kara can monitor the deployment and organization of assets in real time. Using the Policy visualization, she can ensure all APIs are compliant with InfoSec rules before promoting a project to production.
