@@ -1,1 +1,1 @@
-Apps and APIs that are associated with a Mule domain appear in the Anypoint Visualizer application network, but metrics and connection information related to these apps and APIs may be inaccurate.
+Apps and APIs that are associated with a Mule domain appear in the Anypoint Visualizer application network, but metrics and connection information related to these apps and APIs might be inaccurate.

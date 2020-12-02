@@ -57,6 +57,6 @@ Metrics at the connection level are only available for certain types of connecti
 
 When you use Database Connector, Anypoint Visualizer does not indicate the type of database, such as Postgres or Oracle, from which the traffic originates. Additionally, Anypoint Visualizer cannot differentiate between instances of a database.
 
-=== Why do some on-premises apps and APIs show incorrect or incomplete metrics and connection information?
+=== Why do some Mule apps and APIs deployed on premises show incorrect or incomplete metrics and connection information?
 
 include::partial$include-mule-domain-support.adoc[]
