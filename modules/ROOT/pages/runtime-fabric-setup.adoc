@@ -5,7 +5,7 @@ endif::[]
 
 == Verify Supported Mule Versions for Runtime Fabric
 
-Anypoint Visualizer supports the following Mule versions for Runtime Fabric deployments:
+Anypoint Visualizer supports the following Mule versions for Anypoint Runtime Fabric deployments:
 
 * Mule 3.8.7
 * Mule 3.9.1+
@@ -43,6 +43,7 @@ The APIs and policies that Anypoint Visualizer displays in the Policy visualizat
 * If a Runtime Fabric Mule app calls a Mule 3 CloudHub Mule app with the old Anypoint Visualizer agent (version earlier than April 5, 2019) using its DNS, the correct connection is drawn, but there will be an additional edge from the External Traffic node to the CloudHub app.
 * If a Runtime Fabric Mule app calls a Mule 4 CloudHub Mule app using its DNS, the correct connection is drawn, but there will be an additional edge from the External Traffic node to the CloudHub app.
 * If you have an app in two different clusters with the same name, these applications are drawn as one node on the canvas. You should rename one app.
+* In the Troubleshooting visualization, *View Logs* and *View Dashboard* links are not currently supported.
 
 == Manage Performance and Data Collection
 
