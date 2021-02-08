@@ -7,10 +7,11 @@ endif::[]
 
 Anypoint Visualizer supports the following Mule versions for standalone Mule deployments:
 
-* Mule 3.8.7
-* Mule 3.9.x
-* Mule 4.1.x
-* Mule 4.2.x
+* Mule version 3.8.7
+* Mule version 3.9.x
+* Mule version 4.1.x
+* Mule version 4.2.x
+* Mule version 4.3.x
 
 == Install Agent
 
