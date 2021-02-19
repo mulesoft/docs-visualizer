@@ -46,6 +46,7 @@ In order for your app to appear in Anypoint Visualizer and for metrics to be dis
 To enable the Anypoint Monitoring agent:
 
 include::partial$include-nav-steps-AM-user-permission.adoc
+
 . In the Anypoint Monitoring navigation menu, click *Settings*.
 . Select *CloudHub*.
 . From the *Environment* drop-down list, choose an environment.

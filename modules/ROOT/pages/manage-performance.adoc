@@ -43,6 +43,7 @@ If you are using the following Mule versions, you can disable the Anypoint Monit
 * Mule Version 3.8.7 Released on August 14, 2019 or Later
 
 include::partial$include-nav-steps-AM-user-permission.adoc
+
 . Click *Settings*.
 . Select *CloudHub*.
 . From the *Environment* drop-down list, choose an environment.
