@@ -14,7 +14,7 @@ Anypoint Visualizer displays information about the node in a card. This card is 
 
 * *Details*
 Provides information about the node.
-* *Customization* 
+* *Customization*
 Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc#set-tag-ui[tags] from this section.
 
 == Filtering Your View
@@ -25,7 +25,7 @@ You can hide nodes through what you select in the canvas:
 
 * To hide a single node, select it, and then click *Hide selected service*.
 * To hide multiple nodes, multiselect them, and then click *Hide selected services*.
-* To hide all of the services other than the selected nodes, you can click *Hide other services*. 
+* To hide all of the services other than the selected nodes, you can click *Hide other services*.
 If you want to hide everything that is not related to a given dependency stack, select a node and then click *Select dependents and dependencies*, which selects all nodes related to the service which you selected. Then, click *Hide other services*.
 
 You can search for a node (service) in the *Search services* text field. Services containing your search in any part of their name are highlighted, while others fade.
@@ -40,6 +40,6 @@ If you customized your view, the customized network topology is exported.
 
 == See More
 
-* xref:view.adoc[Visualizer Views]
+* xref:view.adoc[Anypoint Visualizer Views]
 * xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
 * xref:layers.adoc[Use Layers in Anypoint Visualizer]

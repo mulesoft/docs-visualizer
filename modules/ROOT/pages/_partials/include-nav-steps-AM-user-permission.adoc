@@ -1,0 +1,2 @@
+. Log in to Anypoint Platform using an account that has the Anypoint Monitoring User permission.
+. In the navigation bar or the main Anypoint Platform screen, click *Visualizer*.

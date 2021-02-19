@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*Visualizer editors* can create auto-discoverable views that provide a single source of truth and that are accessible to their team members across environments.
+Users who have the Visualizer Editor permission can create auto-discoverable views that provide a single source of truth and that are accessible to their team members across environments.
 
 Views display your saved filter selection, including:
 
@@ -13,20 +13,19 @@ Views display your saved filter selection, including:
 * New services deployed that match the selected environments and tags
 * If the *Show dependents and dependencies* option is selected and the a service is deployed and related to a selected service
 
-Views that you have access to appear in a list in the *View* card (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because you don't need to readjust filters every time you access Visualizer to get the view that is relevant to you.
+Views that you have access to appear in a list in the *View* card (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because you don't need to readjust filters every time you access Anypoint Visualizer to get the view that is relevant to you.
 
 == Defined Views
 
-As a Visualizer editor, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects.
+If you have the Visualizer Editor permission, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects.
 Any Anypoint Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the *View* card.
 Only editors can create, rename, and edit defined views.
 
 These views provide team members with a topological view of the apps that are specific to the areas they are responsible for. Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency.
 
-
 == Create a Defined View
 
-Only users with the *Visualizer Editor* permission can create defined views.
+Only users with the Visualizer Editor permission can create defined views.
 
 . In the top navigation bar, on the right of the view name, click the drop-down arrow.
 . Click *+New*.
@@ -45,7 +44,7 @@ Once you save the view, it becomes accessible to other users, meaning that any u
 
 == Edit a View
 
-Users can make changes to their private view's filters, and save them. However, only users with the *Visualizer Editor* permission can edit defined views.
+Users can make changes to their private view's filters, and save them. However, only users with the Visualizer Editor permission can edit defined views.
 
 . Make the desired changes to the current filters. +
 An asterisk appears next to the view name until you click *Save* in the *View* card.
@@ -56,7 +55,7 @@ image::visualizer-save-as-new-view.png[]
 
 == Rename a View
 
-Users can rename their private view, but only users with *Visualizer Editor* permission can rename defined views.
+Users can rename their private view, but only users with Visualizer Editor permission can rename defined views.
 
 . Click the drop-down arrow next to *Save*, and click *Rename*.
 +
@@ -74,14 +73,14 @@ image::visualizer-share-view.png[]
 
 == Delete a View
 
-Only users with the *Visualizer Editor* permission can delete views.
+Only users with the Visualizer Editor permission can delete views.
 
 . Click the drop-down arrow next to *Save*, and select *Delete*.
 . Click *Delete* again.
 
 == Private View
 
-When you access Visualizer the first time, your private view is displayed. Each subsequent time you access Visualizer, you are returned to the view you last accessed. Your private view includes defined views, providing a complete picture of the projects to which you have access.
+When you access Anypoint Visualizer for the first time, your private view is displayed. Each subsequent time you access Anypoint Visualizer, you are returned to the view you last accessed. Your private view includes defined views, providing a complete picture of the projects to which you have access.
 In your private view, you can:
 
 * Edit and save which apps are included in your private view

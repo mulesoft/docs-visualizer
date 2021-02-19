@@ -4,14 +4,14 @@ include::_attributes.adoc[]
 endif::[]
 
 
-You can choose what appears in your Visualizer canvas by applying filters for environments, tags, and services.
+You can choose what appears in your Anypoint Visualizer canvas by applying filters for environments, tags, and services.
 This enables you to hide the nodes that you do not want to see in the application graph.
 Filters have a cascading design, so all nodes that don't belong to the checked environments or tags are automatically hidden from the list of services.
 
 You can toggle *Show dependents and dependencies* to see the services and dependencies of the nodes and services which have the selected tags.
 The *View* card and the canvas are updated to display the current selection.
 
-Visualizer editors can save defined views so that any Visualizer user can access them.
+Users who have the Visualizer Editor permission can save defined views so that any Anypoint Visualizer user can access them.
 When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
 
 You can customize layers, tags, and display names in the Architecture visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
@@ -30,7 +30,7 @@ You can add tags to API, application, proxy, or other services, so you can use t
 
 To automate adding tags to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>`.
 
-For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Visualizer].
+For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer].
 
 [[display-name]]
 == Display Name

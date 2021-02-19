@@ -45,9 +45,8 @@ In order for your app to appear in Anypoint Visualizer and for metrics to be dis
 
 To enable the Anypoint Monitoring agent:
 
-. Verify that you are a user with Anypoint Monitoring User permission.
-. Sign in to Anypoint Platform and click *Anypoint Monitoring*.
-. Click *Settings*.
+include::partial$include-nav-steps-AM-user-permission.adoc
+. In the Anypoint Monitoring navigation menu, click *Settings*.
 . Select *CloudHub*.
 . From the *Environment* drop-down list, choose an environment.
 . In *List of resources in <Environment Name>*, search for an app to visualize.
@@ -67,4 +66,4 @@ Anypoint Visualizer supports dedicated load balancers for CloudHub apps using Mu
 
 The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
 
-For more information about data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].
+For more information about data collection and performance, see xref:visualizer::manage-performance.adoc[Manage Performance and Data Collection].
