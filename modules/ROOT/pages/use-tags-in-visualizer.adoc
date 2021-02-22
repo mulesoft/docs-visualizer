@@ -11,7 +11,7 @@ If a tag is assigned to an application, the application will appear in every vie
 
 You can automate adding tags to nodes by using `anypoint.platform.visualizer.tags=<name>, <name>`, either in the application's properties file or at deployment time through the Runtime Manager UI or API. Note that this is an application property, not a server property.
 
-When you use this property, the nodes automatically show the assigned tags in the *View* card of Visualizer. You can add but cannot override tags in the UI; you can modify them only in properties. All letters in tag names are displayed in lowercase.
+When you use this property, the nodes automatically show the assigned tags in the *View* card of Anypoint Visualizer. You can add but cannot override tags in the UI. Additionally, you can modify the tags only in properties. All the letters in the tag names are displayed in lowercase.
 
 In the following example, the tag `project-b` was added through properties and therefore cannot be modified on the canvas.
 

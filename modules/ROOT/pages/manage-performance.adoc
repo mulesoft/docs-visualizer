@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: technical.adoc
 
 Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP address and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is encrypted and stored in a database.
 
@@ -41,8 +42,8 @@ If you are using the following Mule versions, you can disable the Anypoint Monit
 * Mule Version 3.9 Released on April 5, 2019 or Later
 * Mule Version 3.8.7 Released on August 14, 2019 or Later
 
-. Verify that you are a user with *Anypoint Monitoring User* permission.
-. Sign in to Anypoint Platform and click *Anypoint Monitoring*.
+include::partial$include-nav-steps-AM-user-permission.adoc[]
+
 . Click *Settings*.
 . Select *CloudHub*.
 . From the *Environment* drop-down list, choose an environment.

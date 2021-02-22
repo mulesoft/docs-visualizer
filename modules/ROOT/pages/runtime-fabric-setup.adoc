@@ -49,4 +49,4 @@ The APIs and policies that Anypoint Visualizer displays in the Policy visualizat
 
 The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
 
-For more information about data collection and performance, see xref:visualizer::technical.adoc[Manage Performance and Data Collection].
+For more information about data collection and performance, see xref:visualizer::manage-performance.adoc[Manage Performance and Data Collection].

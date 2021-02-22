@@ -31,9 +31,9 @@ The xref:policy-visualization.adoc[_Policy visualization_] enables you to see th
 
 == View an Application Network in an Organization
 
-. From Management Center, select *Visualizer*.
+include::partial$include-nav-steps-no-permissions.adoc
 +
-If Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
+If Anypoint Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
 . In the list in the canvas, select the visualization you want to use.
 
@@ -47,9 +47,9 @@ After selecting the organization and environment group, Anypoint Visualizer disp
 
 == Views
 
-Visualizer editors can define views based on filtered environments and tags. These defined views are auto-discoverable and available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use-case specific visualizations.
+Users with the Visualizer Editor permission can define views based on filtered environments and tags. These defined views are auto-discoverable and are available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use-case-specific visualizations.
 
-For more information, see xref:view.adoc[Visualizer Views].
+For more information, see xref:view.adoc[Anypoint Visualizer Views].
 
 == See Also
 

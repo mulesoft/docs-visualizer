@@ -1,6 +1,6 @@
 = Troubleshoot Visualizer
 
-If you encounter an error or issue while using Visualizer, you can try these solutions.
+If you encounter an error or an issue while using Anypoint Visualizer, you can try these solutions.
 
 == Why are no applications loading?
 
@@ -9,13 +9,13 @@ If you encounter an error or issue while using Visualizer, you can try these sol
 |Error Message |Cause |Solution
 |`You don’t have access to any ${environment_type} environments. You can request access from your org admin.`
 | Either the organization or business group does not have the specified environment configured, or you do not have the necessary permissions.
-|Learn more about xref:access-management::roles.adoc[role permissions] or request the Runtime Manager *CloudHub Network Viewer* permission from your org administrator.
+|Learn more about xref:access-management::roles.adoc[role permissions] or request the CloudHub Network Viewer permission in Anypoint Runtime Manager from your org administrator.
 |`There are no services to show in the selected environments. You may need to update your applications' runtime versions so they can appear in the Visualizer.`
-|Visualizer currently supports only applications deployed to CloudHub and standalone Mule runtime engines (Mule) with specific runtimes.
-|If you know that you have applications deployed in a supported environment, but are not seeing them on the Visualizer canvas, you may need to update your applications to use the supported Mule version. View a list of xref:setup.adoc[supported Mule runtime engines].
+|Anypoint Visualizer currently supports only applications deployed to CloudHub and standalone Mule runtime engines (Mule) with specific runtimes.
+|If you know that you have applications deployed in a supported environment, but are not seeing them in the Anypoint Visualizer canvas, you may need to update your applications to use the supported Mule version. View a list of xref:setup.adoc[supported Mule runtime engines].
 |Apps aren't appearing (and you aren't getting a specific error message).
-|Visualizer only supports specific Mule versions (runtimes).
-|If you are not seeing some of your applications on the Visualizer canvas or in the services list, check your filters. If the filters are not the issue, you may need to update your applications to use a different Mule version if you want them to appear. View a list of xref:setup.adoc[supported Mule versions]. If you have upgraded to a Mule version 4 released after March 22, 2019, or Mule version 3.9 released after April 5, 2019, you must xref:monitoring::enable-apps-deployed-to-cloud.adoc[enable monitoring] before the applications and metrics will appear.
+|Anypoint Visualizer only supports specific Mule versions (runtimes).
+|If you are not seeing some of your applications in the Anypoint Visualizer canvas or in the services list, check your filters. If the filters are not the issue, you may need to update your applications to use a different xref:setup.adoc[supported Mule version] for the applications to appear on the canvas. If you have upgraded to a version of Mule 4 that was released after March 22, 2019, or a version of Mule 3.9 that was released after April 5, 2019, you must xref:monitoring::enable-apps-deployed-to-cloud.adoc[enable monitoring] before the applications and metrics can appear.
 |===
 
 == Why can't I see metrics for my applications?
@@ -41,13 +41,13 @@ Metrics at the connection level are only available for certain types of connecti
 |===
 |Error Message |Cause |Solution
 |`You don’t have permissions to edit this node. Learn more.`
-|You need to have the *Visualizer Editor* permission to edit in Visualizer.
-|Learn more about the different permissions in Visualizer and how to configure xref:access-management::roles.adoc#custom-roles[custom roles].
+|You need the Visualizer Editor permission to edit in Anypoint Visualizer.
+|Learn more about the different permissions in Anypoint Visualizer and how to configure xref:access-management::roles.adoc#custom-roles[custom roles].
 |`Metrics are hidden for this app because you don’t have the *Runtime Manager "Read Application"* permission for its environment. Learn more.`
-|You have selected an application that belongs to an environment for which you do not have the *Read Application* permission. The node is showing only because it is a dependency of another node.
+|You have selected an application that belongs to an environment for which you do not have the Read Application permission. The node is showing only because it is a dependency of another node.
 |Learn more about xref:access-management::roles.adoc[configuring permissions].
 |`You cannot customize this service because you don't have the *Runtime Manager "Read Application"* permission for its environment.`
-|The node you selected belongs to an environment for which you do not have the *Read Application* permission. This node is displayed only because it is a dependency of another node.
+|The node you selected belongs to an environment for which you do not have the Read Application permission. This node is displayed only because it is a dependency of another node.
 |Learn more about xref:access-management::roles.adoc[configuring permissions].
 |===
 
