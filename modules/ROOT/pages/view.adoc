@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Users who have the Visualizer Editor permission can create auto-discoverable views that provide a single source of truth and that are accessible to their team members across environments.
+Users with the Visualizer Editor permission can create auto-discoverable views that provide a single source of truth and are accessible to their team members across environments.
 
 Views display your saved filter selection, including:
 
