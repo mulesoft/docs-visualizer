@@ -1,6 +1,6 @@
 = Troubleshoot Visualizer
 
-If you encounter an error or issue while using Anypoint Visualizer, you can try these solutions.
+If you encounter an error or an issue while using Anypoint Visualizer, you can try these solutions.
 
 == Why are no applications loading?
 
@@ -15,7 +15,7 @@ If you encounter an error or issue while using Anypoint Visualizer, you can try 
 |If you know that you have applications deployed in a supported environment, but are not seeing them in the Anypoint Visualizer canvas, you may need to update your applications to use the supported Mule version. View a list of xref:setup.adoc[supported Mule runtime engines].
 |Apps aren't appearing (and you aren't getting a specific error message).
 |Anypoint Visualizer only supports specific Mule versions (runtimes).
-|If you are not seeing some of your applications in the Anypoint Visualizer canvas or in the services list, check your filters. If the filters are not the issue, you may need to update your applications to use a different Mule version if you want them to appear. View a list of xref:setup.adoc[supported Mule versions]. If you have upgraded to a Mule version 4 released after March 22, 2019, or Mule version 3.9 released after April 5, 2019, you must xref:monitoring::enable-apps-deployed-to-cloud.adoc[enable monitoring] before the applications and metrics will appear.
+|If you are not seeing some of your applications in the Anypoint Visualizer canvas or in the services list, check your filters. If the filters are not the issue, you may need to update your applications to use a different xref:setup.adoc[supported Mule version] for the applications to appear on the canvas. If you have upgraded to a version of Mule 4 that was released after March 22, 2019, or a version of Mule 3.9 that was released after April 5, 2019, you must xref:monitoring::enable-apps-deployed-to-cloud.adoc[enable monitoring] before the applications and metrics can appear.
 |===
 
 == Why can't I see metrics for my applications?

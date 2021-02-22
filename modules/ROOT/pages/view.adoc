@@ -17,7 +17,7 @@ Views that you have access to appear in a list in the *View* card (click the dro
 
 == Defined Views
 
-If you have the Visualizer Editor permission, you can create views that provide a consistent, high quality source of truth for the architecture of each of your organization's projects.
+If you have the Visualizer Editor permission, you can create views that provide a consistent and high-quality source of truth for the architecture of each of your organization's projects.
 Any Anypoint Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the *View* card.
 Only editors can create, rename, and edit defined views.
 
