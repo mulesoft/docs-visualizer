@@ -31,7 +31,7 @@ The xref:policy-visualization.adoc[_Policy visualization_] enables you to see th
 
 == View an Application Network in an Organization
 
-include::partial$include-nav-steps-no-permissions.adoc
+include::partial$include-nav-steps-no-permissions.adoc[]
 +
 If Anypoint Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
