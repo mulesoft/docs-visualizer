@@ -60,3 +60,7 @@ When you use Database Connector, Anypoint Visualizer does not indicate the type 
 === Why do some Mule apps and APIs deployed on premises show incorrect or incomplete metrics and connection information?
 
 include::partial$include-mule-domain-support.adoc[]
+
+=== Why don't I see metadata from an HTTP requester?
+
+To avoid high graph cardinality, Anypoint Visualizer does not show outbound traffic to IP addresses or localhost.
