@@ -61,6 +61,6 @@ When you use Database Connector, Anypoint Visualizer does not indicate the type 
 
 include::partial$include-mule-domain-support.adoc[]
 
-=== Why can't I see metadata from an HTTP requester?
+=== Why don't I see metadata from an HTTP requester?
 
-To avoid high cardinality, Anypoint Visualizer does not support outbound traffic that uses IP addresses or localhost for validation.
+To avoid high graph cardinality, Anypoint Visualizer does not show outbound traffic to IP addresses or localhost.
