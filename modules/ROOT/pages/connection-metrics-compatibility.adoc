@@ -33,9 +33,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If the source node is a CloudHub app using Mule version 4.x released before April 14, 2020 or a Mule version with an -AM extension, then metrics do not appear on that connection and the following message appears:
-
-`Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x or an -AM extension. Learn more.`
+| If there has not been traffic in the selected time range, the following message appears: `Inbound metrics are not available for this connection. Learn more.`
 
 | Mule App to a Non-Mule Node
 | Not applicable
@@ -88,19 +86,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-a| 
-If the following conditions exist, then metrics do not appear for a connection:
-
-* The source node is a standalone Mule app
-* The app uses an HTTP Connector version earlier than 1.5.12
-* The app uses a Mule 4.x version with Anypoint Monitoring Agent released before April 6, 2020
-* Additional header injection is not enabled
-
-Additionally, the following message appears:
-
-`Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
-
-Learn more about xref:standalone-mule-setup.adoc#enable-header-injection[enabling the header injection].
+| If there has not been traffic in the selected time range, the following message appears: `Inbound metrics are not available for this connection. Learn more.`
 
 | Mule App to a Non-Mule Node
 | Not applicable
@@ -148,20 +134,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-a| 
-If the following conditions exist, then metrics do not appear for a connection:
-
-* The source node is a Runtime Fabric app
-* The app uses an HTTP Connector version earlier than 1.5.12
-* The app uses a Mule 4.x version with Anypoint Monitoring Agent released before April 6, 2020
-* Additional header injection is not enabled
-
-Additionally, the following message appears:
-
-
-`Inbound metrics may be inaccurate or not appear when the source of the connection is a Mule app using Mule runtime version 4.x. Learn how to view connections and their metrics properly.`
-
-Learn more about xref:runtime-fabric-setup.adoc#enable-header-injection[enabling the header injection].
+| If there has not been traffic in the selected time range, the following message appears: `Inbound metrics are not available for this connection. Learn more.`
 
 | Mule App to a Non-Mule Node
 | Not applicable
