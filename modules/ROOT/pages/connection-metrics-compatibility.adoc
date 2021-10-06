@@ -33,7 +33,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If there has not been traffic in the selected time range, the following message appears `Inbound metrics are not available for this connection. Learn more.`
+| If there has not been traffic in the selected time range, the following message appears: `Inbound metrics are not available for this connection. Learn more.`
 
 | Mule App to a Non-Mule Node
 | Not applicable
@@ -86,7 +86,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If there has not been traffic in the selected time range, the following message appears `Inbound metrics are not available for this connection. Learn more.`
+| If there has not been traffic in the selected time range, the following message appears: `Inbound metrics are not available for this connection. Learn more.`
 
 | Mule App to a Non-Mule Node
 | Not applicable
@@ -134,7 +134,7 @@ The following connection types and directions support or do not support connecti
 
 | Mule App to a Mule App
 | Yes
-| If there has not been traffic in the selected time range, the following message appears `Inbound metrics are not available for this connection. Learn more.`
+| If there has not been traffic in the selected time range, the following message appears: `Inbound metrics are not available for this connection. Learn more.`
 
 | Mule App to a Non-Mule Node
 | Not applicable
