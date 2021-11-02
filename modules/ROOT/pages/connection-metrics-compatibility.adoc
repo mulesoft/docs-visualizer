@@ -82,7 +82,7 @@ The following connection types and directions support or do not support connecti
 
 | External Traffic to a Mule App
 | Yes
-| None
+| If there is a connection from external traffic to a Mule app and also a connection from a Mule app using Mule 4.x to the same app, then the Mule-app-to-Mule-app edge metric does not appear; rather, it is averaged into the value shown on the edge from external traffic.
 
 | Mule App to a Mule App
 | Yes
