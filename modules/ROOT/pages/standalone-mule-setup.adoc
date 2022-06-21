@@ -12,6 +12,7 @@ Anypoint Visualizer supports the following Mule versions for standalone Mule dep
 * Mule version 4.1.x
 * Mule version 4.2.x
 * Mule version 4.3.x
+* Mule version 4.4.x
 
 == Install Agent
 
