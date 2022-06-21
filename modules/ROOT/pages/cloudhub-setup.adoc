@@ -13,6 +13,7 @@ Anypoint Visualizer supports the following Mule versions running on CloudHub:
 * Mule version 4.1.x
 * Mule version 4.2.x
 * Mule version 4.3.x
+* Mule version 4.4.x
 
 [NOTE]
 If your version of Mule was released before June 30th 2018, to ensure you have the correct Anypoint Visualizer agent, upgrade your version of Mule to any of the supported versions listed in this section. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
