@@ -36,7 +36,7 @@ You can either: +
 * Enter a name for a new tag, and click *Create tag <your-tag>*, or
 * Enter a name for the new tag, and press enter. +
 [NOTE]
-You cannot apply the same tag to one node multiple times. All tags are converted to lowercase.
+You cannot apply the same tag to one node multiple times.
 +
 image::create-tag.png[]
 +
