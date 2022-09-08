@@ -13,7 +13,7 @@ You can automate adding tags to nodes by using `anypoint.platform.visualizer.tag
 
 When you use this property, the nodes automatically show the assigned tags in the *View* card of Anypoint Visualizer. You can add but cannot override tags in the UI. Additionally, you can modify the tags only in properties.
 
-In the following example, the tag `project-b` was added through properties and therefore cannot be modified on the canvas.
+In the following example, the tag `demo` was added through properties. Therefore, you cannot modify the. `demo` tag on the canvas. However, `project-a` and `project-b` were created using the UI, so you can modify them.
 
 image::properties-tags.png[]
 
