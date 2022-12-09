@@ -17,7 +17,7 @@ Enables a user to view the APIs linked to their Mule applications and the polici
 Enables a user to manage and customize certain aspects of the visualization of an application network.
 You can create a xref:access-management::roles.adoc#custom-roles[custom role] and assign the Visualizer Editor permission to it.
 [NOTE]
-The *Visualizer Editor* permission can be assigned only within the master organization.
+The *Visualizer Editor* permission can be assigned only within the root organization.
 
 == Select a Deployment Type
 
