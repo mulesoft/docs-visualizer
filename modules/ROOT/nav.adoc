@@ -1,5 +1,6 @@
 .xref:index.adoc[Anypoint Visualizer]
 * xref:index.adoc[Anypoint Visualizer]
+* xref:release-notes::visualizer/anypoint-visualizer-1.0-release-notes.adoc[Release Notes]
 * xref:setup.adoc[Set up Anypoint Visualizer]
  ** xref:cloudhub-setup.adoc[CloudHub Setup]
  ** xref:standalone-mule-setup.adoc[Standalone Mule Setup]
