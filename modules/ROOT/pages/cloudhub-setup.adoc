@@ -46,8 +46,8 @@ In order for your app to appear in Anypoint Visualizer and for metrics to be dis
 
 To enable the Anypoint Monitoring agent:
 
-include::partial$include-nav-steps-AM-user-permission.adoc[]
-
+. Log in to Anypoint Platform using an account that has the Anypoint Monitoring User permission. 
+. In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
 . In the Anypoint Monitoring navigation menu, click *Settings*.
 . Select *CloudHub*.
 . From the *Environment* drop-down list, choose an environment.
