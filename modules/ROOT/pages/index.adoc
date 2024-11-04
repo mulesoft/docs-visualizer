@@ -1,7 +1,4 @@
 = Anypoint Visualizer
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 Anypoint Visualizer displays views of different aspects of an application network graph. You can use the graph to explore your application network. Use cases for Anypoint Visualizer include architectural review, troubleshooting, and policy compliance.
 
@@ -43,6 +40,16 @@ Anypoint Visualizer enables you to understand the behavior of all your APIs and 
 
 * Ensuring Policy Compliance +
 Lead API Architect Ayesha needs to understand which APIs comply or don’t comply with policies mandated by InfoSec. With the Policy visualization, she can select a set of policies; see which APIs have none, one, or all of these policies applied, and thus ensure adherence to company standards before promoting an API or project to production.
+
+== Visualizer on Hyperforce
+
+All features of Anypoint Visualizer are supported on Hyperforce with these exceptions:
+
+* The Troubleshooting visualization, including connection metrics. 
+* Hybrid standalone apps are not displayed.
+* The topology is shown only for active apps (versus all apps). Active apps are apps that have inbound and outbound traffic within the past seven days.
+* Layers, tags, and display name customizations can't be set using runtime properties. 
+* External nodes aren't grouped by ClientId when the ClientId is present in the app_inbound request.   
 
 === See Also
 
