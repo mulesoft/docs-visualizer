@@ -40,6 +40,7 @@ Anypoint Visualizer enables you to understand the behavior of all your APIs and 
 
 * Ensuring Policy Compliance +
 Lead API Architect Ayesha needs to understand which APIs comply or don’t comply with policies mandated by InfoSec. With the Policy visualization, she can select a set of policies; see which APIs have none, one, or all of these policies applied, and thus ensure adherence to company standards before promoting an API or project to production.
+
 [[visualizer-hyperforce]]
 == Visualizer on Hyperforce
 
