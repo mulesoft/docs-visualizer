@@ -65,8 +65,8 @@ include::partial$include-mule-domain-support.adoc[]
 
 To avoid high graph cardinality, Anypoint Visualizer does not show outbound traffic to IP addresses or localhost.
 
-=== Why don't I see edges on the canvas?
+=== Why don't I see edges on the canvas for my hybrid apps?
 
 Visualizer uses the host header and port number to identify a Mule app when generating edges.
 
-In a Hybrid deployment, if multiple Mule apps have the same host header and port number, Visualizer can't identify which Mule app is the caller and can't draw the edge. 
+In a hybrid deployment, if multiple Mule apps have the same host header and port number, Visualizer can't identify which Mule app is the caller and can't draw the edge. 
