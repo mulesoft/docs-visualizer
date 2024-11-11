@@ -16,6 +16,9 @@ When you close Anypoint Visualizer and reload the canvas later, the views you la
 
 You can customize layers, tags, and display names in the Architecture visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
 
+[NOTE]
+You can't customize layers, tags, and display names using the runtime properties in Runtime Manager for Hyperforce deployments.
+
 == Layers
 
 You can use one of the default layers provided by Anypoint Visualizer, or add a custom layer to create a visual representation of the apps in your network. You can use layers across Anypoint Visualizer, but note that you can only define layers in the xref:architecture-visualization.adoc[Architecture visualization].

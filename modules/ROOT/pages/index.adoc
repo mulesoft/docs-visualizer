@@ -46,9 +46,9 @@ Lead API Architect Ayesha needs to understand which APIs comply or don’t compl
 
 All features of Anypoint Visualizer are supported on Hyperforce with these exceptions:
 
-* The Troubleshooting visualization, including connection metrics. 
-* Hybrid standalone apps are not displayed.
-* The topology is shown only for active apps (versus all apps). Active apps are apps that have inbound and outbound traffic within the past seven days.
+* Troubleshooting visualization, including connection metrics. 
+* Hybrid standalone apps are not shown in the canvas.
+* Topology is shown only for active apps (versus all apps). Active apps are apps that have inbound and outbound traffic within the past seven days.
 * Layers, tags, and display name customizations can't be set using runtime properties. 
 * External nodes aren't grouped by ClientId when the ClientId is present in the app_inbound request.   
 
