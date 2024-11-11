@@ -59,7 +59,7 @@ If the selected metric is compatible, the canvas also displays metrics on the co
 For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
 
 [NOTE]
-Edges displayed between services are active, meaning that there has been traffic in the past seven days. Nonactive and hybrid app edges do not appear on the canvas.
+Edges displayed between services are active, meaning that there has been traffic in the past seven days. Nonactive app edges do not appear on the canvas.
 
 == Filtering your View
 
