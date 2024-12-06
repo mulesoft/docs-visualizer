@@ -1,12 +1,12 @@
 = Troubleshooting Visualization
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-3
+
 
 == About the Troubleshooting Visualization
 
 The Troubleshooting visualization shows you the current and past health of your Mule apps. It enables you to quickly visualize where your network is slow, receiving heavy traffic, or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
+
+[NOTE]
+The Troubleshooting visualization isn't available on Hyperforce deployments.
 
 == Choosing Your Metric
 
@@ -59,7 +59,7 @@ If the selected metric is compatible, the canvas also displays metrics on the co
 For more information about which connections support this feature, see xref:connection-metrics-compatibility.adoc[Supported Connection-Level Metrics].
 
 [NOTE]
-Edges displayed between services are active, meaning that there has been traffic in the past seven days. Nonactive edges do not appear on the canvas.
+Edges displayed between services are active, meaning that there has been traffic in the past seven days. Nonactive app edges do not appear on the canvas.
 
 == Filtering your View
 
