@@ -10,9 +10,9 @@ The Troubleshooting visualization isn't available on Hyperforce deployments.
 
 == Choosing Your Metric
 
-Select options in the *Metric* card to show metrics for all the nodes in your application network. For applicable metrics, these values also appear on the connection, or _edge_.
+On the *Monitoring* tab, select options in the *Metric* card to show metrics for all the nodes in your application network. For applicable metrics, these values also appear on the connection, or _edge_.
 
-In the *Metrics* section, you can select one of the following metrics:
+In the *Metrics* section, you can select one from these metrics:
 
 * *Avg response time*
 * *Avg throughput*
@@ -52,6 +52,9 @@ Provides monitoring metrics for the selected node, including average response ti
 Metrics chart:: Shows the time-series chart of the selected metric in the *Metric* card.
 
 Within the *Monitoring* tab, you can also select *View logs* or *View dashboard* to navigate to the associated logs or dashboard in Anypoint Monitoring.
+
+[NOTE]
+The *View logs* and *View dashboard* buttons aren't available for apps that are deployed to CloudHub 2.0. 
 
 == View Metrics for a Connection in Your Network
 
