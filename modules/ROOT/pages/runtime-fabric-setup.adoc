@@ -14,7 +14,7 @@ Anypoint Visualizer supports the following Mule versions for Anypoint Runtime Fa
 * Mule version 4.3.x
 * Mule version 4.4.x
 
-Follow the instructions for xref:runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric].
+Follow the instructions for xref:1.13@runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric].
 After you install Runtime Fabric, Anypoint Visualizer can display applications that are running and deployed to Runtime Fabric.
 
 Anypoint Visualizer relies on a header injection to display connections between services correctly.
