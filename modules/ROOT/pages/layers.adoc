@@ -40,7 +40,7 @@ image::select-node.png[Select Node]
 +
 image::select-layer.png[Select Layer]
 
-. Select the layerfrom the drop-down list.
+. Select the layer from the drop-down list.
 +
 The node you selected appears within the layer as shown in this image:
 +
