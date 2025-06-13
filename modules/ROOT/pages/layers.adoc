@@ -56,6 +56,7 @@ In addition to the default layers provided by Anypoint Visualizer, you can creat
 +
 The node appears in the new layer. You can add additional nodes to the new layer as necessary.
 
+[[delete-layer]]
 == Delete a Layer
 
 If a layer has no services assigned to it, Anypoint Visualizer deletes the layer automatically:
@@ -65,10 +66,12 @@ If a layer has no services assigned to it, Anypoint Visualizer deletes the layer
 
 Anypoint Visualizer also automatically adjusts the network display.
 
+[[reorder-layers]]
 == Reorder Layers
 
 In the canvas of the Architecture visualization, use the arrows to move it up or down relative to the other layers.
 
+[[minimize-maximize-layers]]
 == Minimize and Maximize Layers
 
 Use the minus sign (*-*) to minimize a layer. When a layer is minimized, the apps and app details are hidden. 
