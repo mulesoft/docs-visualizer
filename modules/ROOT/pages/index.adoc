@@ -50,7 +50,7 @@ Anypoint Visualizer feature availability depends on the control plane for your A
 |===
 |Anypoint Visualizer Feature 
 |https://anypoint.mulesoft.com/[US], https://eu1.anypoint.mulesoft.com/[EU] Clouds
-| https://ca1.platform.mulesoft.com/[Canada], https://jp1.platform.mulesoft.com/[Japan] Clouds (on Hyperforce)
+| https://ca1.platform.mulesoft.com/[Canada], https://jp1.platform.mulesoft.com/[Japan] Clouds
 | Government Cloud | Private Cloud (3.x)
 
 |{empty}
