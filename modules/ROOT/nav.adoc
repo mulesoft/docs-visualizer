@@ -1,5 +1,5 @@
 .xref:index.adoc[Anypoint Visualizer]
-* xref:index.adoc[Visualizer]
+* xref:index.adoc[Visualizer Overview]
 * xref:visualizer-release-notes.adoc[Release Notes]
 * xref:setup.adoc[Set up Visualizer]
  ** xref:cloudhub-setup.adoc[CloudHub Setup]
