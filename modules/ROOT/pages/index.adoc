@@ -1,4 +1,4 @@
-= Anypoint Visualizer
+= Anypoint Visualizer Overview
 
 Anypoint Visualizer displays views of different aspects of an application network graph. You can use the graph to explore your application network. Use cases for Anypoint Visualizer include architectural review, troubleshooting, and policy compliance.
 
