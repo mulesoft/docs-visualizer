@@ -6,7 +6,7 @@
 The Troubleshooting visualization shows you the current and past health of your Mule apps. It enables you to quickly visualize where your network is slow, receiving heavy traffic, or failing. From this visualization, you can drill down directly into Anypoint Monitoring dashboards or logs to continue to troubleshoot the performance of your systems.
 
 [NOTE]
-The Troubleshooting visualization isn't available on Hyperforce deployments.
+The Troubleshooting visualization isn't available on Canada and Japan control plane deployments.
 
 == Choosing Your Metric
 
