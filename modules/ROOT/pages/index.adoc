@@ -87,6 +87,7 @@ Troubleshooting visualization, including connection metrics.
 | Yes
 |===
 
+For more information about MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
 === See Also
 
