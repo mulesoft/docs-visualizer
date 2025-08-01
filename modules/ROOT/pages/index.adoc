@@ -80,7 +80,7 @@ Troubleshooting visualization, including connection metrics.
 | Yes
 | Yes
 
-|External nodes are grouped by ClientId when the ClientId is present in the app_inbound request. 
+|External nodes are grouped by Client Id when `ClientId` is present in the `app_inbound` request. 
 | Yes
 | No
 | Yes
