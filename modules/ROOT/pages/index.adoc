@@ -44,7 +44,7 @@ Lead API Architect Ayesha needs to understand which APIs comply or don’t compl
 [[visualizer-hyperforce]]
 == Visualizer Features by Control Plane
 
-Anypoint Visualizer feature availability depends on the control plane for your Anypoint Platform instance. Data isn’t shared across the separate instances of Anypoint Platform.
+Anypoint Visualizer feature availability depends on the control plane of your Anypoint Platform instance. Data isn’t shared across separate Anypoint Platform instances.
 
 [%header,cols="3a,1a,1a,1a,1a"]
 |===
