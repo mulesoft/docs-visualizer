@@ -17,7 +17,7 @@ When you close Anypoint Visualizer and reload the canvas later, the views you la
 You can customize layers, tags, and display names in the Architecture visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
 
 [NOTE]
-You can't customize layers, tags, and display names using the runtime properties in Runtime Manager Canada and Japan control plane deployments.
+You can't customize layers, tags, and display names using the runtime properties in Runtime Manager for Canada and Japan control plane deployments.
 
 == Layers
 

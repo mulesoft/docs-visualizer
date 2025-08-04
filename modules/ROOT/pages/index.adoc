@@ -67,13 +67,6 @@ Troubleshooting visualization, including connection metrics.
 | Yes
 | Yes
 
-| Topology is shown for active apps (versus all apps). Active apps are apps that have inbound and outbound traffic within the past seven days.
-| Yes
-| No
-| Yes
-| Yes
-
-
 | Layers, tags, and display name customizations can be set using runtime properties. 
 | Yes
 | No

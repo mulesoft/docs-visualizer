@@ -1,11 +1,9 @@
 = Architecture Visualization
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-== About the Architecture Visualization
 
 The Architecture visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. The Architecture visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
+
+[NOTE]
+For Canada and Japan control plane deployments, only active apps that have inbound and outbound traffic within the past seven days are shown in the canvas.
 
 == View Information About One Service in Your Network
 
