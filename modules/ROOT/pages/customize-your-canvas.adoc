@@ -1,18 +1,14 @@
-= Customize the Canvas
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= Customize the API Visualizer Canvas
 
-
-You can choose what appears in your Anypoint Visualizer canvas by applying filters for environments, tags, and services.
+You can choose what appears in your API Visualizer canvas by applying filters for environments, tags, and services.
 This enables you to hide the nodes that you do not want to see in the application graph.
 Filters have a cascading design, so all nodes that don't belong to the checked environments or tags are automatically hidden from the list of services.
 
 You can toggle *Show dependents and dependencies* to see the services and dependencies of the nodes and services which have the selected tags.
 The *View* card and the canvas are updated to display the current selection.
 
-Users who have the Visualizer Editor permission can save defined views so that any Anypoint Visualizer user can access them.
-When you close Anypoint Visualizer and reload the canvas later, the views you last accessed are displayed.
+Users who have the Visualizer Editor permission can save defined views so that any API Visualizer user can access them.
+When you close API Visualizer and reload the canvas later, the views you last accessed are displayed.
 
 You can customize layers, tags, and display names in the Architecture visualization UI or by setting a runtime property. If you are using a Mule runtime patch that was released after December 12, 2019, you can use all unicode characters with UTF-8 encoding (such as international letters, symbols, and numbers).
 
@@ -21,23 +17,23 @@ You can't customize layers, tags, and display names using the runtime properties
 
 == Layers
 
-You can use one of the default layers provided by Anypoint Visualizer, or add a custom layer to create a visual representation of the apps in your network. You can use layers across Anypoint Visualizer, but note that you can only define layers in the xref:architecture-visualization.adoc[Architecture visualization].
+You can use one of the default layers provided by API Visualizer, or add a custom layer to create a visual representation of the apps in your network. You can use layers across API Visualizer, but note that you can only define layers in the xref:architecture-visualization.adoc[].
 
 To automate the classification of nodes into layers, configure the property `anypoint.platform.visualizer.layer=<name>`.
 
-For more information, see xref:layers.adoc[Use Layers in Anypoint Visualizer].
+For more information, see xref:layers.adoc[].
 
 == Tags
 
-You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view. You can use tags across Anypoint Visualizer, but note that you can only define tags in the xref:architecture-visualization.adoc[Architecture visualization].
+You can add tags to API, application, proxy, or other services, so you can use the tags as filters to adjust your view. You can use tags across API Visualizer, but note that you can only define tags in the xref:architecture-visualization.adoc[].
 
 To automate adding tags to a node, use the property `anypoint.platform.visualizer.tags=<name>, <name>`.
 
-For more information, see xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer].
+For more information, see xref:use-tags-in-visualizer.adoc[].
 
 [[display-name]]
 == Display Name
 
-You can edit the display name of a service to provide a more readable, explanatory title. You can use display names across Anypoint Visualizer, but note that you can define display names only in the xref:architecture-visualization.adoc[Architecture visualization].
+You can edit the display name of a service to provide a more readable, explanatory title. You can use display names across API Visualizer, but note that you can define display names only in the xref:architecture-visualization.adoc[].
 
 To automate adding a display name to the node, configure the property `anypoint.platform.visualizer.displayName=<name>`.

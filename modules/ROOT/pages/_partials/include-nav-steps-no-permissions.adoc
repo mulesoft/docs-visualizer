@@ -1,2 +1,2 @@
 . Log in to Anypoint Platform.
-. In the navigation bar or the main Anypoint Platform screen, click *Visualizer*.
+. In the navigation bar or the main Anypoint Platform screen, click *API Visualizer*.

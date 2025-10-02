@@ -1,10 +1,7 @@
-= Manage Performance and Data Collection
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= Managing Performance and Data Collection
 :page-aliases: technical.adoc
 
-Anypoint Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP address and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is encrypted and stored in a database.
+API Visualizer collects runtime information from running applications, APIs, and proxies to detect all of its dependencies. The information collected includes IP address and URL (without parameters) of the incoming request, as well as URL (without parameters), and some header values of outgoing requests. This information is encrypted and stored in a database.
 
 [%header%autowidth.spread]
 |===
@@ -18,7 +15,7 @@ Anypoint Visualizer collects runtime information from running applications, APIs
 | url | The fully qualified domain of the application.
 |===
 
-The agent that Anypoint Visualizer uses to collect metadata may have a performance impact.
+The agent that API Visualizer uses to collect metadata may have a performance impact.
 
 == Reduce Potential Performance Impact for CloudHub
 
@@ -52,7 +49,7 @@ include::partial$include-nav-steps-AM-user-permission.adoc[]
 
 == Reduce Potential Performance Impact for Standalone Mule
 
-Anypoint Visualizer requires an additional header injection to work for standalone Mule deployments.
+API Visualizer requires an additional header injection to work for standalone Mule deployments.
 
 To disable the additional header injection, set the following property:
 
@@ -75,7 +72,7 @@ This disables monitoring for applications on the server as well.
 
 == Reduce Potential Performance Impact for Runtime Fabric
 
-Anypoint Visualizer requires an additional header injection to work for Runtime Fabric deployments.
+API Visualizer requires an additional header injection to work for Runtime Fabric deployments.
 
 To disable the additional header injection, set the following property:
 

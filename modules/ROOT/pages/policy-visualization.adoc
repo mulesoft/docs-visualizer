@@ -1,9 +1,4 @@
-= Policy Visualization
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-== About the Policy Visualization
+= Viewing Policies in API Visualizer
 
 When deploying a Mule app, you must ensure that you are using a version of Mule that supports the Policy visualization. Learn more about which xref:setup.adoc#select-a-deployment-type[runtimes are supported]. The Policy visualization is not supported for API Manager 1.x.
 
@@ -25,7 +20,7 @@ When you select a node within the graph, the node and its dependency stack are h
 
 In the Policy visualization, the top card contains information about the Mule app. If the Mule app is an implementation of one or more APIs, cards for each of the APIs will appear below. The card will contain the API, version, and instance names as well as a list of which policies have been applied. The policies are listed in the order in which they are applied and are identified as either being applied at the API level or as an automated policy.
 
-== Filtering Your View
+== Filter Your View
 
 When you select a node, you can click *Select dependents and dependencies*, which selects all nodes related to the service you selected.
 If a single node is selected and does not have any dependents or dependencies, this option is hidden.

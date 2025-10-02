@@ -1,13 +1,10 @@
-= Set up Anypoint Visualizer
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= Set up API Visualizer
 
-Configure the roles and permissions required to use Anypoint Visualizer and understand what to consider when deploying applications.
+Configure the roles and permissions required to use API Visualizer and understand what to consider when deploying applications.
 
 == Configure Permissions
 
-To view content in Anypoint Visualizer, you must be assigned a role that has one of the following permissions:
+To view content in API Visualizer, you must be assigned a role that has one of the following permissions:
 
 * *Runtime Manager > Read Applications*
 Enables a user to view the graph of an app network, but does not allow them to make changes.
@@ -21,7 +18,7 @@ The *Visualizer Editor* permission can be assigned only within the root organiza
 
 == Select a Deployment Type
 
-Anypoint Visualizer supports the following deployment types:
+API Visualizer supports the following deployment types:
 
 * xref:visualizer::cloudhub-setup.adoc[CloudHub]
 * xref:visualizer::standalone-mule-setup.adoc[Standalone Mule]
@@ -31,13 +28,13 @@ The set up process and supported Mule runtimes differ depending on deployment ty
 
 == Deploy an App
 
-When you deploy an app you want to view in Anypoint Visualizer, ensure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
+When you deploy an app you want to view in API Visualizer, ensure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
 
-After redeploying an app, all metadata collected by Anypoint Visualizer is removed for that app. The number of inbound connections for the app node is reset.
+After redeploying an app, all metadata collected by API Visualizer is removed for that app. The number of inbound connections for the app node is reset.
 
 == Verify Supported Connectors
 
-Anypoint Visualizer can monitor activity for outbound connections on specific connectors.
+API Visualizer can monitor activity for outbound connections on specific connectors.
 
 For Mule version 3.9.x, the following connectors are supported:
 
@@ -56,6 +53,6 @@ For Mule version 4.x, the following connectors are supported:
 
 === Manage Performance and Data Collection
 
-The agent that Anypoint Visualizer uses to collect metadata sometimes has a performance impact.
+The agent that API Visualizer uses to collect metadata sometimes has a performance impact.
 
-For more information about data collection and performance, see xref:visualizer::manage-performance.adoc[Manage Performance and Data Collection].
+For more information about data collection and performance, see xref:visualizer::manage-performance.adoc[].

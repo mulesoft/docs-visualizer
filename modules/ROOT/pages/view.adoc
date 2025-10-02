@@ -1,9 +1,7 @@
-= Define a View
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= Defining a View in API Visualizer
 
-Users with the Visualizer Editor permission can create auto-discoverable views that provide a single source of truth and are accessible to their team members across environments.
+
+Users with the *Visualizer Editor* permission can create auto-discoverable views that provide a single source of truth and are accessible to their team members across environments.
 
 Views display your saved filter selection, including:
 
@@ -13,12 +11,12 @@ Views display your saved filter selection, including:
 * New services deployed that match the selected environments and tags
 * If the *Show dependents and dependencies* option is selected and the a service is deployed and related to a selected service
 
-Views that you have access to appear in a list in the *View* card (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because you don't need to readjust filters every time you access Anypoint Visualizer to get the view that is relevant to you.
+Views that you have access to appear in a list in the *View* card (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because you don't need to readjust filters every time you access API Visualizer to get the view that is relevant to you.
 
 == Defined Views
 
 If you have the Visualizer Editor permission, you can create views that provide a consistent and high-quality source of truth for the architecture of each of your organization's projects.
-Any Anypoint Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the *View* card.
+Any API Visualizer user who has permission for the included environments can see these auto-discoverable views in a drop-down list in the *View* card.
 Only editors can create, rename, and edit defined views.
 
 These views provide team members with a topological view of the apps that are specific to the areas they are responsible for. Providing a dynamic view for team members ensures their ability to troubleshoot their projects more quickly and easily, and promotes architectural consistency.
@@ -80,7 +78,7 @@ Only users with the Visualizer Editor permission can delete views.
 
 == Private View
 
-When you access Anypoint Visualizer for the first time, your private view is displayed. Each subsequent time you access Anypoint Visualizer, you are returned to the view you last accessed. Your private view includes defined views, providing a complete picture of the projects to which you have access.
+When you access API Visualizer for the first time, your private view is displayed. Each subsequent time you access API Visualizer, you are returned to the view you last accessed. Your private view includes defined views, providing a complete picture of the projects to which you have access.
 In your private view, you can:
 
 * Edit and save which apps are included in your private view

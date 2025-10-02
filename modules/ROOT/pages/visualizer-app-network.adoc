@@ -1,9 +1,6 @@
 = Use-Case Specific Visualizations
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
-Use Anypoint Visualizer to view a graph of your application network. The _base unit_ is a Mule application that is deployed and running on a supported instance of Mule.
+Use API Visualizer to view a graph of your application network. The _base unit_ is a Mule application that is deployed and running on a supported instance of Mule.
 
 To maximize visualization readability, consumer nodes (nodes that have only outbound connections) are shown at the top. Backend systems (nodes that have only inbound connections) are shown at the bottom.
 
@@ -13,7 +10,7 @@ For usability purposes, client app names replace `ClientIds` values in the canva
 All client apps that call the same Mule app are grouped into a single client app group node.
 The number of client apps in the group is specified in the display name.
 
-When viewing or modifying a graph, Anypoint Visualizer provides the following functionality:
+When viewing or modifying a graph, API Visualizer provides the following functionality:
 
 * Zoom control: Use the zoom in, zoom out, and zoom fit buttons on the bottom right corner of the canvas to control the zoom. You can also use scroll to zoom in and out.
 * Pan the visualization: Click and drag on the canvas to pan the visualization.
@@ -21,7 +18,7 @@ When viewing or modifying a graph, Anypoint Visualizer provides the following fu
 
 == Select Your Use Case
 
-Anypoint Visualizer has three use cases, or _visualizations_: Architecture, Troubleshooting, and Policies. By identifying your use case, you can select the visualization that suits your needs.
+API Visualizer has three use cases, or _visualizations_: Architecture, Troubleshooting, and Policies. By identifying your use case, you can select the visualization that suits your needs.
 
 The xref:architecture-visualization.adoc[_Architecture visualization_] shows the topology of your apps and APIs. This visualization is the most useful for understanding your system architecture. You can view and modify the names of your services, give them specific tags, and assign them to layers.
 
@@ -33,27 +30,27 @@ The xref:policy-visualization.adoc[_Policy visualization_] enables you to see th
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
-If Anypoint Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
+If API Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
 
 . In the list in the canvas, select the visualization you want to use.
 
 . In the environment filters in the *View* card, select an environment.
 +
-Anypoint Visualizer displays only the environments you have permissions to view.
+API Visualizer displays only the environments you have permissions to view.
 
 . Click the checkboxes for the business groups you want to view.
 
-After selecting the organization and environment group, Anypoint Visualizer displays a graph of your application network.
+After selecting the organization and environment group, API Visualizer displays a graph of your application network.
 
 == Views
 
-Users with the Visualizer Editor permission can define views based on filtered environments and tags. These defined views are auto-discoverable and are available to all Anypoint Visualizer users who have permission for the included environments. These views can be opened in any of the use-case-specific visualizations.
+Users with the Visualizer Editor permission can define views based on filtered environments and tags. These defined views are auto-discoverable and are available to all API Visualizer users who have permission for the included environments. These views can be opened in any of the use-case-specific visualizations.
 
-For more information, see xref:view.adoc[Anypoint Visualizer Views].
+For more information, see xref:view.adoc[].
 
 == See Also
 
-* xref:architecture-visualization.adoc[Architecture Visualization]
-* xref:troubleshooting-visualization.adoc[Troubleshooting Visualization]
-* xref:policy-visualization.adoc[Policy Visualization]
-* xref:view.adoc[Define a View]
+* xref:architecture-visualization.adoc[]
+* xref:troubleshooting-visualization.adoc[]
+* xref:policy-visualization.adoc[]
+* xref:view.adoc[]

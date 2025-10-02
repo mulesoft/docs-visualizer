@@ -1,7 +1,7 @@
-= Use Layers in Anypoint Visualizer
+= Using Layers in API Visualizer
 
 When you associate a node with a layer, you create a visual representation of the applications in your network.
-Use one of the default layers provided by Anypoint Visualizer, or create a custom layer.
+Use one of the default layers provided by API Visualizer, or create a custom layer.
 
 [NOTE]
 The application appears in its assigned layer in every defined view in which it's included. It also appears in the correct layer across all visualization types.
@@ -16,12 +16,12 @@ Use the `anypoint.platform.visualizer.layer=<name>` property to automate adding 
 
 This property is an application property, not a server property. When you use this property, nodes automatically appear in the specified layer and, if that layer doesn't exist, it's automatically created.
 
-You can't reassign a node layer using the Anypoint Visualizer UI if you assign it using an application property.
+You can't reassign a node layer using the API Visualizer UI if you assign it using an application property.
 
 [[set-a-layer-ui]]
 == Set a Layer with the Architecture Visualization UI
 
-If a node wasn't assigned to a layer at deployment time using the Runtime Manager UI or API, by default, the node isn't assigned to a layer in Anypoint Visualizer. Use the Anypoint Visualizer UI to:
+If a node wasn't assigned to a layer at deployment time using the Runtime Manager UI or API, by default, the node isn't assigned to a layer in API Visualizer. Use the API Visualizer UI to:
 
 * Assign a node to an existing layer or, if the node does not have a layer set via properties, change the assigned layer.
 * Create a new layer.
@@ -48,7 +48,7 @@ image::select-layer-result.png[Node in Layer]
 
 === Create a New Layer
 
-In addition to the default layers provided by Anypoint Visualizer, you can create new layers to customize the view of your application network.
+In addition to the default layers provided by API Visualizer, you can create new layers to customize the view of your application network.
 
 . Select the node to add to a new layer.
 . From the drop-down list in the *Customization* section, select *New Layer*.
@@ -59,12 +59,12 @@ The node appears in the new layer. You can add additional nodes to the new layer
 [[delete-layer]]
 == Delete a Layer
 
-If a layer has no services assigned to it, Anypoint Visualizer deletes the layer automatically:
+If a layer has no services assigned to it, API Visualizer deletes the layer automatically:
 
 * If the layer is a default layer, it disappears from the canvas but is still available in the dropdown.
 * If the layer is a custom layer, it disappears from the canvas and the dropdown.
 
-Anypoint Visualizer also automatically adjusts the network display.
+API Visualizer also automatically adjusts the network display.
 
 [[reorder-layers]]
 == Reorder Layers
@@ -80,6 +80,6 @@ Use the plus sign (*+*) to maximize a layer to show all the apps.
 
 == See Also
 
-* xref:view.adoc[Define a View]
-* xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
-* xref:architecture-visualization.adoc[Architecture Visualization]
+* xref:view.adoc[]
+* xref:use-tags-in-visualizer.adoc[]
+* xref:architecture-visualization.adoc[]
