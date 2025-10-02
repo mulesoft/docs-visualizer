@@ -1,4 +1,4 @@
-.xref:index.adoc[Anypoint Visualizer]
+.xref:index.adoc[API Visualizer]
 * xref:index.adoc[Overview]
 * xref:visualizer-release-notes.adoc[Release Notes]
 * xref:setup.adoc[]

@@ -10,7 +10,7 @@ If you encounter an error or an issue while using API Visualizer, you can try th
 |`You don’t have access to any ${environment_type} environments. You can request access from your org admin.`
 | Either the organization or business group does not have the specified environment configured, or you do not have the necessary permissions.
 |Learn more about xref:access-management::roles.adoc[role permissions] or request the CloudHub Network Viewer permission in Anypoint Runtime Manager from your org administrator.
-|`There are no services to show in the selected environments. You may need to update your applications' runtime versions so they can appear in the Visualizer.`
+|`There are no services to show in the selected environments. You may need to update your applications' runtime versions so they can appear in API Visualizer.`
 |API Visualizer currently supports only applications deployed to CloudHub and standalone Mule runtime engines (Mule) with specific runtimes.
 |If you know that you have applications deployed in a supported environment, but are not seeing them in the API Visualizer canvas, you may need to update your applications to use the supported Mule version. View a list of xref:setup.adoc[supported Mule runtime engines].
 |Apps aren't appearing (and you aren't getting a specific error message).
