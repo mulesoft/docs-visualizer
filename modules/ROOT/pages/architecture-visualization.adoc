@@ -1,23 +1,19 @@
-= Architecture Visualization
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= API Visualizer Architecture Visualization
 
-== About the Architecture Visualization
 
 The Architecture visualization shows the topology of your application network. In this visualization, you can change display names of nodes, add tags, and assign nodes to layers. The Architecture visualization is most useful for documentation and presentation purposes since you can share your network’s architecture without visible metrics.
 
 == View Information About One Service in Your Network
 
 When you select a node within the canvas, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
-Anypoint Visualizer displays information about the node in a card. This card is divided into the following tabs:
+API Visualizer displays information about the node in a card. This card is divided into the following tabs:
 
 * *Details*
 Provides information about the node.
 * *Customization*
 Provides information about the layer to which the node is assigned and the tags assigned to the node. You can xref:customize-your-canvas.adoc#display-name[edit the node's display name] or xref:layers.adoc#set-a-layer-ui[change the layer] and xref:use-tags-in-visualizer.adoc#set-tag-ui[tags] from this section.
 
-== Filtering Your View
+== Filter Your View
 
 When you select a node (service) that has dependents and dependencies, you have the option to also select all nodes related to the service you selected. If the node you select does not have dependents and dependencies, this option is not offered.
 
@@ -40,6 +36,6 @@ If you customized your view, the customized network topology is exported.
 
 == See More
 
-* xref:view.adoc[Anypoint Visualizer Views]
-* xref:use-tags-in-visualizer.adoc[Use Tags in Anypoint Visualizer]
-* xref:layers.adoc[Use Layers in Anypoint Visualizer]
+* xref:view.adoc[]
+* xref:use-tags-in-visualizer.adoc[]
+* xref:layers.adoc[]
