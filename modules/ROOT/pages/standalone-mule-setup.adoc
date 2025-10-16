@@ -2,16 +2,6 @@
 
 Set up API Visualizer for standalone Mule by installing the Anypoint Monitoring agent, ensuring supported Mule versions, and enabling header injection so connections render correctly. Configure server properties as required, use the correct HTTP Connector version, and review performance guidance for data collection to balance visibility and overhead.
 
-
-API Visualizer supports the following Mule versions for standalone Mule deployments:
-
-* Mule version 3.8.7
-* Mule version 3.9.x
-* Mule version 4.1.x
-* Mule version 4.2.x
-* Mule version 4.3.x
-* Mule version 4.4.x
-
 == Install Agent
 
 To support API Visualizer for standalone Mule deployments, install the xref:monitoring::am-installing.adoc[Anypoint Monitoring agent].
