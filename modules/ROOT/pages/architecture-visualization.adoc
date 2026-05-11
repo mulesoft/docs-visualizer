@@ -3,6 +3,11 @@
 
 The Architecture visualization shows the topology of your application network. Use it to document and share your network structure without exposing metrics. You can change display names, add tags, and assign nodes to layers directly in the canvas.
 
+== Access API Visualizer
+
+. Sign in to Anypoint Platform using an account that has the Visualizer Editor permission.
+. Select *API Visualizer* from *Management Center*.
+
 == View Information About One Service in Your Network
 
 When you select a node within the canvas, the node and its dependency stack are highlighted and all unconnected nodes are unavailable.
