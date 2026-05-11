@@ -1,6 +1,6 @@
 = API Visualizer Overview
 
-API Visualizer displays views of different aspects of an application network graph. You can use the graph to explore your application network. Use cases for API Visualizer include architectural review, troubleshooting, and policy compliance.
+API Visualizer (formerly Anypoint Visualizer) displays views of different aspects of an application network graph. You can use the graph to explore your application network. Use cases for API Visualizer include architectural review, troubleshooting, and policy compliance.
 
 
 API Visualizer provides a real-time, graphical representation of the APIs, and Mule applications that are running and discoverable. It also displays third-party systems that are invoked by a Mule API, proxy, or application within your application network. The data displayed in the graph is dynamically updated and does not require prior configuration. Additionally, the data displayed is secure, as only users with the proper permissions can view the application network graph.
