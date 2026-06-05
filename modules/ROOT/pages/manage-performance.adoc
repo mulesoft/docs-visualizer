@@ -23,21 +23,18 @@ To reduce any potential performance impact for an application running in CloudHu
 
 === Disable Data Collection in CloudHub
 
-If you are using the following Mule versions, you can disable data collection by setting an application property:
+If you're using this Mule version, you can disable data collection by setting an application property:
 
 * Mule Version 4 Released Before March 22, 2019
-* Mule Version 3.9 Released Before April 5, 2019
 
 . Set the application property `anypoint.platform.config.visualizer.agent.enabled=false`.
 . Redeploy the application.
 
 === Disable the Anypoint Monitoring agent in CloudHub
 
-If you are using the following Mule versions, you can disable the Anypoint Monitoring agent:
+If you're using this Mule version, you can disable the Anypoint Monitoring agent:
 
 * Mule Version 4 Released on March 22, 2019 or Later
-* Mule Version 3.9 Released on April 5, 2019 or Later
-* Mule Version 3.8.7 Released on August 14, 2019 or Later
 
 include::partial$include-nav-steps-AM-user-permission.adoc[]
 

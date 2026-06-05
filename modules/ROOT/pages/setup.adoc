@@ -34,16 +34,7 @@ After redeploying an app, all metadata collected by API Visualizer is removed fo
 
 == Verify Supported Connectors
 
-API Visualizer can monitor activity for outbound connections on specific connectors.
-
-For Mule version 3.9.x, the following connectors are supported:
-
-* Salesforce
-* HTTP/HTTPS
-* Database
-* All connectors based on the Connector DevKit
-
-For Mule version 4.x, the following connectors are supported:
+API Visualizer can monitor activity for outbound connections for these connectors:
 
 * Salesforce
 * HTTP/HTTPS
