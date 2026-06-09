@@ -47,7 +47,7 @@ API Visualizer feature availability depends on the control plane of your Anypoin
 |===
 |API Visualizer Feature 
 |https://anypoint.mulesoft.com/[US], https://eu1.anypoint.mulesoft.com/[EU] Clouds
-| https://ca1.platform.mulesoft.com/[Canada], https://in1.platform.mulesoft.com/[India], https://jp1.platform.mulesoft.com/[Japan] Clouds (on Hyperforce)
+| https://ca1.platform.mulesoft.com/[Canada], https://in1.platform.mulesoft.com/[India], and https://jp1.platform.mulesoft.com/[Japan] Clouds (on Hyperforce)
 | Government Cloud | Private Cloud (3.x)
 
 |{empty}
