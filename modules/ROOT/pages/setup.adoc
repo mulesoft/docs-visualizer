@@ -4,7 +4,7 @@ Configure the roles and permissions required to use API Visualizer and understan
 
 == Configure Permissions
 
-To view content in API Visualizer, you must be assigned a role that has one of the following permissions:
+To view content in API Visualizer, be assigned a role that has one of the following permissions:
 
 * *Runtime Manager > Read Applications*
 Enables a user to view the graph of an app network, but does not allow them to make changes.
@@ -28,7 +28,7 @@ The set up process and supported Mule runtimes differ depending on deployment ty
 
 == Deploy an App
 
-When you deploy an app you want to view in API Visualizer, ensure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
+When you deploy an app you want to view in API Visualizer, make sure that you select a supported version of Mule as the deployment target. See xref:runtime-manager::index.adoc[Runtime Manager] for more information.
 
 After redeploying an app, all metadata collected by API Visualizer is removed for that app. The number of inbound connections for the app node is reset.
 

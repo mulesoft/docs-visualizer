@@ -30,7 +30,7 @@ The xref:policy-visualization.adoc[_Policy visualization_] enables you to see th
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
-If API Visualizer is not available, contact your system administrator to ensure that you have the correct permissions to access the application.
+If API Visualizer is not available, contact your Salesforce admin to make sure that you have the correct permissions to access the application.
 
 . In the list in the canvas, select the visualization you want to use.
 
