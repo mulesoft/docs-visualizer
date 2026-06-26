@@ -43,7 +43,7 @@ Lead API Architect Ayesha needs to understand which APIs comply or don’t compl
 
 API Visualizer feature availability depends on the control plane of your Anypoint Platform instance. Data isn’t shared across separate instances.
 
-NOTE: For Hyperforce deployment status, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
+NOTE: For Hyperforce deployment status, see xref:hyperforce::index.adoc#control-plane-regions[Hyperforce Control Plane Regions].
 
 [%header,cols="3a,1a,1a,1a,1a"]
 |===
