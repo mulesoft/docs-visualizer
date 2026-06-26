@@ -20,7 +20,7 @@ Update your applications to run on non-AM Mule versions for better functionality
 
 == Enable the Monitoring Agent
 
-In order for your app to appear in API Visualizer and for metrics to be displayed, manually enable the Anypoint Monitoring agent for the following Mule versions:
+For your app to appear in API Visualizer and for metrics to be displayed, manually enable the Anypoint Monitoring agent for the following Mule versions:
 
 * Mule Version 4.1 patch releases available after March 22, 2019
 * Mule Version 4.2
