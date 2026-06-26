@@ -39,9 +39,11 @@ API Visualizer enables you to understand the behavior of all your APIs and their
 Lead API Architect Ayesha needs to understand which APIs comply or don’t comply with policies mandated by InfoSec. With the Policy visualization, she selects a set of policies, sees which APIs have none, one, or all of these policies applied, and verifies adherence to company standards before promoting an API or project to production.
 
 [[visualizer-control-plane]]
-== Visualizer Features by Control Plane
+== API Visualizer Features by Control Plane
 
 API Visualizer feature availability depends on the control plane of your Anypoint Platform instance. Data isn’t shared across separate instances.
+
+NOTE: For Hyperforce deployment status, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
 [%header,cols="3a,1a,1a,1a,1a"]
 |===
