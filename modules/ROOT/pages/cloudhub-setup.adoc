@@ -1,7 +1,7 @@
 = CloudHub Setup in API Visualizer
 
 
-API Visualizer only includes activity from applications deployed to a supported version of Mule runtime engine (Mule). When deploying a Mule app or API, you must ensure that you are using a supported version of Mule as the deployment target.
+API Visualizer only includes activity from applications deployed to a supported version of Mule runtime engine (Mule). When deploying a Mule app or API, make sure that you are using a supported version of Mule as the deployment target.
 
 [NOTE]
 If your version of Mule was released before June 30th 2018, to ensure you have the correct API Visualizer agent, upgrade your version of Mule to any of the supported versions listed in this section. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
@@ -20,7 +20,7 @@ Update your applications to run on non-AM Mule versions for better functionality
 
 == Enable the Monitoring Agent
 
-In order for your app to appear in API Visualizer and for metrics to be displayed, you must manually enable the Anypoint Monitoring agent for the following Mule versions:
+For your app to appear in API Visualizer and for metrics to be displayed, manually enable the Anypoint Monitoring agent for the following Mule versions:
 
 * Mule Version 4.1 patch releases available after March 22, 2019
 * Mule Version 4.2

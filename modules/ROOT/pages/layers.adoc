@@ -54,7 +54,7 @@ In addition to the default layers provided by API Visualizer, you can create new
 . From the drop-down list in the *Customization* section, select *New Layer*.
 . Enter a name for your layer in the dialog box, then select *Create Layer*. 
 +
-The node appears in the new layer. You can add additional nodes to the new layer as necessary.
+The node appears in the new layer. You can add more nodes to the new layer as necessary.
 
 [[delete-layer]]
 == Delete a Layer

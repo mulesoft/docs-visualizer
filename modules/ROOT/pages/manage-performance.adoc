@@ -41,7 +41,7 @@ include::partial$include-nav-steps-AM-user-permission.adoc[]
 . Click *Settings*.
 . Select *CloudHub*.
 . From the *Environment* drop-down list, choose an environment.
-. In *List of resources in <Environment Name>*, search for an application whose metrics you wish to see.
+. In *List of resources in <Environment Name>*, search for an application whose metrics you want to see.
 . Next to application, click *Disable & Apply* to disable monitoring for the application.
 
 == Reduce Potential Performance Impact for Standalone Mule

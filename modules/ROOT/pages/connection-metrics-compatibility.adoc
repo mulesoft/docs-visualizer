@@ -2,7 +2,7 @@
 
 Connection-level metrics, or _edge metrics_, are available for many of your connections in the API Visualizer canvas. Depending on your deployment type (CloudHub, standalone Mule, or Runtime Fabric), some inbound or outbound metrics do not appear at the connection level. You can use this guide to determine why metrics are absent from your canvas.
 
-Metric is Not Available:: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. You may see this message in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
+Metric is Not Available:: Connections appear if there has been traffic between those services in the past 7 days. If there was no traffic for a particular edge in the time range selected on the *Metric* card, however, metrics will not appear on that edge. This message might appear in the card: `Inbound/Outbound metrics are not available for this connection. Learn more.`
 
 [NOTE]
 You may also see the same message if you are using a dedicated load balancer. See below.
@@ -52,7 +52,7 @@ a|
 
 * Outbound metrics on a connection are available only if the destination app is using one of these xref:cloudhub-setup#verify-supported-mule-runtime-engine-mule-versions-for-metrics[Mule versions]. If not, the following message appears:
 
-`Outbound metrics are not available for this connection. You may need to update the runtime version of the destination Mule app.`
+`Outbound metrics are not available for this connection. Update the runtime version of the destination Mule app.`
 
 * If the dedicated load balancer (DLB) modifies the URL, then metrics are not available for any of the connections passing through the DLB and  the following message appears:
 
