@@ -10,7 +10,7 @@ If you encounter an error or an issue while using API Visualizer, you can try th
 |`You don’t have access to any ${environment_type} environments. You can request access from your org admin.`
 | Either the organization or business group does not have the specified environment configured, or you do not have the necessary permissions.
 |Learn more about xref:access-management::roles.adoc[role permissions] or request the CloudHub Network Viewer permission in Anypoint Runtime Manager from your org administrator.
-|`There are no services to show in the selected environments. Update the update your applications' runtime versions so they can appear in API Visualizer.`
+|`There are no services to show in the selected environments. Update the applications' runtime versions so they can appear in API Visualizer.`
 |API Visualizer currently supports only applications deployed to CloudHub and standalone Mule runtime engines (Mule) with specific runtimes.
 |If you know that you have applications deployed in a supported environment, but are not seeing them in the API Visualizer canvas, update your applications to use the supported Mule version. View a list of xref:setup.adoc[supported Mule runtime engines].
 |Apps aren't appearing (and you aren't getting a specific error message).
@@ -26,7 +26,7 @@ If you encounter an error or an issue while using API Visualizer, you can try th
 |`You cannot view metrics because you do not have Anypoint Monitoring for this account. Learn more`
 |While all users have access at no additional cost to API Visualizer and Anypoint Monitoring, your account is first enabled.
 |File a support ticket or contact your Customer Success representative and ask for your account to be enabled.
-|`Metrics aren't available for this app. Update the update its runtime version.`
+|`Metrics aren't available for this app. Update the runtime version.`
 |The application is not using a Mule version that supports Anypoint Monitoring metrics.
 |For CloudHub applications, use an `-AM` Mule to support Anypoint Monitoring, or upgrade to a Mule 4 version available after March 22, 2019, and then enable the Monitoring agent. View a list of xref:setup.adoc[supported Mule versions].
 |===
