@@ -43,7 +43,9 @@ Lead API Architect Ayesha needs to understand which APIs comply or don’t compl
 
 API Visualizer feature availability depends on the control plane of your Anypoint Platform instance. Data isn’t shared across separate instances.
 
-NOTE: For Hyperforce deployment status, see xref:hyperforce::index.adoc#features-supported-on-hyperforce[Features Supported on Hyperforce].
+All API Visualizer features are available on https://anypoint.mulesoft.com/[US Cloud], https://eu1.anypoint.mulesoft.com/[EU Cloud], Government Cloud, and Private Cloud (3.x).
+
+This table shows feature availability for Hyperforce clouds.
 
 [%header,cols="3a,1a,1a,1a,1a,1a"]
 |===
@@ -53,11 +55,11 @@ NOTE: For Hyperforce deployment status, see xref:hyperforce::index.adoc#features
 2+^| Asia Pacific
 
 |{empty}
-|https://anypoint.mulesoft.com/[US Cloud]
-|https://ca1.platform.mulesoft.com/[Canada Cloud]
-|https://eu1.anypoint.mulesoft.com/[EU Cloud]
-|https://jp1.platform.mulesoft.com/[Japan Cloud]
-|https://in1.platform.mulesoft.com/[India Cloud]
+|US Cloud
+|Canada Cloud
+|EU Cloud
+|Japan Cloud
+|India Cloud
 
 |Architecture
 | Available
