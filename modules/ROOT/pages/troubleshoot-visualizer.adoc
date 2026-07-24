@@ -70,3 +70,7 @@ To avoid high graph cardinality, API Visualizer does not show outbound traffic t
 Visualizer uses the host header and port number to identify a Mule app when generating edges.
 
 In a hybrid deployment, if multiple Mule apps have the same host header and port number, Visualizer can't identify which Mule app is the caller and can't draw the edge. 
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
