@@ -83,3 +83,7 @@ You can export the view of your network showing on your canvas to a PNG file by 
 
 * If you customized your view with filters, the customized network topology is exported.
 * If you selected metrics or durations, these settings are reflected in the export.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
