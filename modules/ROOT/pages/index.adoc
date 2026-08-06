@@ -47,17 +47,18 @@ All API Visualizer features are available on https://anypoint.mulesoft.com/[US C
 
 This table shows feature availability for Hyperforce clouds.
 
-[%header,cols="3a,1a,1a,1a,1a,1a,1a"]
+[%header,cols="3a,1a,1a,1a,1a,1a,1a,1a"]
 |===
 |API Visualizer Feature
 2+^| Americas
-^| Europe
+2+^| Europe
 3+^| Asia Pacific
 
 |{empty}
 |US Cloud
 |Canada Cloud
 |EU Cloud
+|United Kingdom Cloud
 |Japan Cloud
 |India Cloud
 |Australia Cloud
@@ -66,6 +67,7 @@ This table shows feature availability for Hyperforce clouds.
 | Available
 | Available
 | Available
+| Planned
 | Available
 | Available
 | Planned
@@ -74,6 +76,7 @@ This table shows feature availability for Hyperforce clouds.
 | Available
 | Available
 | Available
+| Planned
 | Available
 | Available
 | Planned
@@ -82,6 +85,7 @@ This table shows feature availability for Hyperforce clouds.
 | Available
 | Planned
 | Available
+| Planned
 | Planned
 | Planned
 | Planned
