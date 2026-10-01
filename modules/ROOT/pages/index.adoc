@@ -67,19 +67,19 @@ This table shows feature availability for Hyperforce clouds.
 | Available
 | Available
 | Available
-| Planned
 | Available
 | Available
-| Planned
+| Available
+| Available
 
 |Policies
 | Available
 | Available
 | Available
-| Planned
 | Available
 | Available
-| Planned
+| Available
+| Available
 
 |Troubleshooting
 | Available
