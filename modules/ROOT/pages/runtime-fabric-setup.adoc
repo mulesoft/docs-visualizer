@@ -5,6 +5,10 @@ After you install Runtime Fabric, API Visualizer can display applications that a
 
 API Visualizer relies on a header injection to display connections between services correctly.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Enable Header Injection
 
 API Visualizer requires an additional header injection for Anypoint Runtime Fabric deployments. However, due to potential performance impact, header injection is disabled by default in Mule version 4.x released before April 7, 2020.

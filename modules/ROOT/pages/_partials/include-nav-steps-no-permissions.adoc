@@ -1,2 +1,5 @@
 . Log in to Anypoint Platform.
-. In the navigation bar or the main Anypoint Platform screen, click *API Visualizer*.
+
+. In the navigation bar, select *Runtimes* > *API Visualizer*, or select *API Visualizer* in *Management Center*. 
++
+If API Visualizer isn't available, contact your MuleSoft administrator to make sure that you have the correct permissions to access the application.

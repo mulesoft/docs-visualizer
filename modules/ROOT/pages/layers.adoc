@@ -6,6 +6,10 @@ Use one of the default layers provided by API Visualizer, or create a custom lay
 [NOTE]
 The application appears in its assigned layer in every defined view in which it's included. It also appears in the correct layer across all visualization types.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Add a Service to a Layer
 
 Map a node to a layer in the application's properties file, or using the UI in the Architecture visualization.

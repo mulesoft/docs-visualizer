@@ -7,6 +7,10 @@ API Visualizer only includes activity from applications deployed to a supported 
 If your version of Mule was released before June 30th 2018, to ensure you have the correct API Visualizer agent, upgrade your version of Mule to any of the supported versions listed in this section. You can do this update with zero downtime for CloudHub applications, APIs, and proxies.
 These versions are listed in Runtime Manager > Runtime Version. Expand the Show old patch releases section in the runtime versions drop-down.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Verify Supported Mule Runtime Engine (Mule) Versions for Metrics
 
 The metrics that API Visualizer displays come from Anypoint Monitoring. As a result, metrics are shown in API Visualizer only for applications running on Mule versions that are also supported for Anypoint Monitoring.
@@ -28,10 +32,10 @@ For your app to appear in API Visualizer and for metrics to be displayed, manual
 To enable the Anypoint Monitoring agent:
 
 . Log in to Anypoint Platform using an account that has the Anypoint Monitoring User permission. 
-. In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
+. In *Management Center*, select *Monitoring*.
 . In the Anypoint Monitoring navigation menu, click *Settings*.
 . Select *CloudHub*.
-. From the *Environment* drop-down list, choose an environment.
+. From *Environment*, choose an environment.
 . In *List of resources in <Environment Name>*, search for an app to visualize.
 . Next to the app, click *Enable & Apply* to enable visualization and monitoring for the app.
 

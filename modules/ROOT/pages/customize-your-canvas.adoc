@@ -15,6 +15,10 @@ You can customize layers, tags, and display names in the Architecture visualizat
 [NOTE]
 You can't customize layers, tags, and display names using the runtime properties in Runtime Manager Canada and Japan control plane deployments.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Layers
 
 You can use one of the default layers provided by API Visualizer, or add a custom layer to create a visual representation of the apps in your network. You can use layers across API Visualizer, but note that you can only define layers in the xref:architecture-visualization.adoc[].
