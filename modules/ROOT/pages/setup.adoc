@@ -2,6 +2,10 @@
 
 Configure the roles and permissions required to use API Visualizer and understand what to consider when deploying applications.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Configure Permissions
 
 To view content in API Visualizer, be assigned a role that has one of the following permissions:

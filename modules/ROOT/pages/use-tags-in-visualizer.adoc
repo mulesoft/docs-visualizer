@@ -4,6 +4,10 @@ You can add tags to an application, proxy, or other service. Similar to layers, 
 
 If a tag is assigned to an application, the application will appear in every view in which the tags are selected.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Set the Tag Using Properties
 
 You can automate adding tags to nodes by using `anypoint.platform.visualizer.tags=<name>, <name>`, either in the application's properties file or at deployment time through the Runtime Manager UI or API. Note that this is an application property, not a server property.

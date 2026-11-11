@@ -5,8 +5,7 @@ The Architecture visualization shows the topology of your application network. U
 
 == Access API Visualizer
 
-. Sign in to Anypoint Platform using an account that has the Visualizer Editor permission.
-. Select *API Visualizer* from *Management Center*.
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 == View Information About One Service in Your Network
 

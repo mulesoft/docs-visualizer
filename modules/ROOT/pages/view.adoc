@@ -13,6 +13,10 @@ Views display your saved filter selection, including:
 
 Views that you have access to appear in a list in the *View* card (click the drop-down arrow to see the list). This gives you easy access to all the views that are available to you, and saves you time because no readjusting of filters is needed every time you access API Visualizer to get the view that is relevant to you.
 
+== Access API Visualizer
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 == Defined Views
 
 If you have the Visualizer Editor permission, you can create views that provide a consistent and high-quality source of truth for the architecture of each of your organization's projects.
